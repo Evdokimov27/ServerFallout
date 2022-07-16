@@ -1,6 +1,5 @@
 {
   "filters" : {
-    "sort" : [ "search", "brewing", "building_blocks", "decorations", "combat", "tools", "redstone", "food", "transportation", "misc" ],
     "options" : [ {
       "id" : "brewing",
       "icon" : "GLASS_BOTTLE",
@@ -101,10 +100,10 @@
       "recipes" : [ ],
       "creativeModeTabs" : [ "MISC" ],
       "materials" : [ ]
-    } ]
+    } ],
+    "sort" : [ "search", "brewing", "building_blocks", "decorations", "combat", "tools", "redstone", "food", "transportation", "misc" ]
   },
   "categories" : {
-    "sort" : [ "default", "customcrafting" ],
     "options" : [ {
       "id" : "default",
       "icon" : "CRAFTING_TABLE",
@@ -123,6 +122,7 @@
       "groups" : [ ],
       "folders" : [ "customcrafting" ],
       "recipes" : [ ]
-    } ]
+    } ],
+    "sort" : [ "default", "customcrafting" ]
   }
 }
