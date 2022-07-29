@@ -1,0 +1,10 @@
+name: Evdokimov
+craftings:
+  money_exchange:
+    amount: 3
+  king_helmet:
+    amount: 1
+  epic_bow:
+    amount: 3
+  super_sword:
+    amount: 1

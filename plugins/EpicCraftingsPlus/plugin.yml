@@ -1,0 +1,8 @@
+main: ecp.ajneb97.EpicCraftingsPlus
+version: 2.17.2
+name: EpicCraftingsPlus
+softdepend: [Jobs,Vault,BattleLevels]
+
+commands:
+  ecraft:
+    description: Main Command of EpicCraftingsPlus

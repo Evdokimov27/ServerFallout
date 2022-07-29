@@ -1,0 +1,169 @@
+name: '&7&l(&b&l❖&7&l)>> &7&oBack to Death''s Point'
+lore:
+- '&8&l»&7&l&m----------------&8&l«'
+- '&f'
+- '&7When you die, the item'
+- '&7saves your XYZ coordinates'
+- ''
+- '&7Upon respawning, right click'
+- '&7the item to return to that point'
+- '&f'
+- '&8&l»&7&l&m----------------&8&l«'
+material: HEART_OF_THE_SEA
+headDBID: ''
+glow: true
+glowDrop: false
+disableStack: false
+keepItemOnDeath: true
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 0
+hideUsage: false
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+hidePotionEffects: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+activators:
+  activator1:
+    activator: PLAYER_BEFORE_DEATH
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands: []
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    variablesModification:
+      X:
+        type: SET
+        modification: '%player_x%'
+      Y:
+        type: SET
+        modification: '%player_y%'
+      Z:
+        type: SET
+        modification: '%player_z%'
+      PITCH:
+        type: SET
+        modification: '%player_pitch%'
+      YAW:
+        type: SET
+        modification: '%player_yaw%'
+      SET:
+        type: SET
+        modification: '1'
+      WORLD:
+        type: SET
+        modification: '%player_world%'
+    detailedSlots: []
+  activator2:
+    activator: PLAYER_RIGHT_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - execute in <<%var_WORLD%>> run teleport %player% %var_X% %var_Y% %var_Z% %var_YAW%
+      %var_PITCH%
+    - SENDMESSAGE §6§lExecutableItems §7§oTeleportation....
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    variablesModification:
+      SET:
+        type: SET
+        modification: '0'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_SET_int%'
+          comparator: EQUALS
+          part2: 1.0
+          messageIfNotValid: '&4ExecutableItems &c&oYou are not dead or you have already
+            use it ! &7&o(One usage per death)'
+          cancelEventIfNotValid: false
+    detailedSlots:
+    - 40
+    - -1
+  activator3:
+    activator: PLAYER_RESPAWN
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - SENDMESSAGE §6ExecutableItems §ePosition saved ! §7§o(Click on the §bBack to
+      Deaths Point §7§oto go at your death's point) (%var_X_int%, %var_Y_int%, %var_Z_int%)
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    detailedSlots: []
+cancel-item-drop: false
+cancel-item-place: false
+cancel-tool-interactions: false
+cancel-item-craft-no-custom: true
+cancel-item-craft: false
+cancel-deposit-in-chest: false
+cancel-deposit-in-furnace: false
+cancel-item-burn: false
+cancel-stone-cutter: false
+cancel-enchant: true
+cancel-brewing: false
+cancel-anvil: true
+cancel-beacon: false
+cancel-cartography: false
+cancel-composter: false
+cancel-dispenser: false
+cancel-dropper: false
+cancel-hopper: false
+cancel-lectern: false
+cancel-loom: false
+cancel-merchant: false
+cancel-grind-stone: false
+cancel-item-frame: false
+cancel-smithing-table: false
+cancel-consumption: false
+cancel-swap-hand: false
+locked-in-inventory: false
+cancelEventIfNoPerm: false
+cancelEventIfNotOwner: false
+variables:
+  X:
+    type: NUMBER
+    default: 0.0
+  Y:
+    type: NUMBER
+    default: 0.0
+  Z:
+    type: NUMBER
+    default: 0.0
+  SET:
+    type: NUMBER
+    default: 0.0
+  PITCH:
+    type: NUMBER
+    default: 0.0
+  YAW:
+    type: NUMBER
+    default: 0.0
+  WORLD:
+    type: STRING
+    default: '0.0'
+config_4_2: true
+config_update: true

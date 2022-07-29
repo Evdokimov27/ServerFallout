@@ -1,0 +1,33 @@
+name: '&5&l&kO &bMorph Flint & Steel &f(&eTier 1&f) &5&l&kO'
+lore:
+- ''
+- '&f&lABILITIES:'
+- '&f&l - &b&lMorphing &f&l(&3&lSHIFT RIGHT-CLICK&f&l)'
+- '&fCycles through in a form of a &6Pickaxe,'
+- '&6Axe, Shovel, Hoe, Flint and Steel, Shears'
+- '&fand a &6Fishing Rod&f. '
+material: FLINT_AND_STEEL
+glow: true
+cancel-item-drop: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+unbreakable: true
+activators:
+  activator1:
+    activator: PLAYER_RIGHT_CLICK
+    displayName: '&ean activator'
+    usageModification: -1
+    cooldown: 0
+    commands:
+    - SENDMESSAGE §f§lSwitching to §b§lShears!
+    - ei giveslot %player% Prem_Morph_Shears_Lvl1 1 %slot%
+    conditions:
+      playerConditions:
+        ifSneaking: true
+    detailedSlots:
+    - '-1'
+    - '40'
+config_4_2: true
+config_update: true

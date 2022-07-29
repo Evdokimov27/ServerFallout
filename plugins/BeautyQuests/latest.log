@@ -1,0 +1,197 @@
+[07:51:42] ---- BEAUTYQUESTS LOGGER - OPENED Fri Jul 29 07:51:42 IRKT 2022 ----
+[07:51:51] [INFO]: Enabling BeautyQuests v0.19.7
+[07:51:51] [INFO]: ------------ BeautyQuests ------------
+[07:51:51] [DEBUG]: Hooked into [Citizens] v2.0.30-SNAPSHOT (build 2634)
+[07:51:51] [DEBUG]: Hooked into [WorldGuard] v7.0.5+3827266
+[07:51:51] [DEBUG]: Hooked into [MythicMobs] v4.14.1-47dddd45
+[07:51:51] [DEBUG]: Hooked into [Vault] v1.7.3-b131
+[07:51:51] [DEBUG]: Hooked into [PlaceholderAPI] v2.11.2
+[07:51:51] [DEBUG]: Hooked into [HolographicDisplays] v2.4.9
+[07:51:51] [DEBUG]: Hooked into [Sentinel] v2.6.0-SNAPSHOT (build 472)
+[07:51:51] [INFO]: Loaded valid Minecraft version 1_16_R3.
+[07:51:51] [DEBUG]: Loading data file, last time edited : Fri Jul 29 07:51:26 IRKT 2022
+[07:51:52] [INFO]: Loaded language file locales/en_US.yml (0.025s)!
+[07:51:52] [INFO]: Loaded start particles: REDSTONE in shape POINT with color "R255 G255 B0"
+[07:51:52] [INFO]: Loaded talk particles: VILLAGER_HAPPY in shape BAR
+[07:51:52] [INFO]: Loaded next particles: SMOKE_NORMAL in shape SPOT
+[07:51:52] [DEBUG]: Initlializing default stage types.
+[07:51:52] [DEBUG]: Stage registered (Find, 0)
+[07:51:52] [DEBUG]: Stage registered (Talk, 1)
+[07:51:52] [DEBUG]: Stage registered (Items, 2)
+[07:51:52] [DEBUG]: Stage registered (Mobs, 3)
+[07:51:52] [DEBUG]: Stage registered (Mine, 4)
+[07:51:52] [DEBUG]: Stage registered (Place, 5)
+[07:51:52] [DEBUG]: Stage registered (Chat, 6)
+[07:51:52] [DEBUG]: Stage registered (Interact, 7)
+[07:51:52] [DEBUG]: Stage registered (Fish, 8)
+[07:51:52] [DEBUG]: Stage registered (Melt, 9)
+[07:51:52] [DEBUG]: Stage registered (Enchant, 10)
+[07:51:52] [DEBUG]: Stage registered (Craft, 11)
+[07:51:52] [DEBUG]: Stage registered (Bucket, 12)
+[07:51:52] [DEBUG]: Stage registered (Location, 13)
+[07:51:52] [DEBUG]: Stage registered (PlayTime, 14)
+[07:51:52] [DEBUG]: Stage registered (Breed, 15)
+[07:51:52] [DEBUG]: Stage registered (Tame, 16)
+[07:51:52] [DEBUG]: Initlializing default rewards.
+[07:51:52] [DEBUG]: Quest object registered (id: commandReward, class: fr.skytasul.quests.rewards.CommandReward)
+[07:51:52] [DEBUG]: Quest object registered (id: itemReward, class: fr.skytasul.quests.rewards.ItemReward)
+[07:51:52] [DEBUG]: Quest object registered (id: removeItemsReward, class: fr.skytasul.quests.rewards.RemoveItemsReward)
+[07:51:52] [DEBUG]: Quest object registered (id: textReward, class: fr.skytasul.quests.rewards.MessageReward)
+[07:51:52] [DEBUG]: Quest object registered (id: tpReward, class: fr.skytasul.quests.rewards.TeleportationReward)
+[07:51:52] [DEBUG]: Quest object registered (id: expReward, class: fr.skytasul.quests.rewards.XPReward)
+[07:51:52] [DEBUG]: Quest object registered (id: checkpointReward, class: fr.skytasul.quests.rewards.CheckpointReward)
+[07:51:52] [DEBUG]: Quest object registered (id: questStopReward, class: fr.skytasul.quests.rewards.QuestStopReward)
+[07:51:52] [DEBUG]: Quest object registered (id: requirementDependentReward, class: fr.skytasul.quests.rewards.RequirementDependentReward)
+[07:51:52] [DEBUG]: Quest object registered (id: randomReward, class: fr.skytasul.quests.rewards.RandomReward)
+[07:51:52] [DEBUG]: Quest object registered (id: wait, class: fr.skytasul.quests.rewards.WaitReward)
+[07:51:52] [DEBUG]: Quest object registered (id: titleReward, class: fr.skytasul.quests.rewards.TitleReward)
+[07:51:52] [DEBUG]: Initlializing default requirements.
+[07:51:52] [DEBUG]: Quest object registered (id: logicalOr, class: fr.skytasul.quests.requirements.logical.LogicalOrRequirement)
+[07:51:52] [DEBUG]: Quest object registered (id: questRequired, class: fr.skytasul.quests.requirements.QuestRequirement)
+[07:51:52] [DEBUG]: Quest object registered (id: levelRequired, class: fr.skytasul.quests.requirements.LevelRequirement)
+[07:51:52] [DEBUG]: Quest object registered (id: permissionRequired, class: fr.skytasul.quests.requirements.PermissionsRequirement)
+[07:51:52] [DEBUG]: Quest object registered (id: scoreboardRequired, class: fr.skytasul.quests.requirements.ScoreboardRequirement)
+[07:51:52] [DEBUG]: Initlializing default quest options.
+[07:51:52] [DEBUG]: Quest option registered (id: pool)
+[07:51:52] [DEBUG]: Quest option registered (id: name)
+[07:51:52] [DEBUG]: Quest option registered (id: description)
+[07:51:52] [DEBUG]: Quest option registered (id: customItem)
+[07:51:52] [DEBUG]: Quest option registered (id: confirmMessage)
+[07:51:52] [DEBUG]: Quest option registered (id: hologramText)
+[07:51:52] [DEBUG]: Quest option registered (id: bypassLimit)
+[07:51:52] [DEBUG]: Quest option registered (id: hideNoRequirements)
+[07:51:52] [DEBUG]: Quest option registered (id: startableFromGUI)
+[07:51:52] [DEBUG]: Quest option registered (id: failOnDeath)
+[07:51:52] [DEBUG]: Quest option registered (id: cancellable)
+[07:51:52] [DEBUG]: Quest option registered (id: cancelActions)
+[07:51:52] [DEBUG]: Quest option registered (id: hologramLaunch)
+[07:51:52] [DEBUG]: Quest option registered (id: hologramLaunchNo)
+[07:51:52] [DEBUG]: Quest option registered (id: scoreboard)
+[07:51:52] [DEBUG]: Quest option registered (id: hide)
+[07:51:52] [DEBUG]: Quest option registered (id: auto)
+[07:51:52] [DEBUG]: Quest option registered (id: repeatable)
+[07:51:52] [DEBUG]: Quest option registered (id: timer)
+[07:51:52] [DEBUG]: Quest option registered (id: endSound)
+[07:51:52] [DEBUG]: Quest option registered (id: firework)
+[07:51:52] [DEBUG]: Quest option registered (id: requirements)
+[07:51:52] [DEBUG]: Quest option registered (id: startRewards)
+[07:51:52] [DEBUG]: Quest option registered (id: startMessage)
+[07:51:52] [DEBUG]: Quest option registered (id: starterNPC)
+[07:51:52] [DEBUG]: Quest option registered (id: startDialog)
+[07:51:52] [DEBUG]: Quest option registered (id: endRewards)
+[07:51:52] [DEBUG]: Quest option registered (id: endMsg)
+[07:51:52] [DEBUG]: Item comparison registered (id: bukkit)
+[07:51:52] [DEBUG]: Item comparison registered (id: customBukkit)
+[07:51:52] [DEBUG]: Item comparison registered (id: material)
+[07:51:52] [DEBUG]: Item comparison registered (id: name)
+[07:51:52] [DEBUG]: Item comparison registered (id: lore)
+[07:51:52] [DEBUG]: Item comparison registered (id: enchants)
+[07:51:52] [DEBUG]: Item comparison registered (id: repair)
+[07:51:52] [DEBUG]: Mob factory registered (id: bukkitEntity)
+[07:51:52] [DEBUG]: Bossbars manager has been registered: fr.skytasul.quests.api.bossbar.BQBossBarImplementation
+[07:51:52] [DEBUG]: Mob factory registered (id: citizensNPC)
+[07:51:52] [DEBUG]: Now using WorldGuard entry API.
+[07:51:52] [DEBUG]: Quest object registered (id: regionRequired, class: fr.skytasul.quests.requirements.RegionRequirement)
+[07:51:52] [DEBUG]: Mob factory registered (id: mythicMobs)
+[07:51:52] [DEBUG]: Quest object registered (id: moneyReward, class: fr.skytasul.quests.rewards.MoneyReward)
+[07:51:52] [DEBUG]: Quest object registered (id: permReward, class: fr.skytasul.quests.rewards.PermissionReward)
+[07:51:52] [DEBUG]: Quest object registered (id: moneyRequired, class: fr.skytasul.quests.requirements.MoneyRequirement)
+[07:51:52] [INFO]: Placeholders registered !
+[07:51:52] [DEBUG]: Quest object registered (id: placeholderRequired, class: fr.skytasul.quests.requirements.PlaceholderRequirement)
+[07:51:52] [DEBUG]: Holograms manager has been registered: fr.skytasul.quests.utils.compatibility.BQHolographicDisplays2
+[07:51:52] [DEBUG]: Started bStats metrics
+[07:51:52] [DEBUG]: Starting Spigot updater
+[07:51:55] [DEBUG]: 0 accounts loaded and 2 identifiers.
+[07:51:55] [DEBUG]: Registered 4 lines in scoreboard
+[07:51:55] [INFO]: 0 quests loaded (0.015s)!
+[07:51:55] [INFO]: Periodic saves task started (18000 ticks). Task ID: 536
+[07:51:55] [INFO]: You are using the latest version of BeautyQuests.
+[08:04:03] [DEBUG]: Loading player evdokimov27...
+[08:04:03] [DEBUG]: New account registered for evdokimov27 (498bb71d-5c93-3516-8446-ff71a3d642f8), index 3 via org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftTask.run 100; org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftAsyncTask.run 58; 
+[08:04:03] [DEBUG]: Completed load of evdokimov27 datas within 124 ms (0 quests, 0 pools)
+[08:04:47] [DEBUG]: Unloading player evdokimov27... (0 quests, 0 pools)
+[08:06:55] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[08:06:55] [DEBUG]: Saved datas (0.002s)!
+[08:06:55] [INFO]: Datas saved ~ periodic save
+[08:21:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[08:21:54] [DEBUG]: Saved datas (0.0s)!
+[08:21:54] [INFO]: Datas saved ~ periodic save
+[08:36:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[08:36:54] [DEBUG]: Saved datas (0.002s)!
+[08:36:54] [INFO]: Datas saved ~ periodic save
+[08:51:55] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[08:51:55] [DEBUG]: Saved datas (0.001s)!
+[08:51:55] [INFO]: Datas saved ~ periodic save
+[09:06:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[09:06:54] [DEBUG]: Saved datas (0.001s)!
+[09:06:54] [INFO]: Datas saved ~ periodic save
+[09:21:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[09:21:54] [DEBUG]: Saved datas (0.001s)!
+[09:21:54] [INFO]: Datas saved ~ periodic save
+[09:36:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[09:36:54] [DEBUG]: Saved datas (0.001s)!
+[09:36:54] [INFO]: Datas saved ~ periodic save
+[09:51:55] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[09:51:55] [DEBUG]: Saved datas (0.001s)!
+[09:51:55] [INFO]: Datas saved ~ periodic save
+[10:06:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[10:06:54] [DEBUG]: Saved datas (0.001s)!
+[10:06:54] [INFO]: Datas saved ~ periodic save
+[10:21:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[10:21:54] [DEBUG]: Saved datas (0.001s)!
+[10:21:54] [INFO]: Datas saved ~ periodic save
+[10:36:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[10:36:54] [DEBUG]: Saved datas (0.001s)!
+[10:36:54] [INFO]: Datas saved ~ periodic save
+[10:51:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[10:51:54] [DEBUG]: Saved datas (0.001s)!
+[10:51:54] [INFO]: Datas saved ~ periodic save
+[11:06:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[11:06:54] [DEBUG]: Saved datas (0.0s)!
+[11:06:54] [INFO]: Datas saved ~ periodic save
+[11:21:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[11:21:54] [DEBUG]: Saved datas (0.0s)!
+[11:21:54] [INFO]: Datas saved ~ periodic save
+[11:36:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[11:36:54] [DEBUG]: Saved datas (0.001s)!
+[11:36:54] [INFO]: Datas saved ~ periodic save
+[11:51:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[11:51:54] [DEBUG]: Saved datas (0.001s)!
+[11:51:54] [INFO]: Datas saved ~ periodic save
+[12:06:55] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[12:06:55] [DEBUG]: Saved datas (0.001s)!
+[12:06:55] [INFO]: Datas saved ~ periodic save
+[12:21:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[12:21:54] [DEBUG]: Saved datas (0.0s)!
+[12:21:54] [INFO]: Datas saved ~ periodic save
+[12:36:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[12:36:54] [DEBUG]: Saved datas (0.0s)!
+[12:36:54] [INFO]: Datas saved ~ periodic save
+[12:51:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[12:51:54] [DEBUG]: Saved datas (0.001s)!
+[12:51:54] [INFO]: Datas saved ~ periodic save
+[13:06:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[13:06:54] [DEBUG]: Saved datas (0.001s)!
+[13:06:54] [INFO]: Datas saved ~ periodic save
+[13:21:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[13:21:54] [DEBUG]: Saved datas (0.001s)!
+[13:21:54] [INFO]: Datas saved ~ periodic save
+[13:36:55] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[13:36:55] [DEBUG]: Saved datas (0.002s)!
+[13:36:55] [INFO]: Datas saved ~ periodic save
+[13:51:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[13:51:54] [DEBUG]: Saved datas (0.0s)!
+[13:51:54] [INFO]: Datas saved ~ periodic save
+[14:06:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[14:06:54] [DEBUG]: Saved datas (0.0s)!
+[14:06:54] [INFO]: Datas saved ~ periodic save
+[14:21:54] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[14:21:54] [DEBUG]: Saved datas (0.001s)!
+[14:21:54] [INFO]: Datas saved ~ periodic save
+[14:25:05] [INFO]: Disabling BeautyQuests v0.19.7
+[14:25:05] [INFO]: Periodic saves task stopped.
+[14:25:05] [DEBUG]: Saving 0 loaded accounts and 3 identifiers.
+[14:25:05] [DEBUG]: Saved datas (0.001s)!
+[14:25:05] [DEBUG]: Unregistered from WorldGuard entry API.
+[14:25:05] Logger was open during 6 hours 33 minutes
+[14:25:05] ---- BEAUTYQUESTS LOGGER - CLOSED Fri Jul 29 14:25:05 IRKT 2022 ----

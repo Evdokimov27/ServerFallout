@@ -1,0 +1,52 @@
+name: '&3✦ &bWater Drainer &3✦'
+lore:
+- '&3&l---&7&l>>&3&l-----&7&l<<&3&l---'
+- '&7Epic: &bInfinite usage'
+- '&3&l---&7&l>>&3&l-----&7&l<<&3&l---'
+- '&8Signed by: &bPoseidon'
+material: BUCKET
+glow: false
+cancel-item-drop: true
+cancel-enchant: false
+cancel-anvil: false
+cancel-consumption: false
+cancel-item-place: true
+cancel-deposit-in-chest: false
+cancel-item-craft: false
+locked-in-inventory: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: PLAYER_FILL_BUCKET
+    displayName: '&ean activator'
+    usageModification: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    cancelEvent: true
+    commands:
+    - REPLACEBLOCK DIRT
+    - REPLACEBLOCK AIR
+    detailedSlots:
+    - '-1'
+    - '40'
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - WATER
+    cancelEventIfNotDetailedBlocks: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+config_4_2: true
+config_update: true

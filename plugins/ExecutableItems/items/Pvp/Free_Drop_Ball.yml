@@ -1,0 +1,44 @@
+name: '&8(()) &fForce drop ball &8(())'
+lore:
+- '&8&m------------------------'
+- '&7'
+- '&7Right click on a player'
+- '&7to make him drop the item in his main hand.'
+- '&7(&6+ 3 seconds pickup disabled&7)'
+- '&7'
+- '&8&m------------------------'
+material: MAGMA_CREAM
+headDBID: ''
+glow: false
+glowDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+activators:
+  activator2:
+    activator: PLAYER_CLICK_ON_PLAYER
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - SENDMESSAGE §7§oExecutableItems §aThe player §e%target% §ahas drop the item
+      in his hand ! §7(§6§oAnd he has pickup disabled for 3 seconds§7)
+    silenceOutput: false
+    targetCommands:
+    - FORCEDROP -1
+    - CANCELPICKUP 60
+    cancelEventIfInvalidRequiredExecutableItems: false
+    detailedClick: RIGHT
+    cancelEvent: false
+config_4_2: true
+config_update: true

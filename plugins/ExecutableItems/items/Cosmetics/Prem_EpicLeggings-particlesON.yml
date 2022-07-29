@@ -1,0 +1,77 @@
+name: '&1✦ &9Epic leggings &1✦'
+lore:
+- '&9&l---&7&l>>&9&l-----&7&l<<&9&l---'
+- ''
+- '&1✦ &7Epic:'
+- '  &1➤ &9Haste 2'
+- '  &1➤ &9+ 2.5 armor bonus'
+- ''
+- '&1✦ &7Particle: &9True'
+- '&7&oClick to change to False'
+- ''
+- '&9&l---&7&l>>&9&l-----&7&l<<&9&l---'
+- '&8Signed by: &1%player%'
+material: LEATHER_LEGGINGS
+armorColor: 5135577
+glow: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: true
+hideAttributes: true
+usage: 0
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: LOOP
+    detailedSlots:
+    - '37'
+    displayName: '&ean activator'
+    usageModification: 0
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - effect give %player% minecraft:haste 2 2 true
+    - execute at %player% run particle minecraft:flame ~ ~3 ~ 0.5 0.5 0.5 0.001 10
+      normal
+    silenceOutput: true
+    requiredItems: []
+    delay: 1
+    delayInTick: false
+  activator2:
+    activator: INVENTORY_CLICK
+    displayName: '&ean activator'
+    usageModification: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - ei giveslot %player% Prem_EpicLeggings-particlesOFF 1 %slot%
+    silenceOutput: false
+    requiredItems: []
+    detailedClick: RIGHT
+    cancelEvent: false
+    detailedSlots: []
+attributes:
+  attribute1:
+    attribute: GENERIC_ARMOR
+    name: '&eDefault name'
+    uuid: aace69d0-38e6-412a-92c8-12632e77d140
+    amount: 5.0
+    operation: ADD_NUMBER
+    slot: LEGS
+cancel-item-drop: false
+cancel-enchant: true
+cancel-anvil: true
+cancel-consumption: false
+cancel-item-place: false
+cancel-deposit-in-chest: false
+cancel-deposit-in-furnace: false
+cancel-item-craft: true
+cancel-item-frame: false
+cancel-tool-interactions: false
+locked-in-inventory: false
+config_4_2: true
+config_update: true

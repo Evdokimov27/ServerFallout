@@ -1,0 +1,158 @@
+name: '&d&lWither Lord Mask'
+lore:
+- ''
+- '&7Crafted by &6&l[&f&l%player%&6&l]'
+- '&7A Mythic Series Helmet by Special70'
+- '&f'
+- '&7To one who is wearing this mask will'
+- '&7gain immense power'
+- '&7When you wear this mask, purple smoke emits from you.'
+- '&f'
+- '&8This mask cannot be enchanted nor renamed...'
+- '&f'
+- '&7&l>&8&l>&7&l> &d&lABILITIES &7&l<&8&l<&7&l<'
+- ''
+- '&f&l >>> &d&lWither Impact'
+- '&7 - &fWhen you jump, you will get launched real high.'
+- '&fWhen you sneak midair, you will fall super fast and'
+- '&fupon impact, you will deal 8 damage to nearby players'
+- '&fand mobs in a 6 block radius while not receiving any'
+- '&ffall damage.'
+- ''
+- '&f&l >>> &d&lWither Rend'
+- '&7 - &fWhen you left-click with a Diamond Sword,'
+- '&fyou will fly through in your direction and dealing'
+- '&f12 damage to targets that were near you while you'
+- '&fwere flying.'
+material: WITHER_SKELETON_SKULL
+headDBID: ''
+glow: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 0
+hideUsage: false
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+hidePotionEffects: false
+canBeUsedOnlyByTheOwner: false
+activators:
+  PARTICLE_ACTIVATOR:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run particle dust 1 0 1 2 ~ ~ ~ 0.01 1 0.01 0 50
+    silenceOutput: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    delay: 1
+    delayInTick: true
+    cancelEvent: false
+    detailedSlots:
+    - '39'
+  activator1:
+    activator: PLAYER_JUMP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - CUSTOMDASH1 %x% %y%+5 %z%
+    - execute at %player% run particle dust 1 0 1 2 ~ ~ ~ 1 0.1 1 0 50
+    - execute at %player% run playsound entity.wither.shoot ambient %player%
+    silenceOutput: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '39'
+  activator2:
+    activator: PLAYER_RECEIVE_HIT_GLOBAL
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run particle dust 1 0 1 2 ~ ~ ~ 2 2 2 0 50
+    - MOB_AROUND 6 true DAMAGE 8
+    - AROUND 6 false DAMAGE 8
+    - execute at %player% run playsound entity.generic.explode ambient %player%
+    - execute at %player% run particle explosion_emitter
+    - execute at %player% run particle dust 1 0 1 2 ~ ~ ~ 2 0.1 2 0 800
+    silenceOutput: true
+    detailedDamageCauses:
+    - FALL
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: true
+    conditions:
+      playerConditions:
+        ifSneaking: true
+        ifSneakingMsg: ''
+    detailedSlots:
+    - '39'
+  activator3:
+    activator: PLAYER_ACTIVE_SNEAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - CUSTOMDASH1 %x% %y%+-5 %z%
+    - 'LOOP START: 5'
+    - execute at %player% run particle firework ~ ~ ~ 0.01 0.01 0.01 0 1
+    - DELAYTICK 1
+    - LOOP END
+    silenceOutput: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '39'
+  activator4:
+    activator: PLAYER_LEFT_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run playsound entity.wither.shoot ambient %player%
+    - effect give %player% levitation 1 255
+    - FRONTDASH 3
+    - 'LOOP START: 5'
+    - execute at %player% run particle explosion ~ ~ ~ 0.01 0.01 0.01 0 1
+    - MOB_AROUND 1 true DAMAGE 12
+    - AROUND 1 false DAMAGE 12
+    - DELAYTICK 1
+    - LOOP END
+    silenceOutput: true
+    blockCommands: []
+    detailedBlocks: []
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '39'
+config_4_2: true
+config_update: true

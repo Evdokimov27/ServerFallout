@@ -1,0 +1,24 @@
+item:
+  id: 'GHAST_TEAR'
+  name: "&4&lVIP &7Rank"
+  lore:
+  - "&6When crafting this, you will receive"
+  - "&6the &4&lVIP &6rank. Good luck getting"
+  - "&6the ingredients!"
+category: others
+requires:
+- 'id:COMMAND_BLOCK;amount:30' 
+- 'id:BARRIER;amount:30'
+- 'id:BEDROCK;amount:30'   
+priority: 2
+no_item: true  
+one_time: true
+extra_requirements:
+  conditions:
+  - "%epiccraftings_totalcrafted_money_exchange% >= 5"  
+  message:   
+  - "&8Extra Requirements:"
+  - "&6You need to craft at least x5 Money Exchange first."
+  - "&8Status: &7%epiccraftings_totalcrafted_money_exchange%&8/&75 %status_symbol_requirement_1%"
+actions_when_crafted:
+- "console_command: lp user %player% parent set vip"

@@ -1,0 +1,83 @@
+[02:07:56] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:07:57] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[02:07:57] [Worker-Main-5/INFO]: Loaded 7 recipes
+[02:07:58] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[02:07:58] [Server thread/INFO]: Loading properties
+[02:07:58] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
+java.io.IOException: Неверный дескриптор
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:271) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:282) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:343) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:297) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:188) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:178) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:161) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:329) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:396) ~[?:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:180) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.DedicatedServer$1.run(DedicatedServer.java:106) ~[patched_1.16.5.jar:git-Purpur-1171]
+	Suppressed: java.io.IOException: Неверный дескриптор
+		at java.io.FileDescriptor.close0(Native Method) ~[?:?]
+		at java.io.FileDescriptor.close(FileDescriptor.java:297) ~[?:?]
+		at java.io.FileInputStream$1.close(FileInputStream.java:366) ~[?:?]
+		at java.io.FileDescriptor.closeAll(FileDescriptor.java:355) ~[?:?]
+		at java.io.FileInputStream.close(FileInputStream.java:364) ~[?:?]
+		at java.io.BufferedInputStream.close(BufferedInputStream.java:481) ~[?:?]
+		at sun.nio.cs.StreamDecoder.implClose(StreamDecoder.java:391) ~[?:?]
+		at sun.nio.cs.StreamDecoder.close(StreamDecoder.java:204) ~[?:?]
+		at java.io.InputStreamReader.close(InputStreamReader.java:193) ~[?:?]
+		at java.io.BufferedReader.close(BufferedReader.java:532) ~[?:?]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:183) ~[patched_1.16.5.jar:git-Purpur-1171]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[patched_1.16.5.jar:git-Purpur-1171]
+		at net.minecraft.server.v1_16_R3.DedicatedServer$1.run(DedicatedServer.java:106) ~[patched_1.16.5.jar:git-Purpur-1171]
+[02:07:58] [Server thread/INFO]: This server is running Purpur version git-Purpur-1171 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[02:07:58] [Server thread/INFO]: Debug logging is disabled
+[02:07:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[02:07:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[02:07:59] [Server thread/WARN]: You specified a resource pack without providing a sha1 hash. Pack will be updated on the client only if you change the name of the pack.
+[02:07:59] [Server thread/INFO]: Default game type: SURVIVAL
+[02:07:59] [Server thread/INFO]: Generating keypair
+[02:07:59] [Server thread/INFO]: Starting Minecraft server on *:25565
+[02:07:59] [Server thread/INFO]: Using default channel type
+[02:07:59] [Server thread/INFO]: Tuinity: Using Java 11 compression from Velocity.
+[02:07:59] [Server thread/INFO]: Tuinity: Using Java cipher from Velocity.
+[02:07:59] [Server thread/INFO]: [ArmorEquipEvent] Loading ArmorEquipEvent v1.7
+[02:07:59] [Server thread/INFO]: [HeadJoin] Loading HeadJoin v1.0
+[02:07:59] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[02:07:59] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[02:07:59] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[02:07:59] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[02:07:59] [Server thread/WARN]: You will not be offered any support as long as the server allows offline-mode players to join.
+[02:07:59] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[02:07:59] [Server thread/INFO]: Preparing level "world"
+[02:08:00] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:08:00] [Server thread/INFO]: Preparing spawn area: 0%
+[02:08:00] [Server thread/INFO]: Time elapsed: 291 ms
+[02:08:00] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[02:08:00] [Server thread/INFO]: Preparing spawn area: 0%
+[02:08:00] [Server thread/INFO]: Time elapsed: 137 ms
+[02:08:00] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[02:08:00] [Server thread/INFO]: Time elapsed: 109 ms
+[02:08:00] [Server thread/INFO]: [ArmorEquipEvent] Enabling ArmorEquipEvent v1.7
+[02:08:00] [Server thread/INFO]: [HeadJoin] Enabling HeadJoin v1.0
+[02:08:00] [Server thread/INFO]: 
+ 
+[]=====[Enabling HeadJoin]=====[]
+| Information:
+|   Name: HeadJoin
+|   Developer: rub1kub
+|   Version: 1.0
+| Support:
+|   Github: https://github.com/LordRubikI
+|   Telegram: https://t.me/rub1kub
+[]=======================================[]
+
+[02:08:00] [Server thread/INFO]: Running delayed init tasks
+[02:08:00] [Server thread/INFO]: Done (1.849s)! For help, type "help"
+[02:08:00] [Server thread/INFO]: Timings Reset
+[02:08:03] [User Authenticator #1/INFO]: UUID of player Evdokimov is 92e31549-c7c4-37cb-881d-ffcecdf8907b
+[02:08:03] [Server thread/INFO]: Evdokimov joined the game
+[02:08:03] [Server thread/INFO]: Evdokimov[/127.0.0.1:59092] logged in with entity id 50 at ([world]-1118.1083024249149, 46.0, 895.5544052896465)

@@ -1,0 +1,139 @@
+name: '&6ꕥ &e&lEPIC FIREWORK &6ꕥ'
+lore:
+- '&6&l---&7&l>>&6&l-----&7&l<<&6&l---'
+- '&7Tier: &bNormal'
+- '&7Epic:'
+- ' &6• &eSpread your hapiness'
+- ' &6• &eFlyyyy around the world'
+- ' &6• &eEpic firework ❁'
+- '&6&l---&7&l>>&6&l-----&7&l<<&6&l---'
+- '&7&oClick in inventory'
+- '&7&o for more infos!'
+- '&8Signed by: &e%player%'
+material: FIREWORK_ROCKET
+glow: true
+cancel-item-drop: true
+cancel-enchant: false
+cancel-anvil: true
+cancel-consumption: true
+cancel-item-place: true
+cancel-deposit-in-chest: true
+cancel-item-craft: true
+cancel-item-frame: true
+cancel-tool-interactions: true
+locked-in-inventory: false
+disableStack: true
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 200
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: PLAYER_RIGHT_CLICK
+    displayName: '&ean activator'
+    usageModification: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    onlyAirClick: false
+    onlyBlockClick: true
+    silenceOutput: false
+    requiredItems: []
+    commands:
+    - ei giveslot %player% Prem_Firework 1 %slot% %usage%
+    conditions:
+      itemConditions:
+        ifUsage: '>=2'
+        ifUsageMsg: '&e'
+    detailedSlots:
+    - '-1'
+    - '40'
+  activator4:
+    activator: PLAYER_RIGHT_CLICK
+    displayName: '&ean activator'
+    usageModification: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    onlyAirClick: true
+    onlyBlockClick: false
+    silenceOutput: false
+    commands:
+    - FRONTDASH 5
+    conditions:
+      playerConditions:
+        ifGliding: true
+        ifGlidingMsg: '&e'
+    detailedSlots:
+    - '-1'
+    - '40'
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+  activator2:
+    activator: PLAYER_RIGHT_CLICK
+    displayName: '&ean activator'
+    usageModification: 0
+    cooldown: 5
+    displayCooldownMessage: true
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEvent: true
+    commands:
+    - 'RANDOM RUN: 1'
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,Colors:[I;1973019,11743532],FadeColors:[I;1973019,11743532]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;11743532,3887386]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;3887386,5320730]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;5320730,2437522]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;2437522,8073150]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;8073150,2651799]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;2651799,11250603]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;11250603,4408131]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;4408131,14188952]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;14188952,4312372]}]}}}}
+    - execute at %player% run summon firework_rocket %x% %y%+3 %z% {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Flicker:0,Trail:0,FadeColors:[I;4312372,14602026]}]}}}}
+    - RANDOM END
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    detailedSlots:
+    - '-1'
+    - '40'
+    usePerDay: -1
+    cancelEventIfInvalidRequiredExecutableItems: false
+  activator3:
+    activator: INVENTORY_CLICK
+    detailedClick: RIGHTORLEFT
+    displayName: '&ean activator'
+    usageModification: 0
+    cooldown: 0
+    displayCooldownMessage: false
+    commands:
+    - SENDMESSAGE §6§l---§7§l>>§6§l--§6ꕥ §e§lEPIC FIREWORK §6ꕥ--§7§l<<§6§l---
+    - SENDMESSAGE §7
+    - 'SENDMESSAGE §6§lꕥ Epic activators:'
+    - SENDMESSAGE §7
+    - 'SENDMESSAGE §8➤ §7Right click with Elytra:'
+    - SENDMESSAGE §8 • §7Boost your speed
+    - 'SENDMESSAGE §8 ⌛ §7Cooldown: 0 sec'
+    - SENDMESSAGE §7
+    - 'SENDMESSAGE &8➤ &7Left or Right click:'
+    - SENDMESSAGE &8 • &7Launch a beautiful firework
+    - 'SENDMESSAGE &8 ⌛ &7Cooldown: 5 secs'
+    - SENDMESSAGE §7
+    - SENDMESSAGE §6§l---§7§l>>§6§l----------------§7§l<<§6§l---
+    silenceOutput: false
+    requiredItems: []
+hideUsage: false
+usePerDay: -1
+hideUnbreakable: false
+canBeUsedOnlyByTheOwner: false
+headDBID: ''
+hidePotionEffects: false
+config_4_2: true
+config_update: true

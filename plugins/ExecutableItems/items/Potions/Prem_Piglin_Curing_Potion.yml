@@ -1,0 +1,80 @@
+name: '&5<< &fPiglin Curing Potion &5>>'
+lore:
+- '&8&m------------------------'
+- '&f'
+- '&7Throw it on or near the'
+- '&7zombified piglin and it will turn'
+- '&7into a normal piglin'
+- '&f'
+- '&8&m------------------------'
+material: SPLASH_POTION
+headDBID: ''
+glow: false
+glowDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+potionType: INSTANT_HEAL
+potionExtended: false
+potionUpgraded: true
+activators:
+  activator1:
+    activator: PROJECTILE_HIT_ENTITY
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - execute at %entity_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
+      run summon piglin ~ ~ ~
+    - execute at %entity_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
+      run tp %entity_uuid% ~ ~-256 ~
+    - execute at %entity_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
+      run kill %entity_uuid%
+    silenceOutput: false
+    entityCommands: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    detailedEntities:
+    - ZOMBIFIED_PIGLIN
+    mustBeAProjectileLaunchWithTheSameEI: true
+    detailedSlots: []
+  activator2:
+    activator: PROJECTILE_HIT_BLOCK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands: []
+    silenceOutput: false
+    blockCommands:
+    - MOB_AROUND 3 execute at %around_target_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
+      run summon piglin ~ ~ ~
+    - MOB_AROUND 3 execute at %around_target_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
+      run tp %around_target_uuid% ~ ~-256 ~
+    - MOB_AROUND 3 execute at %around_target_uuid% if entity @e[distance=..0.01,type=zombified_piglin]
+      run kill %around_target_uuid%
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    mustBeAProjectileLaunchWithTheSameEI: true
+    detailedSlots: []
+hideEnchantments: false
+hideUnbreakable: false
+hideAttributes: false
+hidePotionEffects: true
+hideUsage: false
+customModelData: 1
+config_4_2: true
+config_update: true

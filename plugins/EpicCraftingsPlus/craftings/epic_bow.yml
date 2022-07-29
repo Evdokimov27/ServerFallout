@@ -1,0 +1,14 @@
+item:
+  id: 'BOW'
+  name: "&aE&bP&cI&dC &6Bow"
+  amount: 2
+  enchants:
+  - 'ARROW_DAMAGE;4'
+  - 'ARROW_INFINITE;1'
+category: weapons_armor
+requires:
+- 'id:BOW;10;amount:1;enchants:ARROW_DAMAGE-1;dont_remove'
+- 'id:IRON_INGOT;amount:40'
+- 'id:DIAMOND;amount:30'
+priority: 3
+actions_when_crafted:

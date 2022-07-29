@@ -1,0 +1,56 @@
+name: '&d֎ &5&lEpic potion &d֎'
+lore:
+- '&d&l---&7&l>>&d&l-----&7&l<<&d&l---'
+- '&7Tier: &dRare'
+- '&7Effects:'
+- ' &5• &dSpeed 3 (30 secs)'
+- ' &5• &dStrength 5 (10 secs)'
+- '&7Epic:'
+- ' &5• &dEpic particles ❁'
+- '&d&l---&7&l>>&d&l-----&7&l<<&d&l---'
+- '&8Signed by: &5%player%'
+material: POTION
+glow: true
+cancel-item-drop: true
+cancel-enchant: false
+cancel-anvil: true
+cancel-consumption: false
+cancel-item-place: true
+cancel-deposit-in-chest: false
+cancel-item-craft: true
+locked-in-inventory: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+hidePotionEffects: true
+usage: 0
+usageLimit: -1
+disable-world: []
+unbreakable: false
+potionColor: 16776960
+potionEffects:
+  '1':
+    potionEffectType: SPEED
+    duration: 20
+    amplifier: 2
+  '2':
+    potionEffectType: INCREASE_DAMAGE
+    duration: 10
+    amplifier: 4
+activators:
+  activator1:
+    activator: PLAYER_CONSUME
+    displayName: '&ean activator'
+    usageModification: -1
+    cooldown: 0
+    displayCooldownMessage: false
+    commands:
+    - PARTICLE DRAGON_BREATH 200 1.5 0.12
+    detailedSlots:
+    - '-1'
+    - '40'
+config_4_2: true
+config_update: true

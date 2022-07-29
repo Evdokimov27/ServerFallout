@@ -1,0 +1,59 @@
+name: '&6✪  &e&lLotery item &6✪'
+lore:
+- '&8&m------------------------------'
+- '&7'
+- '&6➤ &e&oClick to execute me !'
+- '&7'
+- '&7&oInfo:'
+- '&6» &a33% &eNothing :('
+- '&6» &a33% &e5 Diamonds'
+- '&6» &a33% &eEffect strenght 2 (30 secs)'
+- '&7'
+- '&8&m------------------------------'
+material: BEACON
+glow: true
+cancel-item-drop: false
+give-first-join: false
+hide-enchantments: true
+hide-attributes: true
+usage: 0
+give-slot: 0
+keepItemOnDeath: true
+unbreakable: false
+attributes:
+  attribute1:
+    attribute: GENERIC_MOVEMENT_SPEED
+    name: '&eDefault name'
+    uuid: 8774b141-8029-41c3-907f-a1f6b8769500
+    amount: 0.1
+    operation: ADD_NUMBER
+    slot: HAND
+activators:
+  activator1:
+    activator: PLAYER_ALL_CLICK
+    displayName: '&ean activator'
+    usageRestore: 0
+    cooldown: 0
+    sneaking: false
+    needConfirmBeforeUse: false
+    commands:
+    - SENDMESSAGE §6✪ §eGood job §a%player% §e! You have execute the %item% !
+    - DELAY 1
+    - SENDMESSAGE §6✪ §eOPENING §a3 §esecs!
+    - DELAY 1
+    - SENDMESSAGE §6✪ §eOPENING §a2 §esecs!
+    - DELAY 1
+    - SENDMESSAGE §6✪ §eOPENING §a1 §esec!
+    - DELAY 1
+    - 'RANDOM RUN: 1'
+    - SENDMESSAGE §6✪ §cNOTHING :(
+    - give %player% diamond 5 // §6✪ §eYou have earn §a5 Diamonds
+    - effect give %player% strength 30 1 // §6✪ §eYou are now boost with §astrength
+      2 §efor 30 seconds
+    - RANDOM END
+    detailedSlots:
+    - '-1'
+    - '40'
+    detailedEntities: []
+config_4_2: true
+config_update: true

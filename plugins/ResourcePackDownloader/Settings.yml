@@ -1,0 +1,23 @@
+Resourcepack-URL: https://github.com/Evdokimov27/Fallout-Resourcepack/releases/download/0.0.4/Fallout.Paradise.zip
+Global-Resourcepack: true
+Resourcepack-Command: rp
+Command-Case-Sensitive: false
+Use-Join-Bypass-Permission: false
+Send-Resourcepack-On-Join: true
+Accepted-Command:
+  Enabled: false
+  Command: tell %PLAYER% Your uuid is %UUID%
+Declined-Command:
+  Enabled: false
+  Command: kick %PLAYER% '&cНастроить > Наборы ресурсов - Включены'
+Successfuly-Downloaded-Command:
+  Enabled: false
+  Command: tell %PLAYER% Your uuid is %UUID%
+Failed-Download-Command:
+  Enabled: false
+  Command: tell %PLAYER% Your uuid is %UUID%
+Messages:
+  Enable-Accepted-Message: true
+  Enable-Declined-Message: true
+  Enable-Successfuly-Downloaded-Message: false
+  Enable-Failed-Downloaded-Message: false

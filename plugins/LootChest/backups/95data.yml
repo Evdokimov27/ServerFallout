@@ -1,0 +1,169 @@
+chests:
+  test:
+    chance:
+      '0': 10
+      '1': 10
+      '2': 10
+      '3': 10
+    fall: false
+    type: BARREL
+    respawn_cmd: false
+    respawn_natural: false
+    take_message: false
+    direction: WEST
+    holo: test1
+    time: 1
+    position:
+      world: world
+      x: -1102.0
+      y: 57.0
+      z: 801.0
+      pitch: 0.0
+      yaw: 0.0
+    lastreset: 1659034880678
+    particle: Disabled
+    randomradius: 0
+    inventory:
+      '0':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CROSSBOW
+        meta:
+          ==: ItemMeta
+          meta-type: CROSSBOW
+          display-name: '{"extra":[{"italic":false,"color":"yellow","text":"Обрез"}],"text":""}'
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Урон
+            - 5"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Точность
+            - 6/10 "}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Боезапас
+            - 2"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Скорострельность
+            - 0.5"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Bullets:
+            2/2"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Damage:
+            1.0"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"DPS:
+            3.0x12"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Ammo:
+            "},{"italic":false,"color":"white","text":"7.62x39mm"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"[LMB]
+            to use Single-fire mode"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"[DropItem]
+            to reload"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"[RMB]
+            to open ironsights"}],"text":""}'
+          custom-model-data: 19
+          attribute-modifiers:
+            GENERIC_ATTACK_SPEED:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 0.0
+              name: generic.attackSpeed
+              uuid: d2b5e0ce-b0c8-4474-8f97-6867dd2e55d7
+              operation: 0
+          ItemFlags:
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          Unbreakable: true
+          charged: false
+      '1':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CARVED_PUMPKIN
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          custom-model-data: 1
+      '2':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CROSSBOW
+        meta:
+          ==: ItemMeta
+          meta-type: CROSSBOW
+          display-name: '{"extra":[{"italic":false,"color":"yellow","text":"Обрез"}],"text":""}'
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Урон
+            - 5"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Точность
+            - 6/10 "}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Боезапас
+            - 2"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Скорострельность
+            - 0.5"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Bullets:
+            2/2"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Damage:
+            1.0"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"DPS:
+            3.0x12"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Ammo:
+            "},{"italic":false,"color":"white","text":"7.62x39mm"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"[LMB]
+            to use Single-fire mode"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"[DropItem]
+            to reload"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"[RMB]
+            to open ironsights"}],"text":""}'
+          custom-model-data: 19
+          attribute-modifiers:
+            GENERIC_ATTACK_SPEED:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 0.0
+              name: generic.attackSpeed
+              uuid: d2b5e0ce-b0c8-4474-8f97-6867dd2e55d7
+              operation: 0
+          ItemFlags:
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          Unbreakable: true
+          charged: false
+      '3':
+        ==: org.bukkit.inventory.ItemStack
+        v: 2586
+        type: CROSSBOW
+        meta:
+          ==: ItemMeta
+          meta-type: CROSSBOW
+          display-name: '{"extra":[{"italic":false,"color":"yellow","text":"Обрез"}],"text":""}'
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Урон
+            - 5"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Точность
+            - 6/10 "}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Боезапас
+            - 2"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"Скорострельность
+            - 0.5"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Bullets:
+            2/2"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Damage:
+            1.0"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_green","text":"DPS:
+            3.0x12"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"Ammo:
+            "},{"italic":false,"color":"white","text":"7.62x39mm"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"[LMB]
+            to use Single-fire mode"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"[DropItem]
+            to reload"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_gray","text":"[RMB]
+            to open ironsights"}],"text":""}'
+          custom-model-data: 19
+          attribute-modifiers:
+            GENERIC_ATTACK_SPEED:
+            - ==: org.bukkit.attribute.AttributeModifier
+              amount: 0.0
+              name: generic.attackSpeed
+              uuid: d2b5e0ce-b0c8-4474-8f97-6867dd2e55d7
+              operation: 0
+          ItemFlags:
+          - HIDE_ATTRIBUTES
+          - HIDE_UNBREAKABLE
+          - HIDE_DESTROYS
+          Unbreakable: true
+          charged: false

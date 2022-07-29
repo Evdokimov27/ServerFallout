@@ -1,0 +1,49 @@
+name: '&5֍ &d&lEPICSNOWBALL &5֍'
+lore:
+- '&8&m---------------------------'
+- '&7'
+- '&5➤ &d&oTarget a player and CLICKKKK !'
+- '&7'
+- '&7&oInfo:'
+- '&5» &dSlow your enemy during 15 sec'
+- '&5» &dCooldown: &a10 &dsecs'
+- '&7'
+- '&8&m---------------------------'
+material: SNOWBALL
+glow: true
+cancel-item-drop: true
+cancel-item-place: true
+cancel-deposit-in-chest: false
+cancel-item-craft: true
+locked-in-inventory: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 0
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: PROJECTILE_HIT_PLAYER
+    displayName: an activator
+    usageModification: -1
+    cooldown: 10
+    displayCooldownMessage: true
+    commands:
+    - DELAY 15
+    - SENDMESSAGE §cThe player §6%target% §cis no longer slowed
+    targetCommands:
+    - SENDMESSAGE §5֍ §dYou are slow during 15 seconds !
+    - effect give %target% minecraft:slowness 15 3
+    conditions:
+      playerConditions: {}
+      customConditions: {}
+    detailedSlots: []
+    mustBeAProjectileLaunchWithTheSameEI: true
+hideUnbreakable: false
+config_4_2: true
+config_update: true

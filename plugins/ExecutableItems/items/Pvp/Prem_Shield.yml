@@ -1,0 +1,156 @@
+name: ''
+lore: []
+material: SHIELD
+glow: false
+glowDrop: false
+glowDropColor: WHITE
+displayNameOnDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+headDBID: ''
+activators:
+  activator1:
+    activator: PLAYER_SELECT_THE_EI
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - execute at %player% run summon armor_stand ~ ~ ~ {Invulnerable:1b,ShowArms:1b,Marker:1b,Invisible:1b,Tags:["%player_uuid%"]}
+    - execute at %player% run summon armor_stand ~ ~ ~ {Invulnerable:1b,ShowArms:1b,Invisible:1b,Tags:["%player_uuid%1"],Pose:{RightArm:[90f,270f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
+    - execute at %player% run summon armor_stand ~ ~ ~ {Invulnerable:1b,ShowArms:1b,Invisible:1b,Tags:["%player_uuid%2"],Pose:{RightArm:[90f,90f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
+    - execute at %player% run summon armor_stand ~ ~ ~ {Invulnerable:1b,ShowArms:1b,Invisible:1b,Tags:["%player_uuid%3"],Pose:{RightArm:[90f,180f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
+    - execute at %player% run summon armor_stand ~ ~ ~ {Invulnerable:1b,ShowArms:1b,Invisible:1b,Tags:["%player_uuid%4"],Pose:{RightArm:[90f,0f,0f]},HandItems:[{id:"minecraft:shield",Count:1b},{}]}
+    - 'LOOP START: 20'
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
+      run tp @e[type=armor_stand,tag=%player_uuid%] %x% %y% %z% ~18 0
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%1]
+      run tp @e[type=armor_stand,tag=%player_uuid%1] ^ ^ ^1 ~ ~
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%2]
+      run tp @e[type=armor_stand,tag=%player_uuid%2] ^ ^ ^-1 ~ ~
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%3]
+      run tp @e[type=armor_stand,tag=%player_uuid%3] ^1 ^ ^ ~ ~
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%4]
+      run tp @e[type=armor_stand,tag=%player_uuid%4] ^-1 ^ ^ ~ ~
+    - DELAYTICK 1
+    - LOOP END
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    detailedSlots:
+    - 40
+    - -1
+  activator2:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - 'LOOP START: 20'
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%]
+      run tp @e[type=armor_stand,tag=%player_uuid%] %x% %y% %z% ~18 0
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%1]
+      run tp @e[type=armor_stand,tag=%player_uuid%1] ^ ^ ^1 ~ ~
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%2]
+      run tp @e[type=armor_stand,tag=%player_uuid%2] ^ ^ ^-1 ~ ~
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%3]
+      run tp @e[type=armor_stand,tag=%player_uuid%3] ^1 ^ ^ ~ ~
+    - execute at @e[type=armor_stand,tag=%player_uuid%] as @e[type=armor_stand,tag=%player_uuid%4]
+      run tp @e[type=armor_stand,tag=%player_uuid%4] ^-1 ^ ^ ~ ~
+    - DELAYTICK 1
+    - LOOP END
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 15
+    delayInTick: true
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    detailedSlots:
+    - 40
+    - -1
+  activator3:
+    activator: PLAYER_DESELECT_THE_EI
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%1]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%2]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%3]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%4]
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+  activator4:
+    activator: PLAYER_DESELECT_THE_EI
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%1]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%2]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%3]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%4]
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+  activator5:
+    activator: PLAYER_DEATH
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%1]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%2]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%3]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%4]
+    detailedDamageCauses: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+  activator6:
+    activator: INVENTORY_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%1]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%2]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%3]
+    - minecraft:kill @e[type=armor_stand,tag=%player_uuid%4]
+    cancelEventIfInvalidRequiredExecutableItems: false
+    detailedClick: RIGHT_OR_LEFT
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+    detailedSlots: []
+config_4_2: true
+config_update: true

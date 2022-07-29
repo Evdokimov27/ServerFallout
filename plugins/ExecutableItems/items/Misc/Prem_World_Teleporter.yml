@@ -1,0 +1,100 @@
+name: '&7&l(&d&l❖&7&l)>> &7&oTeleporter'
+lore:
+- '&f'
+- '&8&l»&7&l&m----------------&8&l«'
+- '&a     World !'
+- '&c     Nether world  '
+- '&b     END world !'
+- '&8&l»&7&l&m----------------&8&l«'
+- '&f'
+material: ENDER_EYE
+glow: true
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: -1
+hideUsage: false
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+canBeUsedOnlyByTheOwner: false
+activators:
+  activator1:
+    activator: PLAYER_ALL_CLICK
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - WORLDTELEPORT world_nether
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: true
+    detailedSlots:
+    - '40'
+    - '-1'
+    conditions:
+      playerConditions:
+        ifInWorld:
+        - world
+        ifInWorldMsg: ''
+  activator2:
+    activator: PLAYER_ALL_CLICK
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - WORLDTELEPORT world_the_end
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: true
+    detailedSlots:
+    - '40'
+    - '-1'
+    conditions:
+      playerConditions:
+        ifInWorld:
+        - world_nether
+        ifInWorldMsg: ''
+  activator3:
+    activator: PLAYER_ALL_CLICK
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - WORLDTELEPORT world
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: true
+    conditions:
+      playerConditions:
+        ifInWorld:
+        - world_the_end
+        ifInWorldMsg: ''
+    detailedSlots:
+    - '40'
+    - '-1'
+config_4_2: true
+config_update: true

@@ -10,7 +10,7 @@ weapontype: LAZER
 weaponsounds: bulletswblaster
 enableIronSights: true
 ammotype: fusion_cell
-damage: 4
+damage: 2
 maxbullets: 20
 price: 1600
 firerate: 1
@@ -45,12 +45,12 @@ delayForShoot: 0.3
 maxBulletDistance: 200
 unlimitedAmmo: false
 LightLeveOnShoot: 14
-slownessOnEquip: 0
+slownessOnEquip: 1
 Version_18_Support: false
 ChargingHandler: none
 ReloadingHandler: none
 drop-glow-color: none
-headshotMultiplier: 3.5
+headshotMultiplier: 1.5
 weaponsounds_volume: 4
 firing_knockback: 0
 DestructableMaterials:

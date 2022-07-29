@@ -1,0 +1,25 @@
+item:
+  id: 'GOLDEN_HELMET'
+  name: "&e&lKing Helmet"
+  lore:
+  - "&6Difficult to obtain, difficult to craft."
+  - "&6The &eKing Helmet &6is one of the most"
+  - "&6wanted items on the server..."
+  enchants:
+  - 'PROTECTION_ENVIRONMENTAL;8'
+  - 'THORNS;8'
+  - 'OXYGEN;5'
+  nbt:
+  - Unbreakable|true|boolean
+category: weapons_armor
+requires:
+- 'id:GOLDEN_HELMET;amount:10'
+- 'id:GOLDEN_APPLE;amount:20'
+- 'id:GOLDEN_CARROT;amount:20'
+- 'id:GOLD_INGOT;amount:50'
+- 'id:GLOWSTONE_DUST;amount:50'
+- 'id:YELLOW_DYE;amount:60'    
+priority: 2
+actions_when_crafted:
+
+    

@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 26.196.139.50
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1658857518909
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1658905707158
+  login: 1658904986005
+money: '250.0'
+last-account-name: chipdan
+logoutlocation:
+  world: 94a43f0b-14e2-4104-a4ac-285a6199c872
+  world-name: world
+  x: -1102.7673310709627
+  y: 66.62669281068142
+  z: 846.5587964214818
+  yaw: -111.1328125
+  pitch: 35.99995803833008
+lastlocation:
+  world: 94a43f0b-14e2-4104-a4ac-285a6199c872
+  world-name: world
+  x: -1130.1282338812903
+  y: 46.0
+  z: 891.5176501488693
+  yaw: -15.713479042053223
+  pitch: 10.658188819885254

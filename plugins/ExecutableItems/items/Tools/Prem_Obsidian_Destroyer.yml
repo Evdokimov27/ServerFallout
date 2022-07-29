@@ -1,0 +1,123 @@
+name: '&8✦ &7Obsidian DESTROYER &8✦'
+lore:
+- '&8&l---&7&l>>&e&l-----&7&l<<&8&l---'
+- '&f'
+- '&7Left Click: &fInstant Obsidian breaker'
+- '&7Right Click: &fObsidian placer'
+- '&f'
+- '&7Obsidian stored: &e%var_obsi_int%'
+- '&f'
+- '&7Owned by: &e%player%'
+- '&f'
+- '&8&l---&7&l>>&e&l-----&7&l<<&8&l---'
+material: PLAYER_HEAD-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDFjODc0NTRmMWVlNTg1YjkwZmRiM2EzZTQwOTUyYTVjMmY4MGMwYTQ5ZGZlYzYyODcwZmRmZjE4Mzk2N2E4NCJ9fX0=
+glow: false
+cancel-item-drop: false
+cancel-enchant: false
+cancel-anvil: false
+cancel-consumption: false
+cancel-item-place: true
+cancel-deposit-in-chest: false
+cancel-item-craft: false
+locked-in-inventory: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: PLAYER_LEFT_CLICK
+    displayName: '&ean activator'
+    usageModification: 0
+    cooldown: 0
+    displayCooldownMessage: true
+    onlyBlockClick: true
+    blockCommands:
+    - SETBLOCK AIR
+    detailedBlocks:
+    - OBSIDIAN
+    detailedSlots:
+    - '-1'
+    - '40'
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands: []
+    silenceOutput: false
+    cancelEventIfNotDetailedBlocks: false
+    onlyAirClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    variablesModification:
+      obsi:
+        type: MODIFICATION
+        modification: '1'
+  activator2:
+    activator: PLAYER_RIGHT_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - SETBLOCK OBSIDIAN
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    onlyAirClick: false
+    onlyBlockClick: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    variablesModification:
+      obsi:
+        type: MODIFICATION
+        modification: '-1'
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_obsi_int%'
+          comparator: SUPERIOR
+          part2: 0.0
+          messageIfNotValid: '&4&l&oExecutableItems &cYou must first break some &6Obsidians
+            &c!'
+          cancelEventIfNotValid: false
+headDBID: ''
+glowDrop: false
+usePerDay: -1
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+variables:
+  obsi: 0.0
+cancel-tool-interactions: false
+cancel-item-craft-no-custom: false
+cancel-deposit-in-furnace: false
+cancel-item-burn: false
+cancel-stone-cutter: false
+cancel-brewing: false
+cancel-rename-anvil: false
+cancel-enchant-anvil: false
+cancel-beacon: false
+cancel-cartography: false
+cancel-composter: false
+cancel-dispenser: false
+cancel-dropper: false
+cancel-hopper: false
+cancel-lectern: false
+cancel-loom: false
+cancel-merchant: false
+cancel-grind-stone: false
+cancel-item-frame: false
+cancel-smithing-table: false
+cancel-swap-hand: false
+cancelEventIfNoPerm: false
+cancelEventIfNotOwner: false
+config_4_2: true
+config_update: true

@@ -1,0 +1,49 @@
+name: '&8◘ &7&lEPICANVIL &8◘'
+lore:
+- '&8&m-------------------------'
+- '&7'
+- '&8➤ &7&oClick to execute me !'
+- '&7'
+- '&7&oInfo:'
+- '&8» &7All your enemies in distance'
+- '&7  of 50 blocks will be slowed'
+- '&7  down for 15 secs'
+- '&7'
+- '&8&m-------------------------'
+material: ANVIL
+glow: true
+cancel-item-drop: true
+cancel-item-place: true
+cancel-deposit-in-chest: false
+cancel-item-craft: true
+locked-in-inventory: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 0
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: PLAYER_ALL_CLICK
+    displayName: an activator
+    usageModification: -1
+    cooldown: 10
+    displayCooldownMessage: false
+    commands:
+    - SENDMESSAGE §8◘ §7All your enemies are slow for 15 seconds !
+    - AROUND 50 true effect give %around_target% minecraft:slowness 15 3 +++ SENDMESSAGE
+      §8◘ §6§lUnlucky §eThe player §a%player% §ehave slow you with the item §a%item%
+    requiredItems: []
+    conditions:
+      playerConditions: {}
+      customConditions: {}
+    detailedSlots:
+    - '-1'
+    - '40'
+config_4_2: true
+config_update: true

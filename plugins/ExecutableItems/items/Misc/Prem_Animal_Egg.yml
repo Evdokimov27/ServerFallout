@@ -1,0 +1,75 @@
+name: '&e>> &fUnknown Farm Egg &e<<'
+lore:
+- '&8&m------------------------'
+- '&f'
+- '&7Place down to randomly spawn'
+- '&7a farm animal'
+- '&f'
+- '&8&m------------------------'
+material: TURTLE_EGG
+headDBID: ''
+glow: true
+glowDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 0
+hideUsage: false
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+hidePotionEffects: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+activators:
+  activator1:
+    activator: PLAYER_BLOCK_PLACE
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: false
+    autoUpdateItem: false
+    commands:
+    - 'RANDOM RUN: 1'
+    - execute at %player% run summon cow %block_x% %block_y% %block_z%
+    - execute at %player% run summon rabbit %block_x% %block_y% %block_z%
+    - execute at %player% run summon sheep %block_x% %block_y% %block_z%
+    - execute at %player% run summon pig %block_x% %block_y% %block_z%
+    - execute at %player% run summon chicken %block_x% %block_y% %block_z%
+    - RANDOM END
+    - execute at %player% run particle snowflake %block_x% %block_y% %block_z% 1 1
+      1 0 10
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: true
+cancel-item-drop: false
+cancel-item-place: false
+cancel-tool-interactions: false
+cancel-item-craft: false
+cancel-deposit-in-chest: false
+cancel-deposit-in-furnace: false
+cancel-stone-cutter: true
+cancel-enchant: false
+cancel-brewing: false
+cancel-anvil: true
+cancel-grind-stone: false
+cancel-item-frame: false
+cancel-smithing-table: false
+cancel-consumption: false
+cancel-swap-hand: false
+locked-in-inventory: false
+cancelEventIfNoPerm: false
+cancelEventIfNotOwner: false
+config_4_2: true
+config_update: true

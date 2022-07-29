@@ -1,0 +1,16 @@
+item:
+  id: 'LEVER'
+  name: "&2&lMagic &d&lKey"
+  lore:
+  - "&6With this item you can open one"
+  - "&6of the mystery vaults on the spawn"
+category: others
+requires:
+- 'id:GOLD_INGOT;amount:30'
+priority: 3
+success_rate:
+  chance: 25
+  fail_actions:
+  - "message: &cThe creation of the &2Magic &dKey &cfailed! The Mystery Vaults can't be opened yet..."
+  - "playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1"
+actions_when_crafted:

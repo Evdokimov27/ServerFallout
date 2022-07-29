@@ -1,0 +1,85 @@
+name: '&7&l(&e&l❖&7&l)>> &7&oEpic box'
+lore:
+- '&f'
+- '&8&l»&7&l&m----------------&8&l«'
+- '&e     Click to open !'
+- '&f'
+- '&7&oLoots:'
+- '&a   20% &e20 gold ingots'
+- '&a   15% &215 emeralds'
+- '&a   40% &810 coal'
+- '&a   25% &b5 diamonds'
+- '&8&l»&7&l&m----------------&8&l«'
+- '&f'
+material: CHEST
+glow: true
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 1
+hideUsage: false
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+canBeUsedOnlyByTheOwner: false
+activators:
+  activator1:
+    activator: PLAYER_ALL_CLICK
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - SENDMESSAGE You have executed %item%
+    - execute at %player% run playsound minecraft:entity.firework_rocket.launch voice
+      %player%
+    - title %player% title {"text":"You have executed","color":"yellow","bold":"true"}
+    - title %player% subtitle {"text":"Money Pouch - Tier I","color":"yellow","bold":"true"}
+    - DELAY 2
+    - title %player% title {"text":"Rolling","color":"red","bold":"true"}
+    - title %player% subtitle [{"text":"$  ","color":"green","bold":"true"},{"text":"2
+      3 4 5 6 7","color":"green","obfuscated":"true","bold":"true"}]
+    - execute at %player% run playsound minecraft:entity.experience_orb.pickup voice
+      %player%
+    - 'LOOP START: 30'
+    - DELAYTICK 2
+    - execute at %player% run playsound minecraft:block.note_block.bass ambient %player%
+    - LOOP END
+    - 'RANDOM RUN: 1'
+    - 'LOOP START: 20'
+    - title %player% times 0 60 0 +++ title %player% title {"text":"20 GOLD INGOTS
+      ","color":"gold"}+++ title %player% subtitle {"text":""} +++ execute at %player%
+      run playsound minecraft:entity.villager.yes voice %player% +++ give %player%
+      gold_ingot 20
+    - LOOP END
+    - 'LOOP START: 15'
+    - title %player% times 0 60 0 +++ title %player% title {"text":"15 EMERALDS ","color":"green"}+++
+      title %player% subtitle {"text":""} +++ execute at %player% run playsound minecraft:entity.villager.yes
+      voice %player% +++ give %player% emerald 15
+    - LOOP END
+    - 'LOOP START: 40'
+    - title %player% times 0 60 0 +++ title %player% title {"text":"10 COAL ","color":"gray"}+++
+      title %player% subtitle {"text":""} +++ execute at %player% run playsound minecraft:entity.villager.no
+      voice %player% +++ give %player% coal 10
+    - LOOP END
+    - 'LOOP START: 25'
+    - title %player% times 0 60 0 +++ title %player% title {"text":"5 DIAMONDS ","color":"blue"}+++
+      title %player% subtitle {"text":""} +++ execute at %player% run playsound minecraft:entity.villager.yes
+      voice %player% +++ give %player% diamond 5
+    - LOOP END
+    - RANDOM END
+    silenceOutput: true
+    blockCommands: []
+    detailedBlocks: []
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+config_4_2: true
+config_update: true

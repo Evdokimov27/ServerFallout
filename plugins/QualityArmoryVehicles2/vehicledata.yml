@@ -1,0 +1,300 @@
+data:
+- ==: me.zombie_striker.qav.VehicleEntity
+  owner: 498bb71d-5c93-3516-8446-ff71a3d642f8
+  loc:
+    ==: org.bukkit.Location
+    world: world
+    x: -1102.0
+    y: 57.0
+    z: 890.0
+    pitch: 0.0
+    yaw: 0.0
+  fuel: 0
+  health: 100.0
+  angle: 0.0
+  whitelist:
+  - 498bb71d-5c93-3516-8446-ff71a3d642f8
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  type: bmw
+  uuid: 0c48acf5-6d44-48e6-bd1b-0b9bc528c0a5
+- ==: me.zombie_striker.qav.VehicleEntity
+  owner: 498bb71d-5c93-3516-8446-ff71a3d642f8
+  loc:
+    ==: org.bukkit.Location
+    world: world
+    x: -1103.0
+    y: 57.04574101569741
+    z: 892.0
+    pitch: 0.0
+    yaw: 0.0
+  fuel: 0
+  health: 100.0
+  angle: 0.0
+  whitelist:
+  - 498bb71d-5c93-3516-8446-ff71a3d642f8
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  type: bmw
+  uuid: d729e38b-cc29-4aa8-bdc5-0c3f3e327434
+- ==: me.zombie_striker.qav.VehicleEntity
+  owner: 5b2c2e7c-bf6e-33e0-a644-7b8e45218df5
+  loc:
+    ==: org.bukkit.Location
+    world: world
+    x: -754.8914071684744
+    y: 66.0
+    z: -105.61125556379916
+    pitch: 0.0
+    yaw: 0.0
+  fuel: 324
+  fuels:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COAL
+    amount: 60
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COAL
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  health: 55.44000244140625
+  angle: -0.039269908169872636
+  whitelist:
+  - 5b2c2e7c-bf6e-33e0-a644-7b8e45218df5
+  - 498bb71d-5c93-3516-8446-ff71a3d642f8
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  type: cadillac62
+  uuid: 67e1e2bf-3d5b-43b6-841c-a07a0782f4d0
+- ==: me.zombie_striker.qav.VehicleEntity
+  owner: 5b2c2e7c-bf6e-33e0-a644-7b8e45218df5
+  loc:
+    ==: org.bukkit.Location
+    world: world
+    x: -700.5931723681053
+    y: 70.0
+    z: 657.4750739983059
+    pitch: 0.0
+    yaw: 0.0
+  fuel: 260
+  fuels:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COAL
+    amount: 30
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  health: 250.0
+  angle: -4.751658888554577
+  whitelist:
+  - 5b2c2e7c-bf6e-33e0-a644-7b8e45218df5
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  type: helicopterorange
+  uuid: eb185467-a0e0-472d-8268-c149ee5d3568
+- ==: me.zombie_striker.qav.VehicleEntity
+  owner: 498bb71d-5c93-3516-8446-ff71a3d642f8
+  loc:
+    ==: org.bukkit.Location
+    world: world
+    x: -751.9247891349243
+    y: 66.0
+    z: 355.6716917503591
+    pitch: 0.0
+    yaw: 0.0
+  fuel: 337
+  fuels:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COAL
+    amount: 30
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  health: 250.0
+  angle: -3.29867228626929
+  whitelist:
+  - 498bb71d-5c93-3516-8446-ff71a3d642f8
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  type: helicopter
+  uuid: ef2a0c42-2e0b-4f40-816b-cbb851ad8d50
+- ==: me.zombie_striker.qav.VehicleEntity
+  owner: 498bb71d-5c93-3516-8446-ff71a3d642f8
+  loc:
+    ==: org.bukkit.Location
+    world: world
+    x: 1010.888800666448
+    y: 60.24616164592995
+    z: 452.5085068231471
+    pitch: 0.0
+    yaw: 0.0
+  fuel: 0
+  fuels:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COAL
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COAL
+    amount: 64
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  health: 100.0
+  angle: -1.6493361431346414
+  whitelist:
+  - 498bb71d-5c93-3516-8446-ff71a3d642f8
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  type: bmw
+  uuid: 313b7afc-2e7b-4e85-ac96-5bff85646028
+- ==: me.zombie_striker.qav.VehicleEntity
+  owner: 498bb71d-5c93-3516-8446-ff71a3d642f8
+  loc:
+    ==: org.bukkit.Location
+    world: world
+    x: 1009.9274686930341
+    y: 61.146070199348614
+    z: 608.7264622712817
+    pitch: 0.0
+    yaw: 0.0
+  fuel: 0
+  fuels:
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COAL
+    amount: 64
+  - ==: org.bukkit.inventory.ItemStack
+    v: 2586
+    type: COAL
+    amount: 64
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  health: 200.0
+  angle: 1.4922565104551517
+  whitelist:
+  - 498bb71d-5c93-3516-8446-ff71a3d642f8
+  inventory:
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  type: bus
+  uuid: 03ee1f72-3e0e-40ce-aa42-84780f1efd38

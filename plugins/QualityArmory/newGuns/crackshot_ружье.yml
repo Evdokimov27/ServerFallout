@@ -6,7 +6,7 @@ weapontype: RIFLE
 weaponsounds: bulletdeagle
 enableIronSights: true
 ammotype: '762'
-damage: 4
+damage: 3
 maxbullets: 5
 price: 1000
 lore:
@@ -22,7 +22,7 @@ sway:
   runModifier: true
   unscopedModifier: 1
 isAutomatic: false
-bullets-per-shot: 1
+bullets-per-shot: 5
 delayForReload: 2.0
 material: crossbow
 setZoomLevel: 0
@@ -37,19 +37,19 @@ particles:
 invalid: false
 durability: 1000
 maxItemStack: 1
-firerate: 1
+firerate: 0.7
 delayForShoot: 0.3
-maxBulletDistance: 200
+maxBulletDistance: 80
 unlimitedAmmo: false
 LightLeveOnShoot: 14
-recoil: 1
+recoil: 4
 slownessOnEquip: 0
 Version_18_Support: false
 ChargingHandler: none
 ReloadingHandler: none
 addMuzzleSmoke: true
 drop-glow-color: none
-headshotMultiplier: 3.5
+headshotMultiplier: 1.5
 weaponsounds_volume: 4
 firing_knockback: 0
 KilledByMessage: '%player% was shot by %killer% using a %name%'

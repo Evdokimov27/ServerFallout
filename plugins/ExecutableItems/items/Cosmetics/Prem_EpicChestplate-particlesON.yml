@@ -1,0 +1,77 @@
+name: '&8✦ &fEpic chestplate &8✦'
+lore:
+- '&f&l---&7&l>>&f&l--------&7&l<<&f&l---'
+- ''
+- '&8✦ &7Epic:'
+- '  &8➤ &fStrength 2'
+- '  &8➤ &fKnockback resistance'
+- ''
+- '&8✦ &7Particle: &fTrue'
+- '&7&oClick to change to False'
+- ''
+- '&f&l---&7&l>>&f&l--------&7&l<<&f&l---'
+- '&8Signed by: &8%player%'
+material: LEATHER_CHESTPLATE
+armorColor: 16777215
+glow: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: true
+hideAttributes: true
+usage: 0
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: LOOP
+    detailedSlots:
+    - '38'
+    displayName: '&ean activator'
+    usageModification: 0
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - effect give %player% minecraft:strength 2 2 true
+    - execute at %player% run particle minecraft:flame ~ ~3 ~ 0.5 0.5 0.5 0.001 10
+      normal
+    silenceOutput: true
+    requiredItems: []
+    delay: 1
+    delayInTick: false
+  activator2:
+    activator: INVENTORY_CLICK
+    displayName: '&ean activator'
+    usageModification: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - ei giveslot %player% Prem_EpicChestplate-particlesOFF 1 %slot%
+    silenceOutput: false
+    requiredItems: []
+    detailedClick: RIGHT
+    cancelEvent: false
+    detailedSlots: []
+attributes:
+  attribute1:
+    attribute: GENERIC_KNOCKBACK_RESISTANCE
+    name: '&eDefault name'
+    uuid: aace69d0-38e6-412a-92c8-12632e77d140
+    amount: 1.0
+    operation: ADD_NUMBER
+    slot: CHEST
+cancel-item-drop: false
+cancel-enchant: true
+cancel-anvil: true
+cancel-consumption: false
+cancel-item-place: false
+cancel-deposit-in-chest: false
+cancel-deposit-in-furnace: false
+cancel-item-craft: true
+cancel-item-frame: false
+cancel-tool-interactions: false
+locked-in-inventory: false
+config_4_2: true
+config_update: true

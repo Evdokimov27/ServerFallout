@@ -1,0 +1,15 @@
+item:
+  id: 'GHAST_TEAR'
+  name: "&2&lMoney Exchange"
+  lore:
+  - "&6When crafting this, you will get"
+  - "&2$500&6. You can use the money to buy"
+  - "&6items on the shop."
+category: others
+requires:
+- 'id:IRON_INGOT;amount:10' 
+cooldown: 30
+priority: 1
+no_item: true
+actions_when_crafted:
+- "console_command: eco give %player% 500"

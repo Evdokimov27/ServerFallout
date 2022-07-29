@@ -1,0 +1,42 @@
+name: '&#c78116☐ &#762919Wifi crafting table &#c78116☐'
+lore:
+- '&8&m------------------------'
+- '&7'
+- '&#762919➤ &#c78116&oClick to open!'
+- '&7'
+- '&8&m------------------------'
+material: CRAFTING_TABLE
+headDBID: ''
+glow: false
+glowDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: -1
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+activators:
+  activator1:
+    activator: PLAYER_ALL_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - OPEN_WORKBENCH
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+config_4_2: true
+config_update: true

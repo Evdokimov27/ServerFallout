@@ -1,0 +1,48 @@
+name: '&3☄ &b&lHoming arrow / firework &3☄'
+lore:
+- '&8&m------------------------'
+- '&7'
+- '&3➤ &b&oNo need to be a pro player !'
+- '&7&o(Use fireworks, it''s more visual)'
+- '&7&o(fireworks: offhand)'
+- '&7'
+- '&8&m------------------------'
+material: CROSSBOW
+glow: false
+glowDrop: false
+glowDropColor: WHITE
+displayNameOnDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: -1
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+headDBID: ''
+activators:
+  activator1:
+    activator: PLAYER_LAUNCH_PROJECTILE
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    commands:
+    - DELAYTICK 10
+    - 'LOOP START: 100'
+    - execute at %projectile_uuid% facing entity @e[distance=..20,sort=nearest,limit=1,name=!%player%,type=!firework_rocket,type=!arrow,type=!item]
+      eyes run tp %projectile_uuid% ~ ~ ~ ~ ~
+    - DELAYTICK 1
+    - execute at %projectile_uuid% as %projectile_uuid% run tp ^ ^ ^1
+    - LOOP END
+    cancelEventIfInvalidRequiredExecutableItems: false
+    mustBeAProjectileLaunchWithTheSameEI: false
+    cancelEvent: false
+    autoUpdateItem: false
+    silenceOutput: false
+config_4_2: true
+config_update: true

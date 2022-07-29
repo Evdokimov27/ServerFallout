@@ -6,7 +6,7 @@ weapontype: RIFLE
 weaponsounds: bulletak47
 enableIronSights: true
 ammotype: '762'
-damage: 3
+damage: 1
 maxbullets: 24
 price: 1000
 lore:
@@ -21,8 +21,8 @@ sway:
   moveModifier: true
   runModifier: true
   unscopedModifier: 1
-isAutomatic: false
-bullets-per-shot: 1
+isAutomatic: true
+bullets-per-shot: 10
 delayForReload: 4.0
 material: crossbow
 setZoomLevel: 4
@@ -37,19 +37,19 @@ particles:
 invalid: false
 durability: 1000
 maxItemStack: 1
-firerate: 1
-delayForShoot: 0.3
+firerate: 2
+delayForShoot: 0.03
 maxBulletDistance: 200
 unlimitedAmmo: false
 LightLeveOnShoot: 14
-recoil: 1
-slownessOnEquip: 0
+recoil: 2
+slownessOnEquip: 1
 Version_18_Support: false
 ChargingHandler: none
 ReloadingHandler: none
 addMuzzleSmoke: true
 drop-glow-color: none
-headshotMultiplier: 3.5
+headshotMultiplier: 1.2
 weaponsounds_volume: 4
 firing_knockback: 0
 KilledByMessage: '%player% was shot by %killer% using a %name%'

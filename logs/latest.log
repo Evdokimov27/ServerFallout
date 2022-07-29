@@ -1,9 +1,9 @@
-[15:33:10] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[15:33:10] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[15:33:11] [Worker-Main-5/INFO]: Loaded 7 recipes
-[15:33:12] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[15:33:12] [Server thread/INFO]: Loading properties
-[15:33:12] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
+[07:51:34] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[07:51:34] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[07:51:34] [Worker-Main-5/INFO]: Loaded 7 recipes
+[07:51:36] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[07:51:36] [Server thread/INFO]: Loading properties
+[07:51:36] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
 java.io.IOException: Неверный дескриптор
 	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
 	at java.io.FileInputStream.read(FileInputStream.java:271) ~[?:?]
@@ -33,234 +33,910 @@ java.io.IOException: Неверный дескриптор
 		at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:183) ~[patched_1.16.5.jar:git-Purpur-1171]
 		at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[patched_1.16.5.jar:git-Purpur-1171]
 		at net.minecraft.server.v1_16_R3.DedicatedServer$1.run(DedicatedServer.java:106) ~[patched_1.16.5.jar:git-Purpur-1171]
-[15:33:12] [Server thread/INFO]: This server is running Purpur version git-Purpur-1171 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[15:33:12] [Server thread/INFO]: Debug logging is disabled
-[15:33:12] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[15:33:12] [Server thread/INFO]: Using 4 threads for Netty based IO
-[15:33:12] [Server thread/WARN]: You specified a resource pack without providing a sha1 hash. Pack will be updated on the client only if you change the name of the pack.
-[15:33:12] [Server thread/INFO]: Default game type: SURVIVAL
-[15:33:12] [Server thread/INFO]: Generating keypair
-[15:33:12] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:33:12] [Server thread/INFO]: Using default channel type
-[15:33:12] [Server thread/INFO]: Tuinity: Using Java 11 compression from Velocity.
-[15:33:12] [Server thread/INFO]: Tuinity: Using Java cipher from Velocity.
-[15:33:13] [Server thread/WARN]: [HelmetSkin] Loaded class net.skinsrestorer.api.exception.SkinRequestException from SkinsRestorer v14.2.1 which is not a depend, softdepend or loadbefore of this plugin.
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loading 2 libraries... please wait
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\inject\guice\5.1.0\guice-5.1.0.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\javax\inject\javax.inject\1\javax.inject-1.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\aopalliance\aopalliance\1.0\aopalliance-1.0.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar
-[15:33:13] [Server thread/INFO]: [WolfyUtilities] NMS Version: v1_16_R3
-[15:33:13] [Server thread/INFO]: [me.wolfyscript.lib.org.reflections.Reflections] Reflections took 281 ms to scan 1 urls, producing 1173 keys and 3749 values
-[15:33:13] [Server thread/INFO]: [CustomCrafting] NMS Version: v1_16_R3
-[15:33:14] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v14.2.1
-[15:33:14] [Server thread/INFO]: [ArmorEquipEvent] Loading ArmorEquipEvent v1.7.6-SNAPSHOT
-[15:33:14] [Server thread/INFO]: [HelmetSkin] Loading HelmetSkin v1.0-SNAPSHOT
-[15:33:14] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
-[15:33:14] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.2
-[15:33:14] [Server thread/INFO]: [QualityArmory] Loading QualityArmory v2.0.7
-[15:33:14] [Server thread/INFO]: [EpicCraftingsPlus] Loading EpicCraftingsPlus v6.3.12
-[15:33:14] [Server thread/INFO]: [WolfyUtilities] Loading WolfyUtilities v4.16.4.1
-[15:33:14] [Server thread/INFO]: [WolfyUtilities] Register json serializer/deserializer
-[15:33:14] [Server thread/INFO]: [WolfyUtilities] Register CustomItem meta checks
-[15:33:14] [Server thread/INFO]: [CustomCrafting] Loading CustomCrafting v3.16.6.2
-[15:33:14] [Server thread/INFO]: [CustomCrafting] WolfyUtils API: v4.16.4.1
-[15:33:14] [Server thread/INFO]: [CustomCrafting] CustomCrafting: v3.16.6.2
-[15:33:14] [Server thread/INFO]: [CustomCrafting] Environment   : PROD
-[15:33:14] [Server thread/INFO]: [CustomCrafting] Registering CustomItem Data
-[15:33:14] [Server thread/INFO]: [CustomCrafting] Registering Result Extensions
-[15:33:14] [Server thread/INFO]: [CustomCrafting] Registering Result Merge Adapters
-[15:33:14] [Server thread/INFO]: [CustomCrafting] Registering Recipe Conditions
-[15:33:14] [Server thread/INFO]: [CustomCrafting] Registering Recipe Types
-[15:33:14] [Server thread/INFO]: [CustomCrafting] Registering Anvil Recipe Tasks
-[15:33:14] [Server thread/INFO]: [CustomCrafting] Registering Type Registries
-[15:33:14] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[15:33:14] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[15:33:14] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[15:33:14] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[15:33:14] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[15:33:14] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[15:33:14] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[15:33:14] [Server thread/WARN]: You will not be offered any support as long as the server allows offline-mode players to join.
-[15:33:14] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[15:33:14] [Server thread/INFO]: Preparing level "world"
-[15:33:14] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[15:33:14] [Server thread/INFO]: Preparing spawn area: 0%
-[15:33:14] [Server thread/INFO]: Time elapsed: 280 ms
-[15:33:14] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[15:33:14] [Server thread/INFO]: Preparing spawn area: 0%
-[15:33:14] [Server thread/INFO]: Time elapsed: 130 ms
-[15:33:14] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[15:33:14] [Server thread/INFO]: Time elapsed: 69 ms
-[15:33:14] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v14.2.1
-[15:33:15] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mDetected Minecraft [33;1mv1_16_R3[32;1m, using [33;1mPaperSkinRefresher[32;1m.[0;39m
-[15:33:15] [Server thread/INFO]: [SkinsRestorer] [ACF] Enabled Asynchronous Tab Completion Support!
-[15:33:15] [Server thread/INFO]: [ArmorEquipEvent] Enabling ArmorEquipEvent v1.7.6-SNAPSHOT
-[15:33:15] [Server thread/INFO]: [HelmetSkin] Enabling HelmetSkin v1.0-SNAPSHOT
-[15:33:15] [Server thread/WARN]: [HelmetSkin] Loaded class com.codingforcookies.armorequip.ArmorEquipEvent from ArmorEquipEvent v1.7.6-SNAPSHOT which is not a depend, softdepend or loadbefore of this plugin.
-[15:33:15] [Server thread/INFO]: [HelmetSkin] Плагин запустился!
-[15:33:15] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.2
-[15:33:15] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
-[15:33:15] [Server thread/INFO]: [QualityArmory] Enabling QualityArmory v2.0.7
-[15:33:15] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: qualityarmory [2.0.7]
-[15:33:15] [Server thread/INFO]: [QualityArmory] Found PlaceholderAPI. Loaded support
-[15:33:15] [Server thread/INFO]: [QualityArmory] -Loaded 11 Ammo types.
-[15:33:15] [Server thread/INFO]: [QualityArmory] -Loaded 16 Misc.
-[15:33:15] [Server thread/INFO]: [QualityArmory] -Loaded 19 Gun types.
-[15:33:15] [Server thread/INFO]: [QualityArmory] -Loading Attachment: awpasiimov
-[15:33:15] [Server thread/INFO]: [QualityArmory] --Failed to load awpasiimov attachment because the base "awp" does not exist.
-[15:33:15] [Server thread/INFO]: [QualityArmory] -Loading Attachment: p30silenced
-[15:33:15] [Server thread/INFO]: [QualityArmory] --Failed to load p30silenced attachment because the base "p30" does not exist.
-[15:33:15] [Server thread/INFO]: [QualityArmory] -Loading Attachment: uzicorn
-[15:33:15] [Server thread/INFO]: [QualityArmory] --Failed to load uzicorn attachment because the base "uzi" does not exist.
-[15:33:15] [Server thread/INFO]: [QualityArmory] -Loaded 0 Attachment types.
-[15:33:15] [Server thread/INFO]: [QualityArmory] -Loaded 4 Armor types.
-[15:33:15] [Server thread/INFO]: [EpicCraftingsPlus] Enabling EpicCraftingsPlus v6.3.12
-[15:33:15] [Server thread/INFO]: ----------[EpicCraftingsPlus]---------
-[15:33:15] [Server thread/INFO]: Has been enabled! Version: 6.3.12
-[15:33:15] [Server thread/INFO]: Optional Dependencies:
-[15:33:15] [Server thread/INFO]: [JOBS] Not Found!
-[15:33:15] [Server thread/INFO]: [VAULT] Not Found!
-[15:33:15] [Server thread/INFO]: [BATTLELEVELS] Not Found!
-[15:33:15] [Server thread/INFO]: [SKILLAPI] Not Found!
-[15:33:15] [Server thread/INFO]: [TOKENENCHANT] Not Found!
-[15:33:15] [Server thread/INFO]: [PLACEHOLDERAPI] Found!
-[15:33:15] [Server thread/INFO]: 
-[15:33:15] [Server thread/INFO]: Thanks for using my plugin!  ~Ajneb97
-[15:33:16] [Server thread/INFO]: There is a new version available. (7.11.5)
-[15:33:16] [Server thread/INFO]: You can download it at: https://www.spigotmc.org/resources/39967/
-[15:33:16] [Server thread/INFO]: -------------------------------------
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Enabling WolfyUtilities v4.16.4.1
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Minecraft version: 1.16.5
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] WolfyUtils version: 4.16.4.1
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Environment: PROD
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Loading Plugin integrations: 
-[15:33:16] [Server thread/INFO]: [WolfyUtilities]  - PlaceholderAPI
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Create & Init Plugin integrations: 
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] init PAPI event
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Register API references
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Loading stored Custom Items
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Loading Player Data
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Loading Creative Mode Tabs
-[15:33:16] [Server thread/INFO]: [WolfyUtilities] Initiating Particles
-[15:33:16] [Server thread/INFO]: [CustomCrafting] Enabling CustomCrafting v3.16.6.2
-[15:33:16] [Server thread/INFO]: [CustomCrafting] ____ _  _ ____ ___ ____ _  _ ____ ____ ____ ____ ___ _ _  _ ____ 
-[15:33:16] [Server thread/INFO]: [CustomCrafting] |    |  | [__   |  |  | |\/| |    |__/ |__| |___  |  | |\ | | __ 
-[15:33:16] [Server thread/INFO]: [CustomCrafting] |___ |__| ___]  |  |__| |  | |___ |  \ |  | |     |  | | \| |__]
-[15:33:16] [Server thread/INFO]: [CustomCrafting]     Version    | v3.16.6.2
-[15:33:16] [Server thread/INFO]: [CustomCrafting]     WolfyUtils | v4.16.4.1
-[15:33:16] [Server thread/INFO]: [CustomCrafting]     Bukkit     | git-Purpur-1171 (MC: 1.16.5)(API: 1.16.5-R0.1-SNAPSHOT)
-[15:33:16] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_16_R3! Trying to find NMS support
-[15:33:16] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_16_R3' loaded!
-[15:33:16] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
-[15:33:16] [Server thread/INFO]: [CustomCrafting] 
-[15:33:16] [Server thread/INFO]: [CustomCrafting] Special thanks to my Patrons for supporting this project: 
-[15:33:16] [Server thread/INFO]: [CustomCrafting] Omarlatif, Nat R, Junye Zhou, Apprehentice, PwassonDoDouce, Mr_Mint_
-[15:33:16] [Server thread/INFO]: [CustomCrafting] ------------------------------------------------------------------------
-[15:33:16] [Server thread/INFO]: [CustomCrafting] Loaded fallback language "en_US" v6.0.0 translated by WolfyScript
-[15:33:16] [Server thread/INFO]: [CustomCrafting] Loaded active language "en_US" v6.0.0 translated by WolfyScript
-[15:33:16] [Server thread/INFO]: [CustomCrafting] Registering PlaceHolder
-[15:33:16] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: customcrafting [3.16.6.2]
-[15:33:16] [Server thread/INFO]: [CustomCrafting] Data destination: LOCAL
-[15:33:16] [Server thread/INFO]: [CustomCrafting] Initiating Inventory GUIs
-[15:33:16] [Server thread/INFO]: [CustomCrafting] Register ItemCreator Tabs
-[15:33:16] [Thread-18/INFO]: [NBTAPI] [NBTAPI] The NBT-API seems to be up-to-date!
-[15:33:17] [Server thread/INFO]: [CustomCrafting] Loading Cauldrons
-[15:33:17] [Server thread/INFO]: [CustomCrafting] Loading Recipes & Items
-[15:33:17] [Server thread/INFO]: [CustomCrafting] - - - - [Local Storage] - - - -
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Looking through data folder...
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loading Items
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loading Recipes
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loaded 2 recipes; Skipped: 0 error/s, 0 already existing
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL_OLD] Loaded 0 recipes; Skipped: 0 error/s, 0 already existing
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL_LEGACY] Loaded 0 recipes; Skipped: 0 error/s, 0 already existing
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loaded 2 recipes
-[15:33:17] [Server thread/INFO]: [CustomCrafting] 
-[15:33:17] [Server thread/INFO]: [CustomCrafting] Indexing Recipe Book...
-[15:33:17] [Server thread/INFO]: [CustomCrafting] Indexed Recipe Book!
-[15:33:17] [Server thread/INFO]: [CustomCrafting] ------------------------------------------------------------------------
-[15:33:17] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
-[15:33:17] [Server thread/INFO]: Running delayed init tasks
-[15:33:17] [Craft Scheduler Thread - 16 - Vault/INFO]: [Vault] Checking for Updates ... 
-[15:33:17] [Server thread/INFO]: 0 placeholder hook(s) registered!
-[15:33:17] [Server thread/INFO]: Done (5.181s)! For help, type "help"
-[15:33:17] [Server thread/INFO]: Timings Reset
-[15:33:17] [Craft Scheduler Thread - 16 - Vault/INFO]: [Vault] No new version available
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[32;1m |[0;39m
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Current version: [32;1m14.2.1[0;39m
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[15:33:17] [Craft Scheduler Thread - 3 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[15:33:17] [Server thread/INFO]: [WolfyUtilities] All dependencies are loaded. Calling the DependenciesLoadedEvent to notify other plugins!
-[15:33:17] [Server thread/INFO]: [CustomCrafting] ------------------------------------------------------------------------
-[15:33:17] [Server thread/INFO]: [CustomCrafting] Loading Recipes & Items
-[15:33:17] [Server thread/INFO]: [CustomCrafting] - - - - [Local Storage] - - - -
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Looking through data folder...
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loading Items
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loading Recipes
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loaded 0 recipes; Skipped: 0 error/s, 2 already existing
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL_OLD] Loaded 0 recipes; Skipped: 0 error/s, 0 already existing
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL_LEGACY] Loaded 0 recipes; Skipped: 0 error/s, 0 already existing
-[15:33:17] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loaded 2 recipes
-[15:33:17] [Server thread/INFO]: [CustomCrafting] 
-[15:33:17] [Server thread/INFO]: [CustomCrafting] Indexing Recipe Book...
-[15:33:17] [Server thread/INFO]: [CustomCrafting] Indexed Recipe Book!
-[15:33:17] [Server thread/INFO]: [CustomCrafting] ------------------------------------------------------------------------
-[15:33:17] [User Authenticator #1/INFO]: UUID of player evdokimov27 is 498bb71d-5c93-3516-8446-ff71a3d642f8
-[15:33:18] [Server thread/INFO]: evdokimov27 joined the game
-[15:33:18] [Server thread/INFO]: evdokimov27[/127.0.0.1:60676] logged in with entity id 186 at ([world]-289.30000001192093, 71.29611130064382, -205.30000001192093)
-[15:33:43] [Server thread/INFO]: evdokimov27 issued server command: /qa give Fallout_штурмовая_винтовка
-[15:34:34] [Server thread/INFO]: evdokimov27 issued server command: /qa reload
-[15:34:34] [Server thread/INFO]: [QualityArmory] -Loaded 11 Ammo types.
-[15:34:34] [Server thread/INFO]: [QualityArmory] -Loaded 16 Misc.
-[15:34:34] [Server thread/INFO]: [QualityArmory] -Loaded 19 Gun types.
-[15:34:34] [Server thread/INFO]: [QualityArmory] -Loading Attachment: awpasiimov
-[15:34:34] [Server thread/INFO]: [QualityArmory] --Failed to load awpasiimov attachment because the base "awp" does not exist.
-[15:34:34] [Server thread/INFO]: [QualityArmory] -Loading Attachment: p30silenced
-[15:34:34] [Server thread/INFO]: [QualityArmory] --Failed to load p30silenced attachment because the base "p30" does not exist.
-[15:34:34] [Server thread/INFO]: [QualityArmory] -Loading Attachment: uzicorn
-[15:34:34] [Server thread/INFO]: [QualityArmory] --Failed to load uzicorn attachment because the base "uzi" does not exist.
-[15:34:34] [Server thread/INFO]: [QualityArmory] -Loaded 0 Attachment types.
-[15:34:34] [Server thread/INFO]: [QualityArmory] -Loaded 4 Armor types.
-[15:35:02] [Server thread/INFO]: Stopping server
-[15:35:02] [Server thread/INFO]: [CustomCrafting] Disabling CustomCrafting v3.16.6.2
-[15:35:02] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
-[15:35:02] [Server thread/INFO]: [WolfyUtilities] Disabling WolfyUtilities v4.16.4.1
-[15:35:02] [Server thread/INFO]: [WolfyUtilities] Save stored Custom Items
-[15:35:02] [Server thread/INFO]: [EpicCraftingsPlus] Disabling EpicCraftingsPlus v6.3.12
-[15:35:02] [Server thread/INFO]: [EpicCraftingsPlus] Has been disabled! Version: 6.3.12
-[15:35:02] [Server thread/INFO]: [QualityArmory] Disabling QualityArmory v2.0.7
-[15:35:02] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.2
-[15:35:02] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
-[15:35:02] [Server thread/INFO]: [HelmetSkin] Disabling HelmetSkin v1.0-SNAPSHOT
-[15:35:02] [Server thread/INFO]: [HelmetSkin] Bye!!!
-[15:35:02] [Server thread/INFO]: [ArmorEquipEvent] Disabling ArmorEquipEvent v1.7.6-SNAPSHOT
-[15:35:02] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v14.2.1
-[15:35:02] [Server thread/INFO]: Saving players
-[15:35:02] [Server thread/INFO]: evdokimov27 lost connection: Server closed
-[15:35:02] [Server thread/INFO]: evdokimov27 left the game
-[15:35:03] [Server thread/INFO]: Saving worlds
-[15:35:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[15:35:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[15:35:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[15:35:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[15:35:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[15:35:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[15:35:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[15:35:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[15:35:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[15:35:04] [Server thread/INFO]: Flushing Chunk IO
-[15:35:04] [Server thread/INFO]: Closing Thread Pool
-[15:35:04] [Server thread/INFO]: Closing Server
+[07:51:36] [Server thread/INFO]: This server is running Purpur version git-Purpur-1171 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[07:51:36] [Server thread/INFO]: Debug logging is disabled
+[07:51:36] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:51:36] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:51:36] [Server thread/INFO]: Default game type: SURVIVAL
+[07:51:36] [Server thread/INFO]: Generating keypair
+[07:51:36] [Server thread/INFO]: Starting Minecraft server on 26.1.208.109:25565
+[07:51:36] [Server thread/INFO]: Using default channel type
+[07:51:36] [Server thread/INFO]: Tuinity: Using Java 11 compression from Velocity.
+[07:51:36] [Server thread/INFO]: Tuinity: Using Java cipher from Velocity.
+[07:51:36] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[07:51:39] [Server thread/WARN]: Legacy plugin FoodPlus v13 does not specify an api-version.
+[07:51:39] [Server thread/WARN]: Legacy plugin ResourcePackDownloader v7.4 does not specify an api-version.
+[07:51:39] [Server thread/ERROR]: Could not load 'plugins\MMOItems 6.6.4.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [MythicLib]. Please download and install these plugins to run 'MMOItems'.
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:291) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:279) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:293) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[07:51:39] [Server thread/WARN]: [HelmetSet] Loaded class net.skinsrestorer.api.exception.SkinRequestException from SkinsRestorer v14.2.1 which is not a depend, softdepend or loadbefore of this plugin.
+[07:51:39] [Server thread/WARN]: Legacy plugin AdvancedLogin v3.22 does not specify an api-version.
+[07:51:39] [Server thread/WARN]: Legacy plugin CommandNPC v1.7.2 does not specify an api-version.
+[07:51:39] [Server thread/WARN]: Legacy plugin yClans v1.6.8-STABLE does not specify an api-version.
+[07:51:39] [Server thread/INFO]: [BeautyQuests] Loading 1 libraries... please wait
+[07:51:39] [Server thread/INFO]: [BeautyQuests] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\org\mariadb\jdbc\mariadb-java-client\2.7.5\mariadb-java-client-2.7.5.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loading 2 libraries... please wait
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\inject\guice\5.1.0\guice-5.1.0.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\javax\inject\javax.inject\1\javax.inject-1.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\aopalliance\aopalliance\1.0\aopalliance-1.0.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\guava\guava\30.1-jre\guava-30.1-jre.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar
+[07:51:39] [Server thread/INFO]: [WolfyUtilities] Loaded library C:\Users\Evdokimov\Desktop\ServerFallout\libraries\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar
+[07:51:40] [Server thread/INFO]: [WolfyUtilities] NMS Version: v1_16_R3
+[07:51:40] [Server thread/INFO]: [me.wolfyscript.lib.org.reflections.Reflections] Reflections took 302 ms to scan 1 urls, producing 1173 keys and 3749 values
+[07:51:40] [Server thread/INFO]: [CustomCrafting] NMS Version: v1_16_R3
+[07:51:40] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.36
+[07:51:40] [Server thread/INFO]: [LootChest] Loading LootChest v2.3.3
+[07:51:40] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.11.2
+[07:51:40] [Server thread/INFO]: [FoodPlus] Loading FoodPlus v13
+[07:51:40] [Server thread/INFO]: [ResourcePackDownloader] Loading ResourcePackDownloader v7.4
+[07:51:40] [Server thread/INFO]: [ArmorEquipEvent] Loading ArmorEquipEvent v1.8-FIX
+[07:51:40] [Server thread/INFO]: [AskMe] Loading AskMe v1.0.1
+[07:51:40] [Server thread/INFO]: [HeadJoin] Loading HeadJoin v1.3
+[07:51:40] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.8.0
+[07:51:41] [Server thread/INFO]: [MessageOverHead] Loading MessageOverHead v2.55
+[07:51:41] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v14.2.1
+[07:51:41] [Server thread/INFO]: [BlowableObsidians] Loading BlowableObsidians v6.8
+[07:51:41] [Server thread/INFO]: [MarkItem] Loading MarkItem v0.5
+[07:51:41] [Server thread/INFO]: [HelmetSet] Loading HelmetSet v1.0-SNAPSHOT
+[07:51:41] [Server thread/INFO]: [PreventActions] Loading PreventActions v1.0-SNAPSHOT
+[07:51:41] [Server thread/INFO]: [UltimateTNT] Loading UltimateTNT v1.11.6
+[07:51:41] [Server thread/INFO]: [nokaut] Loading nokaut v1.15
+[07:51:41] [Server thread/INFO]: [NBTAPI] Loading NBTAPI v2.7.1
+[07:51:41] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_16_R3! Trying to find NMS support
+[07:51:41] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_16_R3' loaded!
+[07:51:41] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
+[07:51:41] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'LuckPerms' to create a bStats instance!
+[07:51:41] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[07:51:41] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.2.2+fc3c499
+[07:51:42] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@4c298e42]
+[07:51:42] [Server thread/INFO]: [AdvancedLogin] Loading AdvancedLogin v3.22
+[07:51:42] [Server thread/INFO]: [PL-Hide-Pro] Loading PL-Hide-Pro v1.4.5
+[07:51:42] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.4
+[07:51:42] [Server thread/INFO]: [PlasmoVoice] Loading PlasmoVoice v1.0.10
+[07:51:42] [Server thread/INFO]: [HolographicDisplays] Loading HolographicDisplays v2.4.9
+[07:51:42] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v7.0.5+3827266
+[07:51:42] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.30-SNAPSHOT (build 2634)
+[07:51:42] [Server thread/INFO]: [Sentinel] Loading Sentinel v2.6.0-SNAPSHOT (build 472)
+[07:51:42] [Server thread/INFO]: [MythicMobs] Loading MythicMobs v4.14.1-47dddd45
+[07:51:42] [Server thread/INFO]: [LumineUtils] (io.lumine.xikage.mythicmobs.utils.) is bound to plugin MythicMobs - io.lumine.xikage.mythicmobs.MythicMobs
+[07:51:42] [Server thread/INFO]: [EpicCraftingsPlus] Loading EpicCraftingsPlus v7.11.4
+[07:51:42] [Server thread/INFO]: [CommandNPC] Loading CommandNPC v1.7.2
+[07:51:42] [Server thread/INFO]: [yClans] Loading yClans v1.6.8-STABLE
+[07:51:42] [Server thread/INFO]: [ModelEngine] Loading ModelEngine vR2.5.0
+[07:51:42] [Server thread/INFO]: [QualityArmory] Loading QualityArmory v2.0.6
+[07:51:42] [Server thread/INFO]: [QualityArmoryVehicles2] Loading QualityArmoryVehicles2 v2.3.3
+[07:51:42] [Server thread/INFO]: [BlockRegen] Loading BlockRegen v3.9.1
+[07:51:42] [Server thread/INFO]: [BeautyQuests] Loading BeautyQuests v0.19.7
+[07:51:42] [Server thread/INFO]: [LWC] Loading LWC v2.2.8-f367129
+[07:51:42] [Server thread/INFO]: [LWCTrust] Loading LWCTrust v1.0.6
+[07:51:42] [Server thread/INFO]: [SCore] Loading SCore v1.7.6.0
+[07:51:42] [Server thread/INFO]: [WolfyUtilities] Loading WolfyUtilities v4.16.4.1
+[07:51:42] [Server thread/INFO]: [WolfyUtilities] Register json serializer/deserializer
+[07:51:42] [Server thread/INFO]: [WolfyUtilities] Register CustomItem meta checks
+[07:51:42] [Server thread/INFO]: [CustomCrafting] Loading CustomCrafting v3.16.6.2
+[07:51:42] [Server thread/INFO]: [CustomCrafting] WolfyUtils API: v4.16.4.1
+[07:51:42] [Server thread/INFO]: [CustomCrafting] CustomCrafting: v3.16.6.2
+[07:51:42] [Server thread/INFO]: [CustomCrafting] Environment   : PROD
+[07:51:42] [Server thread/INFO]: [CustomCrafting] Registering CustomItem Data
+[07:51:42] [Server thread/INFO]: [CustomCrafting] Registering Result Extensions
+[07:51:42] [Server thread/INFO]: [CustomCrafting] Registering Result Merge Adapters
+[07:51:42] [Server thread/INFO]: [CustomCrafting] Registering Recipe Conditions
+[07:51:42] [Server thread/INFO]: [CustomCrafting] Registering Recipe Types
+[07:51:42] [Server thread/INFO]: [CustomCrafting] Registering Anvil Recipe Tasks
+[07:51:42] [Server thread/INFO]: [CustomCrafting] Registering Type Registries
+[07:51:42] [Server thread/INFO]: [ExecutableItems] Loading ExecutableItems v4.2.6.0
+[07:51:42] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[07:51:42] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.36
+[07:51:42] [Server thread/INFO]:         __    
+[07:51:42] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.36
+[07:51:42] [Server thread/INFO]:   |___ |      Running on Bukkit - Purpur
+[07:51:42] [Server thread/INFO]: 
+[07:51:42] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[07:51:42] [Thread-15/WARN]: [NBTAPI] [NBTAPI] The NBT-API at 'package de.tr7zw.nbtapi' seems to be outdated!
+[07:51:42] [Thread-15/WARN]: [NBTAPI] [NBTAPI] Current Version: '2.7.1' Newest Version: 2.10.0'
+[07:51:42] [Thread-15/WARN]: [NBTAPI] [NBTAPI] Please update the nbt-api or the plugin that contains the api!
+[07:51:42] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[07:51:43] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[07:51:43] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[07:51:43] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1119ms)
+[07:51:43] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.8.0
+[07:51:43] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[07:51:43] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[07:51:43] [Server thread/WARN]: [Vault] Loaded class com.earth2me.essentials.api.Economy from Essentials v2.19.4 which is not a depend, softdepend or loadbefore of this plugin.
+[07:51:43] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[07:51:43] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[07:51:43] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[07:51:43] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[07:51:43] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.2+fc3c499
+[07:51:43] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[07:51:43] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_16_R3 as the Bukkit adapter
+[07:51:44] [Server thread/INFO]: [LWC] Enabling LWC v2.2.8-f367129
+[07:51:44] [Server thread/INFO]: [LWC] Connecting to SQLite
+[07:51:44] [Server thread/INFO]: [LWCTrust] Enabling LWCTrust v1.0.6
+[07:51:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[07:51:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[07:51:44] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[07:51:44] [Server thread/WARN]: You will not be offered any support as long as the server allows offline-mode players to join.
+[07:51:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[07:51:44] [Server thread/INFO]: Preparing level "world"
+[07:51:44] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[07:51:45] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[07:51:45] [Server thread/INFO]: Preparing spawn area: 0%
+[07:51:45] [Server thread/INFO]: Time elapsed: 280 ms
+[07:51:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[07:51:45] [Server thread/INFO]: Time elapsed: 96 ms
+[07:51:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[07:51:45] [Server thread/INFO]: Time elapsed: 57 ms
+[07:51:45] [Server thread/INFO]: [LootChest] Enabling LootChest v2.3.3
+[07:51:45] [Server thread/INFO]: [LootChest] Server version: 1.16
+[07:51:45] [Server thread/INFO]: [LootChest] Loading config files...
+[07:51:45] [Server thread/INFO]: [LootChest] Checking for update...
+[07:51:45] [Server thread/INFO]: [LootChest] Starting particles...
+[07:51:45] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.2
+[07:51:45] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[07:51:45] [Server thread/INFO]: [FoodPlus] Enabling FoodPlus v13*
+[07:51:45] [Server thread/INFO]: [FoodPlus] [INFO] Loading...
+[07:51:45] [Server thread/INFO]: [FoodPlus] [ERROR] Can't get material (СARROT_ITEM)! Handler with id carrot is passing.
+[07:51:45] [Server thread/INFO]: [FoodPlus] [INFO] 0 listeners successfully activated.
+[07:51:45] [Server thread/INFO]: [ResourcePackDownloader] Enabling ResourcePackDownloader v7.4*
+[07:51:45] [Server thread/INFO]: ------------------------------
+[07:51:45] [Server thread/INFO]: Resource Pack Downloader
+[07:51:45] [Server thread/INFO]:  
+[07:51:45] [Server thread/INFO]: Running version: 7.4
+[07:51:45] [Server thread/INFO]: Author: Joshb_
+[07:51:45] [Server thread/INFO]:  
+[07:51:45] [Server thread/INFO]: ------------------------------
+[07:51:45] [Server thread/INFO]: [ArmorEquipEvent] Enabling ArmorEquipEvent v1.8-FIX
+[07:51:45] [Server thread/INFO]: [AskMe] Enabling AskMe v1.0.1
+[07:51:45] [Server thread/INFO]: &8[&a&lAsk&c&lMe&8] &aКонфиг успешно загружен! Перезагрузите сервер, если Вам нужно перезагрузить конфиг.
+[07:51:45] [Server thread/INFO]: [HeadJoin] Enabling HeadJoin v1.3
+[07:51:45] [Server thread/INFO]: 
+ 
+[]=====[Enabling HeadJoin]=====[]
+| Information:
+|   Name: HeadJoin
+|   Developer: rub1kub
+|   Version: 1.3
+| Support:
+|   Github: https://github.com/LordRubikI
+|   Telegram: https://t.me/rub1kub
+[]=======================================[]
+
+[07:51:45] [Server thread/INFO]: [MessageOverHead] Enabling MessageOverHead v2.55
+[07:51:45] [Server thread/INFO]: Check updates...
+[07:51:46] [Server thread/INFO]: Plugin have last version
+[07:51:47] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v14.2.1
+[07:51:47] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mDetected Minecraft [33;1mv1_16_R3[32;1m, using [33;1mPaperSkinRefresher[32;1m.[0;39m
+[07:51:47] [Server thread/INFO]: [SkinsRestorer] [ACF] Enabled Asynchronous Tab Completion Support!
+[07:51:47] [Server thread/INFO]: [BlowableObsidians] Enabling BlowableObsidians v6.8
+[07:51:47] [Server thread/INFO]: [BlowableObsidians] Running on server with 116 / v1_16_R3.
+[07:51:47] [Server thread/INFO]: [MarkItem] Enabling MarkItem v0.5
+[07:51:47] [Server thread/INFO]: [MarkItem] 23 item(s) have been initialized
+[07:51:47] [Server thread/INFO]: [HelmetSet] Enabling HelmetSet v1.0-SNAPSHOT
+[07:51:47] [Server thread/WARN]: [HelmetSet] Loaded class lowbrain.armorequip.ArmorEquipEvent from ArmorEquipEvent v1.8-FIX which is not a depend, softdepend or loadbefore of this plugin.
+[07:51:47] [Server thread/INFO]: [HelmetSet] Плагин запустился!
+[07:51:47] [Server thread/INFO]: [PreventActions] Enabling PreventActions v1.0-SNAPSHOT
+[07:51:47] [Server thread/INFO]: [UltimateTNT] Enabling UltimateTNT v1.11.6
+[07:51:47] [Server thread/INFO]: [nokaut] Enabling nokaut v1.15
+[07:51:47] [Server thread/INFO]: 
+[07:51:47] [Server thread/INFO]: |\     |  |  /
+[07:51:47] [Server thread/INFO]: | \    |  | /
+[07:51:47] [Server thread/INFO]: |  \   |  |/
+[07:51:47] [Server thread/INFO]: |   \  |  |\
+[07:51:47] [Server thread/INFO]: |    \ |  | \
+[07:51:47] [Server thread/INFO]: |     \|  |  \
+[07:51:47] [Server thread/INFO]: 
+[07:51:47] [Server thread/INFO]: Enabling the plugin nokaut BY smaks6
+[07:51:47] [Server thread/INFO]: Server version: v1_16_R3
+[07:51:47] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 33 ms to scan 1 urls, producing 8 keys and 40 values 
+[07:51:47] [Server thread/WARN]: [nokaut] Loaded class com.sk89q.worldguard.protection.flags.Flag from WorldGuard v7.0.5+3827266 which is not a depend, softdepend or loadbefore of this plugin.
+[07:51:47] [Server thread/INFO]: [NBTAPI] Enabling NBTAPI v2.7.1
+[07:51:47] [Server thread/INFO]: [NBTAPI] Adding listeners...
+[07:51:47] [Server thread/INFO]: [NBTAPI] Gson:
+[07:51:47] [Server thread/INFO]: [NBTAPI] Checking bindings...
+[07:51:47] [Server thread/INFO]: [NBTAPI] All Classes were able to link!
+[07:51:47] [Server thread/INFO]: [NBTAPI] All Methods were able to link!
+[07:51:47] [Server thread/INFO]: [NBTAPI] Running NBT reflection test...
+[07:51:47] [Server thread/INFO]: [NBTAPI] EntityCustomNbtInjectorTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] RemovingKeys: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] IteratorTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] ItemConvertionTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] MergeTileSubCompoundTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] EqualsTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] GetterSetterTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] TypeTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] TilesCustomNBTInjectorTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] StreamTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] NBTFileTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] EmptyItemTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] WorldDataTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] ListTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] GameprofileTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] MergeTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] EntityTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] ForEachTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] BlockNBTTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] TilesCustomNBTPersistentTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] DirectApplyTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] TileTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] SubCompoundsTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] ChunkNBTPersistentTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] ItemMergingTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] EntityCustomNbtPersistentTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] SpawnEntityCustomNbtInjectorTest: Ok
+[07:51:47] [Server thread/INFO]: [NBTAPI] Success! This version of NBT-API is compatible with your server.
+[07:51:47] [Server thread/INFO]: [AdvancedLogin] Enabling AdvancedLogin v3.22*
+[07:51:47] [Server thread/INFO]: [AdvancedLogin] Leaked by GOLDSLIV: https://vk.com/goldslivnew
+[07:51:47] [Server thread/INFO]: Enabeling files-system
+[07:51:47] [Server thread/INFO]: Checking PINs!
+[07:51:47] [Server thread/INFO]: Done!
+[07:51:47] [Server thread/INFO]: 
+[07:51:47] [Server thread/INFO]: [=]---------------------------[=]
+[07:51:47] [Server thread/INFO]: -= AdvancedLogin =-
+[07:51:47] [Server thread/INFO]: Dev: Leoko
+[07:51:47] [Server thread/INFO]: Status: Enabled
+[07:51:47] [Server thread/INFO]: License: Privat
+[07:51:47] [Server thread/INFO]: [=]---------------------------[=]
+[07:51:47] [Server thread/INFO]: [PL-Hide-Pro] Enabling PL-Hide-Pro v1.4.5
+[07:51:47] [Server thread/INFO]: [PL-Hide-Pro] Downloaded from https://directleaks.net
+[07:51:47] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.4
+[07:51:47] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[07:51:47] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[07:51:48] [Server thread/INFO]: [Essentials] Loaded 36926 items from items.json.
+[07:51:48] [Server thread/INFO]: [Essentials] Using locale ru_RU
+[07:51:48] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[07:51:48] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[07:51:48] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[07:51:48] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[07:51:48] [Server thread/INFO]: [PlasmoVoice] Enabling PlasmoVoice v1.0.10
+[07:51:48] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: plasmovoice [1.0.0]
+[07:51:48] [Thread-26/INFO]: [PlasmoVoice] Voice UDP server started on /0.0.0.0:25565
+[07:51:48] [Server thread/INFO]: [HolographicDisplays] Enabling HolographicDisplays v2.4.9
+[07:51:48] [Server thread/INFO]: [HolographicDisplays] Enabled player relative placeholders with ProtocolLib.
+[07:51:48] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.5+3827266
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[07:51:48] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[07:51:48] [Server thread/INFO]: [WorldGuard] Loading region data...
+[07:51:48] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.30-SNAPSHOT (build 2634)
+[07:51:48] [Server thread/ERROR]: [Citizens] Missing translation for system language (ru_RU): defaulting to English
+[07:51:48] [Server thread/INFO]: [Citizens] Loaded economy handling via Vault.
+[07:51:48] [Server thread/INFO]: [Sentinel] Enabling Sentinel v2.6.0-SNAPSHOT (build 472)
+[07:51:48] [Server thread/INFO]: [Sentinel] Sentinel loading...
+[07:51:48] [Server thread/INFO]: [Sentinel] Running on java version: 16.0.2
+[07:51:48] [Server thread/INFO]: [Sentinel] Sentinel loaded on a fully supported Minecraft version. If you encounter any issues or need to ask a question, please join our Discord at https://discord.gg/Q6pZGSR and post in the '#sentinel' channel.
+[07:51:48] [Server thread/INFO]: [Sentinel] Vault linked! Group targets will work.
+[07:51:48] [Server thread/INFO]: [Sentinel] Sentinel found WorldGuard! Adding support for it!
+[07:51:48] [Server thread/INFO]: [Sentinel] Sentinel loaded!
+[07:51:48] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v4.14.1-47dddd45
+[07:51:48] [Server thread/ERROR]: [MythicMobs] Plugin MythicMobs v4.14.1-47dddd45 has failed to register events for class io.lumine.xikage.mythicmobs.adapters.bukkit.listeners.MobListeners because org/bukkit/event/world/EntitiesLoadEvent does not exist.
+[07:51:48] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.16.5)...[0m
+[07:51:48] [Server thread/INFO]: [MythicMobs] The server is running PaperSpigot; enabled PaperSpigot exclusive functionality[0m
+[07:51:48] [Server thread/INFO]: [io.lumine.xikage.mythicmobs.util.reflections.Reflections] Reflections took 32 ms to scan 1 urls, producing 3 keys and 21 values 
+[07:51:48] [Server thread/INFO]: [io.lumine.xikage.mythicmobs.util.reflections.Reflections] Reflections took 6 ms to scan 1 urls, producing 3 keys and 27 values 
+[07:51:48] [Server thread/INFO]: [io.lumine.xikage.mythicmobs.util.reflections.Reflections] Reflections took 5 ms to scan 1 urls, producing 0 keys and 0 values 
+[07:51:48] [Server thread/INFO]: [io.lumine.xikage.mythicmobs.util.reflections.Reflections] Reflections took 6 ms to scan 1 urls, producing 3 keys and 12 values 
+[07:51:48] [Server thread/INFO]: [MythicMobs] MythicMobs ModelEngine Support has been enabled![0m
+[07:51:48] [Server thread/INFO]: [MythicMobs] MythicMobs HolographicDisplays Support has been enabled![0m
+[07:51:48] [Server thread/INFO]: [MythicMobs] MythicMobs PlaceholderAPI Support has been enabled![0m
+[07:51:48] [Server thread/INFO]: [MythicMobs] Loaded ProtocolLib packet handlers[0m
+[07:51:48] [Server thread/INFO]: [MythicMobs] MythicMobs ProtocolLib Support has been enabled![0m
+[07:51:48] [Server thread/INFO]: [MythicMobs] MythicMobs Vault Support has been enabled![0m
+[07:51:48] [Server thread/INFO]: [MythicMobs] MythicMobs WorldGuard Support has been enabled![0m
+[07:51:48] [Server thread/INFO]: [MythicMobs] Loading Mob Registry...[0m
+[07:51:48] [Server thread/INFO]: [MythicMobs] Base directory C:\Users\Evdokimov\Desktop\ServerFallout\plugins\MythicMobs\SavedData
+[07:51:48] [Server thread/INFO]: [MythicMobs] Module directory C:\Users\Evdokimov\Desktop\ServerFallout\plugins\MythicMobs\SavedData\worlds
+[07:51:48] [Server thread/INFO]: [io.lumine.xikage.mythicmobs.util.reflections.Reflections] Reflections took 16 ms to scan 1 urls, producing 11 keys and 391 values 
+[07:51:48] [Server thread/INFO]: [io.lumine.xikage.mythicmobs.util.reflections.Reflections] Reflections took 25 ms to scan 1 urls, producing 25 keys and 739 values 
+[07:51:48] [Server thread/INFO]: [io.lumine.xikage.mythicmobs.util.reflections.Reflections] Reflections took 9 ms to scan 1 urls, producing 7 keys and 133 values 
+[07:51:49] [Server thread/INFO]: [io.lumine.xikage.mythicmobs.util.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 2 keys and 11 values 
+[07:51:49] [Server thread/INFO]: [MythicMobs] [36mLOADED[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] File config.yml not found! Creating a new one...[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] File ExampleItems.yml not found! Creating a new one...[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] File ExampleSkills.yml not found! Creating a new one...[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] File VanillaMobs.yml not found! Creating a new one...[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] File ExampleMobs.yml not found! Creating a new one...[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] File ExampleDropTables.yml not found! Creating a new one...[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] File ExampleRandomSpawns.yml not found! Creating a new one...[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] Spawners folder not found! Creating...[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 8 mobs.[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 vanilla mob overrides.[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob stacks.[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 skills.[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 random spawns.[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 3 mythic items.[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 2 drop tables.[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] [32m?[37m Loaded 0 mob spawners.[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics[0m
+[07:51:49] [Server thread/INFO]: [MythicMobs] [32m? MythicMobs v4.14.1 (build 47dddd45) has been successfully loaded![0m[0m
+[07:51:49] [Server thread/INFO]: [EpicCraftingsPlus] Enabling EpicCraftingsPlus v7.11.4
+[07:51:50] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: epiccraftings [7.11.4]
+[07:51:50] [Server thread/INFO]: [EpicCraftings+] Has been enabled! Version: 7.11.4
+[07:51:50] [Server thread/INFO]: [EpicCraftings+] Thanks for using my plugin!  ~Ajneb97
+[07:51:50] [Server thread/INFO]: There is a new version available. (7.11.6)
+[07:51:50] [Server thread/INFO]: You can download it at: https://www.spigotmc.org/resources/39967/
+[07:51:50] [Server thread/INFO]: [CommandNPC] Enabling CommandNPC v1.7.2*
+[07:51:50] [Server thread/INFO]: Injecting command information into Citizens.
+[07:51:50] [Server thread/INFO]: [yClans] Enabling yClans v1.6.8-STABLE*
+[07:51:50] [Server thread/INFO]: [*] Downloaded from https://directleaks.net
+[07:51:50] [Server thread/INFO]: [yClans] Langs folder loaded!
+[07:51:50] [Server thread/INFO]: [INFO] [yClans] conex?o com sqlite inicializada com sucesso
+[07:51:51] [Server thread/INFO]: [INFO] [yClans] Carregado 0 objetos em 1ms
+[07:51:51] [Server thread/INFO]: [INFO] [yClans] Carregado 0 objetos em 1ms
+[07:51:51] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: yclans [1.6.8-STABLE]
+[07:51:51] [Server thread/INFO]: [yClans] PlaceholderAPI found, methods initialized.
+[07:51:51] [Server thread/INFO]: В[yClans] ВMessages, options, menus and roles loaded.
+[07:51:51] [Server thread/INFO]: В[yClans] ВMarket loaded.
+[07:51:51] [Server thread/INFO]: [yClans] Commands loaded.
+[07:51:51] [Server thread/INFO]: [yClans] Listeners loaded.
+[07:51:51] [Server thread/INFO]: [yClans] Formats loaded.
+[07:51:51] [Server thread/INFO]: [yClans] API loaded.
+[07:51:51] [Server thread/INFO]: [yClans] All classes loaded.
+[07:51:51] [Server thread/INFO]: В================================
+[07:51:51] [Server thread/INFO]: В| ВPlugin yClans enabled!
+[07:51:51] [Server thread/INFO]: В| ВMade by yChusy.
+[07:51:51] [Server thread/INFO]: В| ВVersion 1.6.8-STABLE
+[07:51:51] [Server thread/INFO]: В================================
+[07:51:51] [Server thread/INFO]: [ModelEngine] Enabling ModelEngine vR2.5.0
+[07:51:51] [Server thread/INFO]: [ModelEngine] Mythic Mobs v4 loaded
+[07:51:51] [Server thread/INFO]: [Model Engine] Engine Activated.
+[07:51:51] [Server thread/INFO]: [Model Engine] Generator Activated.
+[07:51:51] [Server thread/INFO]: [Model Engine] Resource Pack generated.
+[07:51:51] [Server thread/INFO]: 
+[07:51:51] [Server thread/INFO]: [QualityArmory] Enabling QualityArmory v2.0.6
+[07:51:51] [Server thread/INFO]: [QualityArmory] Hooked with WorldGuard!
+[07:51:51] [Server thread/INFO]: [QualityArmory] It appears you are running WorldGuard. If you want to implement flags you can download the QAWorldGuard addon: https://www.spigotmc.org/resources/96868/
+[07:51:51] [Server thread/INFO]: [QualityArmory] -Loaded 11 Ammo types.
+[07:51:51] [Server thread/INFO]: [QualityArmory] -Loaded 16 Misc.
+[07:51:51] [Server thread/INFO]: [QualityArmory] -Loaded 19 Gun types.
+[07:51:51] [Server thread/INFO]: [QualityArmory] -Loading Attachment: awpasiimov
+[07:51:51] [Server thread/INFO]: [QualityArmory] --Failed to load awpasiimov attachment because the base "awp" does not exist.
+[07:51:51] [Server thread/INFO]: [QualityArmory] -Loading Attachment: p30silenced
+[07:51:51] [Server thread/INFO]: [QualityArmory] --Failed to load p30silenced attachment because the base "p30" does not exist.
+[07:51:51] [Server thread/INFO]: [QualityArmory] -Loading Attachment: uzicorn
+[07:51:51] [Server thread/INFO]: [QualityArmory] --Failed to load uzicorn attachment because the base "uzi" does not exist.
+[07:51:51] [Server thread/INFO]: [QualityArmory] -Loaded 0 Attachment types.
+[07:51:51] [Server thread/INFO]: [QualityArmory] -Loaded 4 Armor types.
+[07:51:51] [Server thread/INFO]: [QualityArmoryVehicles2] Enabling QualityArmoryVehicles2 v2.3.3
+[07:51:51] [Server thread/INFO]: [QualityArmoryVehicles2] Hooked with Vault
+[07:51:51] [Server thread/INFO]: [QualityArmoryVehicles2] Found spigot fork. Loaded support.
+[07:51:51] [Server thread/INFO]: [QualityArmoryVehicles2] Loaded NMS mappings & support. NMS version: v1_16_R3
+[07:51:51] [Server thread/INFO]: [QualityArmoryVehicles2] -Loaded 37 Vehicle types
+[07:51:51] [Server thread/INFO]: [QualityArmoryVehicles2] Successfully loaded 7 spawned vehicles.
+[07:51:51] [Server thread/INFO]: [QualityArmoryVehicles2] Leaked by YOURNAME @ BlackSpigot.com
+[07:51:51] [Server thread/INFO]: [BlockRegen] Enabling BlockRegen v3.9.1
+[07:51:51] [Server thread/INFO]: INFO: Loaded file Settings.yml
+[07:51:51] [Server thread/INFO]: INFO: Loaded file Messages.yml
+[07:51:51] [Server thread/INFO]: INFO: Loaded file Blocklist.yml
+[07:51:51] [Server thread/INFO]: INFO: Loaded file Regions.yml
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Running on version 1.16
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: WorldEdit found! Enabling regions.
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: WorldGuard found! Supporting it's Region protection.
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Checking dependencies...
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Vault & economy plugin found! Enabling economy functions.
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Found PlaceholderAPI! Using it for placeholders.
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Loaded 6 block preset(s)...
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Added 1 event(s)...
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Loaded file Regions.yml
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Loaded 0 region(s)...
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: You are using version 3.9.1
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Report bugs or suggestions to discord only please. ( /blockregen discord )
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: Always backup if you are not sure about things.
+[07:51:51] [Server thread/INFO]: [BlockRegen] INFO: MetricsLite enabled
+[07:51:51] [Server thread/INFO]: [BeautyQuests] Enabling BeautyQuests v0.19.7
+[07:51:51] [Server thread/INFO]: [BeautyQuests] ------------ BeautyQuests ------------
+[07:51:51] [ForkJoinPool.commonPool-worker-19/INFO]: [BlockRegen] INFO: Loaded 0 regeneration process(es)...
+[07:51:51] [Server thread/INFO]: [BeautyQuests] Loaded valid Minecraft version 1_16_R3.
+[07:51:52] [Server thread/INFO]: [BeautyQuests] Loaded language file locales/en_US.yml (0.025s)!
+[07:51:52] [Server thread/INFO]: [BeautyQuests] Loaded start particles: REDSTONE in shape POINT with color "R255 G255 B0"
+[07:51:52] [Server thread/INFO]: [BeautyQuests] Loaded talk particles: VILLAGER_HAPPY in shape BAR
+[07:51:52] [Server thread/INFO]: [BeautyQuests] Loaded next particles: SMOKE_NORMAL in shape SPOT
+[07:51:52] [Server thread/INFO]: [WorldGuard] Registering session handler fr.skytasul.quests.utils.compatibility.worldguard.WorldGuardEntryHandler
+[07:51:52] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: beautyquests [0.19.7]
+[07:51:52] [Server thread/INFO]: [BeautyQuests] Placeholders registered !
+[07:51:52] [Server thread/INFO]: [SCore] Enabling SCore v1.7.6.0
+[07:51:52] [Server thread/INFO]: ================ [SCore] ================
+[07:51:52] [Server thread/INFO]: [SCore] ExecutableItems hooked !
+[07:51:52] [Server thread/INFO]: [SCore] PlaceholderAPI hooked !
+[07:51:52] [Server thread/INFO]: [SCore] WorldGuard hooked !
+[07:51:52] [Server thread/INFO]: [SCore] Vault hooked !
+[07:51:52] [Server thread/INFO]: [SCore] ProtocolLib hooked !
+[07:51:52] [Server thread/INFO]: [SCore] NBTAPI hooked !
+[07:51:52] [Server thread/INFO]: [SCore] MythicMobs hooked !
+[07:51:52] [Server thread/INFO]: [SCore] Locale setup: EN
+[07:51:52] [Server thread/INFO]: [SCore] Language setup on EN
+[07:51:52] [Server thread/INFO]: [SCore] [SCore] Connexion to the db...
+[07:51:52] [Server thread/INFO]: [SCore] [SCore] Verification of the table SecurityOP...
+[07:51:52] [Server thread/INFO]: [SCore] [SCore] Verification of the table Commands...
+[07:51:52] [Server thread/INFO]: [SCore] [SCore] Verification of the table Cooldowns...
+[07:51:52] [Server thread/INFO]: [SCore] [SCore] Verification of the table Commands Player...
+[07:51:52] [Server thread/INFO]: [SCore] [SCore] Verification of the table Commands Entity...
+[07:51:52] [Server thread/INFO]: [SCore] [SCore] Verification of the table Commands Block...
+[07:51:52] [Server thread/INFO]: [SCore] Verification of the table UsePerDay...
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FAIRYTAIL_GRAY_FULLBUSTER_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FAIRYTAIL_NATSU_DRAGNEEL_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FATE_ARCHER_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FATE_ARCHER_2 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FATE_CASTER_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FATE_CASTER_2 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FATE_CASTER_3 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FATE_GILGAMESH_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FATE_GILGAMESH_2 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FATE_GILGAMESH_3 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable FATE_RIDER_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable HUNTERXHUNTER_GON_FREECSS_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable HUNTERXHUNTER_KURAPIKA_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable MADOKA_HOMURA_AKEMI_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable MADOKA_MADOKA_KANAME_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable MADOKA_MAMI_TOMOE_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable MHA_DENKI_KAMINARI_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable MHA_IZUKU_MIDORIYA_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable MHA_MINA_ASHIDO_ACID_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable MHA_MINA_ASHIDO_ACID_2 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable MHA_SHOTO_TODOROKI_2 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable OPM_GENOS_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable OPM_SPEED_O_SONIC_1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable proj_rainbow_projectile was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile not editable proj_tornado_blade was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile arrow1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile egg1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile enderpearl1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile fireball1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile lingering1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile shulkerbullet1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile snowball1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile trident1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile tridentCustom1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] projectile witherskull1 was loaded !
+[07:51:52] [Server thread/INFO]: [SCore] 0 saved commands loaded !
+[07:51:52] [Server thread/INFO]: ================ [SCore] ================
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] Enabling WolfyUtilities v4.16.4.1
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] Minecraft version: 1.16.5
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] WolfyUtils version: 4.16.4.1
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] Environment: PROD
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] Loading Plugin integrations: 
+[07:51:52] [Server thread/INFO]: [WolfyUtilities]  - MythicMobs
+[07:51:52] [Server thread/INFO]: [WolfyUtilities]  - PlaceholderAPI
+[07:51:52] [Server thread/INFO]: [WolfyUtilities]  - ExecutableItems
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] Create & Init Plugin integrations: 
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] init PAPI event
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] Register API references
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] Loading stored Custom Items
+[07:51:52] [Server thread/INFO]: [WolfyUtilities] Loading Player Data
+[07:51:53] [Server thread/INFO]: [WolfyUtilities] Loading Creative Mode Tabs
+[07:51:53] [Server thread/INFO]: [WolfyUtilities] Initiating Particles
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Enabling CustomCrafting v3.16.6.2
+[07:51:53] [Server thread/INFO]: [CustomCrafting] ____ _  _ ____ ___ ____ _  _ ____ ____ ____ ____ ___ _ _  _ ____ 
+[07:51:53] [Server thread/INFO]: [CustomCrafting] |    |  | [__   |  |  | |\/| |    |__/ |__| |___  |  | |\ | | __ 
+[07:51:53] [Server thread/INFO]: [CustomCrafting] |___ |__| ___]  |  |__| |  | |___ |  \ |  | |     |  | | \| |__]
+[07:51:53] [Server thread/INFO]: [CustomCrafting]     Version    | v3.16.6.2
+[07:51:53] [Server thread/INFO]: [CustomCrafting]     WolfyUtils | v4.16.4.1
+[07:51:53] [Server thread/INFO]: [CustomCrafting]     Bukkit     | git-Purpur-1171 (MC: 1.16.5)(API: 1.16.5-R0.1-SNAPSHOT)
+[07:51:53] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Spigot: v1_16_R3! Trying to find NMS support
+[07:51:53] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_16_R3' loaded!
+[07:51:53] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Gson: class com.google.gson.Gson
+[07:51:53] [Server thread/INFO]: [CustomCrafting] 
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Special thanks to my Patrons for supporting this project: 
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Omarlatif, Nat R, Junye Zhou, Apprehentice, PwassonDoDouce, Mr_Mint_
+[07:51:53] [Server thread/INFO]: [CustomCrafting] ------------------------------------------------------------------------
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Loaded fallback language "en_US" v6.0.0 translated by WolfyScript
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Loaded active language "en_US" v6.0.0 translated by WolfyScript
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Detected ProtocolLib... initiating additional features.
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Registering PlaceHolder
+[07:51:53] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: customcrafting [3.16.6.2]
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Data destination: LOCAL
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Initiating Inventory GUIs
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Register ItemCreator Tabs
+[07:51:53] [Thread-42/INFO]: [NBTAPI] [NBTAPI] The NBT-API seems to be up-to-date!
+[07:51:53] [Server thread/INFO]: [CustomCrafting] Loading Cauldrons
+[07:51:53] [Server thread/INFO]: [CustomCrafting] ------------------------------------------------------------------------
+[07:51:53] [Server thread/INFO]: [ExecutableItems] Enabling ExecutableItems v4.2.6.0
+[07:51:53] [Server thread/INFO]: ================ [*ExecutableItems*] ================
+[07:51:53] [Server thread/INFO]: [ExecutableItems] PlaceholderAPI hooked !
+[07:51:53] [Server thread/INFO]: [ExecutableItems] NBTAPI hooked !
+[07:51:53] [Server thread/INFO]: [ExecutableItems] CustomCrafting hooked !
+[07:51:53] [Server thread/INFO]: [ExecutableItems] Locale setup: EN
+[07:51:54] [Server thread/INFO]: [ExecutableItems] [ExecutableItems] Connexion to the db...
+[07:51:54] [Server thread/INFO]: [ExecutableItems] [ExecutableItems] Verification of the table UsePerDay... (will be deleted on june 2022)
+[07:51:54] [Server thread/INFO]: [ExecutableItems] [ExecutableItems] Verification of the table UsePerDayNew...
+[07:51:54] [Server thread/INFO]: ================ [ExecutableItems] ================
+[07:51:54] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[07:51:54] [Server thread/INFO]: 0 placeholder hook(s) registered!
+[07:51:55] [Server thread/INFO]: Running delayed init tasks
+[07:51:55] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Получение информации о версии...
+[07:51:55] [Craft Scheduler Thread - 14 - ModelEngine/INFO]: [Model Engine] Generating zipped resource pack.
+[07:51:55] [Craft Scheduler Thread - 14 - ModelEngine/INFO]: [Model Engine] Resource Pack generated.
+[07:51:55] [Server thread/INFO]: [LootChest] Loading chests...
+[07:51:55] [Server thread/INFO]: [LootChest] Removed 0 holograms
+[07:51:55] [Server thread/INFO]: [LootChest] Loaded 1 Lootchests in 10 miliseconds
+[07:51:55] [Server thread/INFO]: [LootChest] Starting LootChest timers asynchronously...
+[07:51:55] [Server thread/INFO]: [LootChest] Plugin loaded
+[07:51:55] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[07:51:55] [Craft Scheduler Thread - 14 - ModelEngine/INFO]: [Model Engine] Resource pack zipped.
+[07:51:55] [Server thread/INFO]: [Citizens] Loaded 2 NPCs.
+[07:51:55] [Server thread/INFO]: [MythicMobs] [32m?Using HolographicDisplays plugin for holograms[0m
+[07:51:55] [Server thread/INFO]: [BlockRegen] INFO: Checking dependencies...
+[07:51:55] [Server thread/INFO]: [BlockRegen] INFO: Starting auto-save.. with an interval of 600 seconds.
+[07:51:55] [Server thread/INFO]: Done (19.108s)! For help, type "help"
+[07:51:55] [Server thread/INFO]: Timings Reset
+[07:51:55] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] Checking for Updates ... 
+[07:51:55] [Server thread/INFO]: [BeautyQuests] 0 quests loaded (0.015s)!
+[07:51:55] [Server thread/INFO]: [BeautyQuests] Periodic saves task started (18000 ticks). Task ID: 536
+[07:51:55] [Craft Scheduler Thread - 0 - LootChest/INFO]: [LootChest] The plugin seems up to date.
+[07:51:55] [Server thread/INFO]: [BeautyQuests] You are using the latest version of BeautyQuests.
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[32;1m |[0;39m
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Current version: [32;1m14.2.1[0;39m
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[07:51:55] [Craft Scheduler Thread - 4 - SkinsRestorer/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[07:51:55] [Craft Scheduler Thread - 8 - nokaut/INFO]: You have the latest version of the plugin
+[07:51:55] [Craft Scheduler Thread - 8 - nokaut/INFO]: Nokaut plugin BY smaks6
+[07:51:55] [Server thread/INFO]: [HolographicDisplays] Found a new version available: v3.0.0
+[07:51:55] [Server thread/INFO]: [HolographicDisplays] Download it on Bukkit Dev:
+[07:51:55] [Server thread/INFO]: [HolographicDisplays] dev.bukkit.org/projects/holographic-displays
+[07:51:55] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] No new version available
+[07:51:55] [Server thread/INFO]: [WolfyUtilities] All dependencies are loaded. Calling the DependenciesLoadedEvent to notify other plugins!
+[07:51:55] [Server thread/INFO]: [CustomCrafting] ------------------------------------------------------------------------
+[07:51:55] [Server thread/INFO]: [CustomCrafting] Loading Recipes & Items
+[07:51:55] [Server thread/INFO]: [CustomCrafting] - - - - [Local Storage] - - - -
+[07:51:55] [Server thread/INFO]: [CustomCrafting] [LOCAL] Looking through data folder...
+[07:51:55] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loading Items
+[07:51:55] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loading Recipes
+[07:51:55] [Craft Scheduler Thread - 10 - PL-Hide-Pro/INFO]: PL-Hide-Pro ? Update available: 2.5.1! You are on 1.4.5!
+[07:51:55] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loaded 2 recipes; Skipped: 0 error/s, 0 already existing
+[07:51:55] [Server thread/INFO]: [CustomCrafting] [LOCAL_OLD] Loaded 0 recipes; Skipped: 0 error/s, 0 already existing
+[07:51:55] [Server thread/INFO]: [CustomCrafting] [LOCAL_LEGACY] Loaded 0 recipes; Skipped: 0 error/s, 0 already existing
+[07:51:55] [Server thread/INFO]: [CustomCrafting] [LOCAL] Loaded 2 recipes
+[07:51:55] [Server thread/INFO]: [CustomCrafting] 
+[07:51:55] [Server thread/INFO]: [CustomCrafting] Indexing Recipe Book...
+[07:51:55] [Server thread/INFO]: [CustomCrafting] Indexed Recipe Book!
+[07:51:55] [Server thread/INFO]: [CustomCrafting] ------------------------------------------------------------------------
+[07:52:35] [Server thread/INFO]: Plugins (43): AdvancedLogin*, ArmorEquipEvent, AskMe, BeautyQuests, BlockRegen, BlowableObsidians, Citizens, CommandNPC*, CustomCrafting, EpicCraftingsPlus, Essentials, ExecutableItems, FoodPlus*, HeadJoin, HelmetSet, HolographicDisplays, LootChest, LuckPerms, LWC, LWCTrust, MarkItem, MessageOverHead, ModelEngine, MythicMobs, NBTAPI, nokaut, PL-Hide-Pro, PlaceholderAPI, PlasmoVoice, PreventActions, ProtocolLib, QualityArmory, QualityArmoryVehicles2, ResourcePackDownloader*, SCore, Sentinel, SkinsRestorer, UltimateTNT, Vault, WolfyUtilities, WorldEdit, WorldGuard, yClans*
+[08:04:03] [User Authenticator #1/INFO]: UUID of player evdokimov27 is 498bb71d-5c93-3516-8446-ff71a3d642f8
+[08:04:03] [Server thread/INFO]: evdokimov27 joined the game
+[08:04:03] [Server thread/INFO]: evdokimov27[/26.1.208.109:57795] logged in with entity id 2289 at ([world]-1099.3559317769552, 47.0, 889.5975351606304)
+[08:04:38] [Server thread/ERROR]: Could not pass event ArmorEquipEvent to HelmetSet v1.0-SNAPSHOT
+java.lang.NullPointerException: Cannot invoke "org.bukkit.inventory.meta.ItemMeta.getCustomModelData()" because the return value of "org.bukkit.inventory.ItemStack.getItemMeta()" is null
+	at com.evdokimov.helmetset.HelmetSet.Check(HelmetSet.java:89) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor111.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at lowbrain.armorequip.ArmorListener.onInventoryClick(ArmorListener.java:134) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor80.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:2848) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:32) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:10) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:55) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1339) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1332) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1308) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1152) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:293) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[08:04:39] [Server thread/ERROR]: Could not pass event ArmorEquipEvent to HelmetSet v1.0-SNAPSHOT
+java.lang.NullPointerException: Cannot invoke "org.bukkit.inventory.meta.ItemMeta.getCustomModelData()" because the return value of "org.bukkit.inventory.ItemStack.getItemMeta()" is null
+	at com.evdokimov.helmetset.HelmetSet.Check(HelmetSet.java:89) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor111.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at lowbrain.armorequip.ArmorListener.onInventoryClick(ArmorListener.java:134) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor80.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:2848) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:32) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:10) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:55) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1339) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1332) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1308) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1152) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:293) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[08:04:39] [Server thread/ERROR]: Could not pass event ArmorEquipEvent to HelmetSet v1.0-SNAPSHOT
+java.lang.NullPointerException: Cannot invoke "org.bukkit.inventory.meta.ItemMeta.getCustomModelData()" because the return value of "org.bukkit.inventory.ItemStack.getItemMeta()" is null
+	at com.evdokimov.helmetset.HelmetSet.Check(HelmetSet.java:89) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor111.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at lowbrain.armorequip.ArmorListener.onInventoryClick(ArmorListener.java:134) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor80.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:2848) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:32) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:10) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:55) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1339) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1332) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1308) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1152) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:293) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[08:04:39] [Server thread/ERROR]: Could not pass event ArmorEquipEvent to HelmetSet v1.0-SNAPSHOT
+java.lang.NullPointerException: Cannot invoke "org.bukkit.inventory.meta.ItemMeta.getCustomModelData()" because the return value of "org.bukkit.inventory.ItemStack.getItemMeta()" is null
+	at com.evdokimov.helmetset.HelmetSet.Check(HelmetSet.java:89) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor111.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at lowbrain.armorequip.ArmorListener.onInventoryClick(ArmorListener.java:134) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor80.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:2848) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:32) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:10) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:55) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1339) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1332) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1308) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1152) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:293) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[08:04:39] [Server thread/ERROR]: Could not pass event ArmorEquipEvent to HelmetSet v1.0-SNAPSHOT
+java.lang.NullPointerException: Cannot invoke "org.bukkit.inventory.meta.ItemMeta.getCustomModelData()" because the return value of "org.bukkit.inventory.ItemStack.getItemMeta()" is null
+	at com.evdokimov.helmetset.HelmetSet.Check(HelmetSet.java:89) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor111.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at lowbrain.armorequip.ArmorListener.onInventoryClick(ArmorListener.java:134) ~[?:?]
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor80.execute(Unknown Source) ~[?:?]
+	at org.bukkit.plugin.EventExecutor.lambda$create$1(EventExecutor.java:69) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:624) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnection.a(PlayerConnection.java:2848) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:32) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PacketPlayInWindowClick.a(SourceFile:10) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.PlayerConnectionUtils.lambda$ensureMainThread$1(PlayerConnectionUtils.java:55) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.TickTask.run(SourceFile:18) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeTask(IAsyncTaskHandler.java:136) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandlerReentrant.executeTask(SourceFile:23) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeNext(IAsyncTaskHandler.java:109) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.bb(MinecraftServer.java:1339) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.executeNext(MinecraftServer.java:1332) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.awaitTasks(IAsyncTaskHandler.java:119) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.sleepForTick(MinecraftServer.java:1308) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1152) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:293) ~[patched_1.16.5.jar:git-Purpur-1171]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+[08:04:47] [Server thread/INFO]: evdokimov27 lost connection: Disconnected
+[08:04:47] [Server thread/INFO]: evdokimov27 left the game
+[08:06:55] [Craft Scheduler Thread - 3 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[08:21:54] [Craft Scheduler Thread - 5 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[08:21:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[08:21:54] [Craft Scheduler Thread - 5 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 10ms
+[08:21:54] [Craft Scheduler Thread - 13 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[08:36:54] [Craft Scheduler Thread - 32 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[08:51:54] [Craft Scheduler Thread - 32 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[08:51:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[08:51:54] [Craft Scheduler Thread - 32 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 18ms
+[08:51:55] [Craft Scheduler Thread - 39 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[09:06:54] [Craft Scheduler Thread - 33 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[09:21:54] [Craft Scheduler Thread - 43 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[09:21:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[09:21:54] [Craft Scheduler Thread - 43 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 13ms
+[09:21:54] [Craft Scheduler Thread - 5 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[09:36:54] [Craft Scheduler Thread - 5 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[09:51:54] [Craft Scheduler Thread - 47 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[09:51:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[09:51:54] [Craft Scheduler Thread - 47 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 9ms
+[09:51:55] [Craft Scheduler Thread - 45 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[10:06:54] [Craft Scheduler Thread - 32 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[10:21:54] [Craft Scheduler Thread - 32 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[10:21:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[10:21:54] [Craft Scheduler Thread - 32 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 10ms
+[10:21:54] [Craft Scheduler Thread - 33 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[10:36:54] [Craft Scheduler Thread - 55 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[10:51:54] [Craft Scheduler Thread - 55 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[10:51:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[10:51:54] [Craft Scheduler Thread - 55 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 9ms
+[10:51:54] [Craft Scheduler Thread - 32 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[11:06:54] [Craft Scheduler Thread - 54 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[11:21:54] [Craft Scheduler Thread - 56 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[11:21:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[11:21:54] [Craft Scheduler Thread - 56 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 9ms
+[11:21:54] [Craft Scheduler Thread - 54 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[11:36:54] [Craft Scheduler Thread - 62 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[11:51:54] [Craft Scheduler Thread - 66 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[11:51:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[11:51:54] [Craft Scheduler Thread - 66 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 16ms
+[11:51:54] [Craft Scheduler Thread - 56 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[12:06:55] [Craft Scheduler Thread - 56 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[12:21:54] [Craft Scheduler Thread - 72 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[12:21:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[12:21:54] [Craft Scheduler Thread - 72 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 11ms
+[12:21:54] [Craft Scheduler Thread - 64 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[12:36:54] [Craft Scheduler Thread - 54 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[12:51:54] [Craft Scheduler Thread - 76 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[12:51:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[12:51:54] [Craft Scheduler Thread - 76 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 7ms
+[12:51:54] [Craft Scheduler Thread - 73 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[13:06:54] [Craft Scheduler Thread - 54 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[13:21:54] [Craft Scheduler Thread - 80 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[13:21:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[13:21:54] [Craft Scheduler Thread - 80 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 12ms
+[13:21:54] [Craft Scheduler Thread - 54 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[13:36:55] [Craft Scheduler Thread - 74 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[13:51:54] [Craft Scheduler Thread - 86 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[13:51:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[13:51:54] [Craft Scheduler Thread - 86 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 8ms
+[13:51:54] [Craft Scheduler Thread - 88 - Vault/INFO]: [Vault] Checking for Updates ... 
+[13:51:54] [Craft Scheduler Thread - 82 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[13:51:57] [Craft Scheduler Thread - 88 - Vault/INFO]: [Vault] There was an issue attempting to check for the latest version.
+[13:51:57] [Craft Scheduler Thread - 88 - Vault/INFO]: [Vault] No new version available
+[14:06:54] [Craft Scheduler Thread - 87 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[14:21:54] [Craft Scheduler Thread - 87 - yClans/INFO]: [DEBUG] [yClans] Iniciando auto save
+[14:21:54] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[14:21:54] [Craft Scheduler Thread - 87 - yClans/INFO]: [INFO] [yClans] Auto completo, salvo 1 objetos em 14ms
+[14:21:54] [Craft Scheduler Thread - 82 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[14:25:05] [Server thread/INFO]: Stopping server
+[14:25:05] [Server thread/INFO]: [ExecutableItems] Disabling ExecutableItems v4.2.6.0
+[14:25:05] [Server thread/INFO]: [CustomCrafting] Disabling CustomCrafting v3.16.6.2
+[14:25:05] [Server thread/INFO]: [CustomCrafting] Saving Cauldrons
+[14:25:05] [Server thread/INFO]: [WolfyUtilities] Disabling WolfyUtilities v4.16.4.1
+[14:25:05] [Server thread/INFO]: [WolfyUtilities] Save stored Custom Items
+[14:25:05] [Server thread/INFO]: [LWCTrust] Disabling LWCTrust v1.0.6
+[14:25:05] [Server thread/INFO]: [LWC] Disabling LWC v2.2.8-f367129
+[14:25:05] [Server thread/INFO]: [LWC] Flushing protection updates (0)
+[14:25:05] [Server thread/INFO]: [BeautyQuests] Disabling BeautyQuests v0.19.7
+[14:25:05] [Server thread/INFO]: [BeautyQuests] Periodic saves task stopped.
+[14:25:05] [Server thread/INFO]: [WorldGuard] Unregistering session handler fr.skytasul.quests.utils.compatibility.worldguard.WorldGuardEntryHandler
+[14:25:05] [Server thread/INFO]: [BlockRegen] Disabling BlockRegen v3.9.1
+[14:25:05] [Server thread/INFO]: [QualityArmoryVehicles2] Disabling QualityArmoryVehicles2 v2.3.3
+[14:25:05] [Server thread/INFO]: [QualityArmory] Disabling QualityArmory v2.0.6
+[14:25:05] [Server thread/INFO]: [ModelEngine] Disabling ModelEngine vR2.5.0
+[14:25:05] [Server thread/INFO]: [Model Engine] Core shut down.
+[14:25:05] [Server thread/INFO]: [yClans] Disabling yClans v1.6.8-STABLE
+[14:25:05] [Server thread/INFO]: В================================
+[14:25:05] [Server thread/INFO]: В| ВPlugin yClans disabled!
+[14:25:05] [Server thread/INFO]: В| ВMade by yChusy.
+[14:25:05] [Server thread/INFO]: В| ВVersion 1.6.8-STABLE
+[14:25:05] [Server thread/INFO]: В================================
+[14:25:05] [Server thread/INFO]: [CommandNPC] Disabling CommandNPC v1.7.2
+[14:25:05] [Server thread/INFO]: [EpicCraftingsPlus] Disabling EpicCraftingsPlus v7.11.4
+[14:25:05] [Server thread/INFO]: [EpicCraftings+] Has been disabled! Version: 7.11.4
+[14:25:05] [Server thread/INFO]: [MythicMobs] Disabling MythicMobs v4.14.1-47dddd45
+[14:25:05] [Server thread/INFO]: [MythicMobs] Disabling Mythic Mobs...[0m
+[14:25:05] [Server thread/INFO]: [MythicMobs] All active settings have been saved.[0m
+[14:25:05] [Server thread/INFO]: [MythicMobs] [36mUNLOADED[0m
+[14:25:05] [Server thread/INFO]: [Sentinel] Disabling Sentinel v2.6.0-SNAPSHOT (build 472)
+[14:25:05] [Server thread/INFO]: [Sentinel] Sentinel unloading...
+[14:25:05] [Server thread/INFO]: [Sentinel] Sentinel unloaded!
+[14:25:05] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.30-SNAPSHOT (build 2634)
+[14:25:05] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.5+3827266
+[14:25:05] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[14:25:05] [Server thread/INFO]: [HolographicDisplays] Disabling HolographicDisplays v2.4.9
+[14:25:05] [Server thread/INFO]: [PlasmoVoice] Disabling PlasmoVoice v1.0.10
+[14:25:05] [Server thread/INFO]: [Essentials] Disabling Essentials v2.19.4
+[14:25:05] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[14:25:05] [Server thread/INFO]: [PL-Hide-Pro] Disabling PL-Hide-Pro v1.4.5
+[14:25:05] [Server thread/INFO]: [AdvancedLogin] Disabling AdvancedLogin v3.22
+[14:25:05] [Server thread/INFO]: 
+[14:25:05] [Server thread/INFO]: [=]---------------------------[=]
+[14:25:05] [Server thread/INFO]: -= AdvancedLogin =-
+[14:25:05] [Server thread/INFO]: Dev: Leoko
+[14:25:05] [Server thread/INFO]: Status: Disabled
+[14:25:05] [Server thread/INFO]: License: Privat
+[14:25:05] [Server thread/INFO]: [=]---------------------------[=]
+[14:25:05] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.2.2+fc3c499
+[14:25:05] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[14:25:05] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[14:25:05] [Server thread/INFO]: [NBTAPI] Disabling NBTAPI v2.7.1
+[14:25:05] [Server thread/INFO]: [nokaut] Disabling nokaut v1.15
+[14:25:05] [Server thread/INFO]: [UltimateTNT] Disabling UltimateTNT v1.11.6
+[14:25:05] [Server thread/INFO]: [PreventActions] Disabling PreventActions v1.0-SNAPSHOT
+[14:25:05] [Server thread/INFO]: [HelmetSet] Disabling HelmetSet v1.0-SNAPSHOT
+[14:25:05] [Server thread/INFO]: [HelmetSet] Bye!!!
+[14:25:05] [Server thread/INFO]: [MarkItem] Disabling MarkItem v0.5
+[14:25:05] [Server thread/INFO]: [BlowableObsidians] Disabling BlowableObsidians v6.8
+[14:25:05] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v14.2.1
+[14:25:05] [Server thread/INFO]: [MessageOverHead] Disabling MessageOverHead v2.55
+[14:25:05] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v4.8.0
+[14:25:05] [Server thread/INFO]: [HeadJoin] Disabling HeadJoin v1.3
+[14:25:05] [Server thread/INFO]: 
+ 
+[]=====[Disabling HeadJoin]=====[]
+| Information:
+|   Name: HeadJoin
+|   Developer: rub1kub
+|   Version: 1.3
+| Support:
+|   Github: https://github.com/LordRubikI
+|   Telegram: https://t.me/rub1kub
+[]========================================[]
+
+[14:25:05] [Server thread/INFO]: [AskMe] Disabling AskMe v1.0.1
+[14:25:05] [Server thread/INFO]: [ArmorEquipEvent] Disabling ArmorEquipEvent v1.8-FIX
+[14:25:05] [Server thread/INFO]: [ResourcePackDownloader] Disabling ResourcePackDownloader v7.4
+[14:25:05] [Server thread/INFO]: [FoodPlus] Disabling FoodPlus v13
+[14:25:05] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.2
+[14:25:05] [Server thread/INFO]: [LootChest] Disabling LootChest v2.3.3
+[14:25:05] [Server thread/INFO]: [LootChest] Backed up data file in case of crash
+[14:25:05] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.36
+[14:25:05] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[14:25:05] [Server thread/INFO]: [LuckPerms] Closing storage...
+[14:25:05] [Server thread/INFO]: [LuckPerms] Goodbye!
+[14:25:05] [Server thread/INFO]: Saving players
+[14:25:05] [Server thread/INFO]: Saving worlds
+[14:25:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:25:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:25:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[14:25:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:25:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[14:25:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:25:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:25:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[14:25:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[14:25:06] [Server thread/INFO]: Flushing Chunk IO
+[14:25:06] [Server thread/INFO]: Closing Thread Pool
+[14:25:06] [Server thread/INFO]: Closing Server

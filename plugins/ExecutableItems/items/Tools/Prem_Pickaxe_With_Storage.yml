@@ -1,0 +1,140 @@
+name: '&8(()) &fCobblestone Storage Pickaxe &8(())'
+lore:
+- '&8&m------------------------'
+- '&7'
+- '&7Cobblestone Storage: &f%var_x_int%'
+- '&f'
+- '&7Breaks all cobblestone in a'
+- '&75 block radius.'
+- '&f'
+- '&7Shift-Left-Click to take'
+- '&7out the cobblestone stored inside'
+- '&7the pickaxe'
+- '&7'
+- '&8&m------------------------'
+material: DIAMOND_PICKAXE
+headDBID: ''
+glow: false
+glowDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+durability: 1561
+variables:
+  x: 0.0
+activators:
+  activator1:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands: []
+    silenceOutput: false
+    blockCommands:
+    - MINEINCUBE 2 false true
+    detailedBlocks:
+    - STONE
+    - COBBLESTONE
+    cancelEventIfNotDetailedBlocks: false
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+  activator2:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands: []
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - STONE
+    - COBBLESTONE
+    cancelEventIfNotDetailedBlocks: true
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    variablesModification:
+      x:
+        type: MODIFICATION
+        modification: '1'
+  activator3:
+    activator: PLAYER_LEFT_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - give %player% cobblestone %var_x_int%
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    variablesModification:
+      x:
+        type: SET
+        modification: 0
+    conditions:
+      playerConditions:
+        ifSneaking: true
+        ifSneakingMsg: ''
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_x_int%'
+          comparator: INFERIOR_OR_EQUALS
+          part2: 64.0
+          messageIfNotValid: '&e'
+          cancelEventIfNotValid: false
+  activator4:
+    activator: PLAYER_LEFT_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - give %player% cobblestone 64
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    variablesModification:
+      x:
+        type: MODIFICATION
+        modification: -64
+    conditions:
+      playerConditions:
+        ifSneaking: true
+        ifSneakingMsg: ''
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_x_int%'
+          comparator: SUPERIOR
+          part2: 64.0
+          messageIfNotValid: '&e'
+          cancelEventIfNotValid: false
+config_4_2: true
+config_update: true

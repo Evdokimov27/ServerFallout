@@ -1,0 +1,15 @@
+settings:
+  prefix: "&6MercuryBlocker &8| "
+
+blockedblocks:
+  - 'DIAMOND_ORE'
+
+titles:
+  fadein: 20
+  stay: 100
+  fadeout: 20
+  title: "&c&lВНИМАНИЕ"
+  subtitle: "&fДанный блок запрещён на сервере"
+
+messages:
+  blockedblock: "&cБлок, который вы попытались поставить является запрещённым, он был удалён"

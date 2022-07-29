@@ -1,0 +1,95 @@
+name: '&5◘ &4R&6a&ei&2n&ab&bo&3w &1T&9r&da&5i&4l &cB&6o&eo&2t&as &5◘'
+lore:
+- '&8&m-&4&m-&8&m-&c&m-&8&m-&6&m-&8&m-&e&m-&8&m-&2&m-&8&m-&a&m-&8&m-&b&m-&8&m-&3&m-&8&m-&1&m-&8&m-&9&m-&8&m-'
+- '&7'
+- '&8➤ &7&oWear to produce'
+- '     &7&orainbow particles !'
+- '&7'
+- '&8&m-&4&m-&8&m-&c&m-&8&m-&6&m-&8&m-&e&m-&8&m-&2&m-&8&m-&a&m-&8&m-&b&m-&8&m-&3&m-&8&m-&1&m-&8&m-&9&m-&8&m-'
+material: LEATHER_BOOTS
+glow: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: true
+usage: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+cancel-item-drop: false
+cancel-enchant: false
+cancel-anvil: true
+cancel-consumption: false
+cancel-item-place: true
+cancel-deposit-in-chest: false
+cancel-deposit-in-furnace: false
+cancel-item-craft: true
+cancel-item-frame: false
+cancel-tool-interactions: false
+locked-in-inventory: false
+activators:
+  activator1:
+    activator: LOOP
+    displayName: '&ean activator'
+    usageModification: 0
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run particle minecraft:dust 1 0 0 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 1 0.5 0 2 ~ ~ ~ 0.1 0.2 0.1
+      1 10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 1 0.8 0 2 ~ ~ ~ 0.1 0.2 0.1
+      1 10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 1 1 0 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 0 1 0 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 0 2 0 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 0 1 3 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 0 1 2 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 0 1 1 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 0 0 1 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 1 0 1 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 1 0 2 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    - execute at %player% run particle minecraft:dust 2 0 2 2 ~ ~ ~ 0.1 0.2 0.1 1
+      10
+    - DELAYTICK 1
+    silenceOutput: false
+    requiredItems: []
+    delay: 5
+    delayInTick: true
+    detailedSlots:
+    - '36'
+headDBID: ''
+glowDrop: false
+usePerDay: -1
+durability: 65
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+hidePotionEffects: false
+hideUsage: false
+config_4_2: true
+config_update: true

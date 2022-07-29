@@ -1,0 +1,18 @@
+# 
+#  - say "KnockedPlayer" has been knocked by "Damager"
+
+NokautTime: 30
+cancelmessage: '&cВы не можете этого сделать во время нокаута'
+helpnokautmessage: '&cВы без сознания, позовите кого-нибуть на помощь или дождитесь
+  смерти'
+wakeupplayer: Вас поднял {player}
+wakeupdamager: Вы подняли {player}
+deathnownot: '&cЭта команда доступна только во время нокаута'
+NokautTitle: Вы без сознания
+DeathOnEnd: 'true'
+BlindnessOnNokaut: 'true'
+WakeUpTitle: Поднятие...
+NpcTeleportTime: 1
+NokautTitleAbovePlayer: Без сознания
+RequireLevelToRevive: false
+NotEnoughLevelMessage: '&cYou don''t have enough level to revive someone'

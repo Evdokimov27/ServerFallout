@@ -1,0 +1,222 @@
+name: '&6&l◈ &eEpic boots &6&l◈'
+lore:
+- '&6&l---&7&l>>&e&l-----&7&l<<&6&l---'
+- '&f'
+- '&7Ability: &fPlace blocks to replace'
+- '         &fair under your feets'
+- '&7Require: &fMust be equiped'
+- '&f'
+- '&7Tip: &fSneak to go down'
+- '&f'
+- '&7Owned by: &e%player%'
+- '&f'
+- '&6&l---&7&l>>&e&l-----&7&l<<&6&l---'
+material: NETHERITE_BOOTS
+headDBID: ''
+glow: true
+glowDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: true
+activators:
+  activator1:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands: []
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    variablesModification:
+      x:
+        type: SET
+        modification: '%player_x%'
+      y:
+        type: SET
+        modification: '%player_y%'
+      z:
+        type: SET
+        modification: '%player_z%'
+    detailedSlots:
+    - 36
+  activator2:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - execute at %player% run fill %var_x_int%-4 %var_y_int%-1 %var_z_int%-3 %var_x_int%+2
+      %var_y_int%-1 %var_z_int%+3 furnace[]{Lock:"custom%var_x%"} replace air
+    - DELAY 5
+    - execute at %player% run fill %var_x_int%-4 %var_y_int%-2 %var_z_int%-3 %var_x_int%+2
+      %var_y_int%-1 %var_z_int%+3 air replace furnace[]{Lock:"custom%var_x%"}
+    silenceOutput: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    conditions:
+      playerConditions:
+        ifPosX: <=0
+        ifPosXMsg: ''
+        ifPosZ: '>0'
+        ifPosZMsg: ''
+        ifNotSneaking: true
+        ifNotSneakingMsg: ''
+    detailedSlots:
+    - 36
+  activator3:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - execute at %player% run fill %var_x_int%-4 %var_y_int%-1 %var_z_int%-4 %var_x_int%+2
+      %var_y_int%-1 %var_z_int%+2 furnace[]{Lock:"custom%var_x%"} replace air
+    - DELAY 5
+    - execute at %player% run fill %var_x_int%-4 %var_y_int%-2 %var_z_int%-4 %var_x_int%+2
+      %var_y_int%-1 %var_z_int%+2 air replace furnace[]{Lock:"custom%var_x%"}
+    silenceOutput: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    conditions:
+      playerConditions:
+        ifPosX: <=0
+        ifPosXMsg: ''
+        ifPosZ: <=0
+        ifPosZMsg: ''
+        ifNotSneaking: true
+        ifNotSneakingMsg: ''
+    detailedSlots:
+    - 36
+  activator4:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - execute at %player% run fill %var_x_int%-3 %var_y_int%-1 %var_z_int%-4 %var_x_int%+3
+      %var_y_int%-1 %var_z_int%+2 furnace[]{Lock:"custom%var_x%"} replace air
+    - DELAY 5
+    - execute at %player% run fill %var_x_int%-3 %var_y_int%-2 %var_z_int%-4 %var_x_int%+3
+      %var_y_int%-1 %var_z_int%+2 air replace furnace[]{Lock:"custom%var_x%"}
+    silenceOutput: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    conditions:
+      playerConditions:
+        ifPosX: '>0'
+        ifPosXMsg: ''
+        ifPosZ: <=0
+        ifPosZMsg: ''
+        ifNotSneaking: true
+        ifNotSneakingMsg: ''
+    detailedSlots:
+    - 36
+  activator5:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - execute at %player% run fill %var_x_int%-3 %var_y_int%-1 %var_z_int%-3 %var_x_int%+3
+      %var_y_int%-1 %var_z_int%+3 furnace[]{Lock:"custom%var_x%"} replace air
+    - DELAY 5
+    - execute at %player% run fill %var_x_int%-3 %var_y_int%-2 %var_z_int%-3 %var_x_int%+3
+      %var_y_int%-1 %var_z_int%+3 air replace furnace[]{Lock:"custom%var_x%"}
+    silenceOutput: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    conditions:
+      playerConditions:
+        ifPosX: '>0'
+        ifPosXMsg: ''
+        ifPosZ: '>0'
+        ifPosZMsg: ''
+        ifNotSneaking: true
+        ifNotSneakingMsg: ''
+    detailedSlots:
+    - 36
+  activator6:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - SENDMESSAGE §8§l§oExecutableItems §7Continue to sneak until the furnaces disappear
+      to go down ! (&a&oIt's safe !&7)
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 10
+    delayInTick: true
+    cancelEvent: false
+    conditions:
+      playerConditions:
+        ifSneaking: true
+        ifSneakingMsg: ''
+        ifIsOnTheBlock:
+        - FURNACE
+        ifIsOnTheBlockMsg: ''
+    detailedSlots:
+    - 36
+  activator7:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - FLY OFF
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 10
+    delayInTick: true
+    cancelEvent: false
+    conditions:
+      playerConditions:
+        ifSneaking: true
+        ifSneakingMsg: ''
+    detailedSlots:
+    - 36
+variables:
+  x: 0.0
+  y: 0.0
+  z: 0.0
+durability: 481
+hideEnchantments: false
+hideUnbreakable: false
+hideAttributes: true
+hidePotionEffects: false
+hideUsage: false
+config_4_2: true
+config_update: true

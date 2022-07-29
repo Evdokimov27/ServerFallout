@@ -1,0 +1,25 @@
+enabled: true
+mark:
+  texture: STICK
+  glow: true
+  name: "&9Mark"
+  lore: "&e&oYou can mark your items and they do not drop when death"
+  text: "&9- Item is marked"
+
+# Update marked items from old version of the plugin (up to 0.4, doesn't work for servers on 1.16)
+update: true
+
+##
+# Allowed and denied items
+# ------------------------------------------
+# You can use a regex for matching materials, eg diamond_.*
+##
+allowed:
+  - iron_.+
+  - diamond_chestplate
+  - carved_pumpkin
+  - (cross)?bow
+  - .+_leggings
+denied:
+  - iron_h.*
+  - chainmal_leggings

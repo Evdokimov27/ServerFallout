@@ -1,0 +1,50 @@
+name: '&4❤ &c&lHealer &4❤'
+lore:
+- '&8&m------------------------'
+- '&7'
+- '&4➤ &c&oClick to execute me !'
+- '&7'
+- '&7&oInfo:'
+- '&4» &cMEGA HEALLL'
+- '&4» &cCooldown: &625 &csecs'
+- '&7'
+- '&8&m------------------------'
+material: POTION
+glow: true
+cancel-item-drop: true
+cancel-item-place: true
+cancel-deposit-in-chest: false
+cancel-item-craft: true
+locked-in-inventory: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 3
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: PLAYER_CONSUME
+    displayName: an activator
+    usageModification: -1
+    cooldown: 15
+    displayCooldownMessage: false
+    cooldownMsg: '&4&lExecutableItems &cYou can''t use this item for again &6%titme%
+      secs !'
+    isCooldownInTicks: false
+    commands:
+    - SENDMESSAGE §4❤ §c§lMEGA HEAL !
+    - REGAIN_HEALTH 20
+    conditions:
+      playerConditions: {}
+      customConditions: {}
+    cancelEventIfInCooldown: true
+    detailedSlots:
+    - '-1'
+    - '40'
+config_4_2: true
+config_update: true

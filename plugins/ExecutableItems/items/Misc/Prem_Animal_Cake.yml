@@ -1,0 +1,55 @@
+name: '&6|| &fMagic Cake &6||'
+lore:
+- '&8&m------------------------'
+- '&7'
+- '&7Right-Click a singular or'
+- '&7stacked mob to forcefully'
+- '&7put them in the "Adult" state'
+- '&f'
+- '&7Only works for Cows, Chickens,'
+- '&7Pigs, Rabbits and Sheeps'
+- '&7'
+- '&8&m------------------------'
+material: CAKE
+headDBID: ''
+glow: true
+glowDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+activators:
+  activator1:
+    activator: PLAYER_CLICK_ON_ENTITY
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - execute at %entity_uuid% run data merge entity %entity_uuid% {Age:0}
+    - execute at %entity_uuid% run particle firework ~ ~ ~ 1 1 1 0.2 20
+    silenceOutput: false
+    entityCommands: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    detailedClick: RIGHT
+    cancelEvent: false
+    conditions:
+      entityConditions:
+        ifBaby: true
+        ifBabyMsg: '&cYour target is an adult.'
+    detailedEntities:
+    - COW
+    - SHEEP
+    - PIG
+    - RABBIT
+    - CHICKEN
+config_4_2: true
+config_update: true

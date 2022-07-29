@@ -1,0 +1,424 @@
+name: '&fReplanter'
+lore:
+- '&7Hold this at your offhand and'
+- '&7any crops you break will get replanted.'
+- '&7You need a seed item for the crop blocks'
+- '&7that you will break.'
+- '&7By Special70'
+material: PLAYER_HEAD-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFhYjk3OGJmNjIxMmExMjhhYmU2NWQzNTIwNmRhYTZkZmM1MjMwNDRkZWFiMTJlMmVlYWU4NzhmNTBhZjJiYyJ9fX0=
+headDBID: ''
+glow: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 0
+hideUsage: false
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+hidePotionEffects: false
+canBeUsedOnlyByTheOwner: false
+activators:
+  WHEAT_REPLANTER:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% wheat[age=0]
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - WHEAT
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+    requiredItems:
+    - WHEAT_SEEDS:1
+    cancelEventIfInvalidRequiredItems: false
+  WHEAT_REPLANTER_ANTIDUPE:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% wheat[age=0]
+    - give %player% wheat_seeds 1
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - WHEAT[AGE=0]
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+  BEETROOT_REPLANTER:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% beetroots[age=0]
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - BEETROOTS
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+    requiredItems:
+    - BEETROOT_SEEDS:1
+    cancelEventIfInvalidRequiredItems: false
+  BEETROOT_REPLANTER_ANTIDUPE:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% beetroots[age=0]
+    - give %player% beetroot_seeds 1
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - BEETROOTS[AGE=0]
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+  POTATO_REPLANTER:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% potatoes[age=0]
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - POTATOES
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+    requiredItems:
+    - POTATO:1
+    cancelEventIfInvalidRequiredItems: false
+  POTATO_REPLANTER_ANTIDUPE:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% potatoes[age=0]
+    - give %player% potato 1
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - POTATOES[AGE=0]
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+  CARROT_REPLANTER:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% carrots[age=0]
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - CARROTS
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+    requiredItems:
+    - POTATO:1
+    cancelEventIfInvalidRequiredItems: false
+  CARROT_REPLANTER_ANTIDUPE:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% carrots[age=0]
+    - give %player% carrot 1
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - CARROTS[AGE=0]
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+  COCOA_WEST_REPLANTER:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% cocoa[age=0,facing=west]
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - COCOA[FACING=WEST]
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+    requiredItems:
+    - COCOA_BEANS:1
+    cancelEventIfInvalidRequiredItems: false
+  COCOA_WEST_ANTIDUPE:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% cocoa[age=0,facing=west]
+    - give %player% cocoa_beans 1
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - COCOA[AGE=0,FACING=WEST]
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+  COCOA_EAST_REPLANTER:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% cocoa[age=0,facing=east]
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - COCOA[FACING=EAST]
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+    requiredItems:
+    - COCOA_BEANS:1
+    cancelEventIfInvalidRequiredItems: false
+  COCOA_EAST_ANTIDUPE:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% cocoa[age=0,facing=east]
+    - give %player% cocoa_beans 1
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - COCOA[AGE=0,FACING=EAST]
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+  COCOA_NORTH_REPLANTER:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% cocoa[age=0,facing=north]
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - COCOA[FACING=NORTH]
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+    requiredItems:
+    - COCOA_BEANS:1
+    cancelEventIfInvalidRequiredItems: false
+  COCOA_NORTH_ANTIDUPE:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% cocoa[age=0,facing=north]
+    - give %player% cocoa_beans 1
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - COCOA[AGE=0,FACING=NORTH]
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+  COCOA_SOUTH_REPLANTER:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% cocoa[age=0,facing=south]
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - COCOA[FACING=SOUTH]
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+    requiredItems:
+    - COCOA_BEANS:1
+    cancelEventIfInvalidRequiredItems: false
+  COCOA_SOUTH_ANTIDUPE:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% cocoa[age=0,facing=south]
+    - give %player% cocoa_beans 1
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - COCOA[AGE=0,FACING=SOUTH]
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+  WART_REPLANTER:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% nether_wart[age=0]
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - NETHER_WART
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+    requiredItems:
+    - NETHER_WART:1
+    cancelEventIfInvalidRequiredItems: false
+  WART_ANTIDUPE:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% nether_wart[age=0]
+    - give %player% nether_wart 1
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - NETHER_WART[AGE=0]
+    desactiveDrops: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+    detailedSlots:
+    - '40'
+config_4_2: true
+config_update: true

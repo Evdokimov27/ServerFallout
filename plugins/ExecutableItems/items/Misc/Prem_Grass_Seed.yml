@@ -1,0 +1,83 @@
+name: '&aoo &fGrass Seeds &aoo'
+lore:
+- '&8&m------------------------'
+- '&7'
+- '&7Instantly converts the dirt'
+- '&7block you click into a grass block'
+- '&7'
+- '&8&m------------------------'
+material: WHEAT_SEEDS
+headDBID: ''
+glow: true
+glowDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 0
+hideUsage: false
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+hidePotionEffects: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+activators:
+  activator1:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: false
+    autoUpdateItem: false
+    commands:
+    - execute at %player% run setblock %block_x_int% %block_y_int% %block_z_int% grass_block
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: true
+    conditions:
+      customConditions:
+        ifNeedPlayerConfirmationMsg: '&e &7➤ Click again to confirm the use of this
+          item'
+        ifOwnerOfTheEIMsg: '&e &cYou must be the owner of the item to active the activator:
+          &6%activator% &c!'
+        ifNotOwnerOfTheEIMsg: '&e &cYou must not be the owner of the item to active
+          the activator: &6%activator% &c!'
+        ifPlayerMustBeOnHisIslandMsg: '&e &cTo active this activator/item, you must
+          be on your Island !'
+        ifPlayerMustBeOnHisClaimMsg: '&e &cTo active this activator/item, you must
+          be on your Claim or friend claim !'
+    desactiveDrops: false
+  activator2:
+    activator: PLAYER_ALL_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    cooldown: 0
+    displayCooldownMessage: false
+    autoUpdateItem: false
+    commands: []
+    silenceOutput: false
+    blockCommands:
+    - MINEINCUBE 0
+    detailedBlocks:
+    - DIRT
+    cancelEventIfNotDetailedBlocks: true
+    onlyAirClick: false
+    onlyBlockClick: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+    cancelEvent: false
+config_4_2: true
+config_update: true

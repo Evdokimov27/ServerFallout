@@ -22,7 +22,7 @@ KilledByMessage: '%player% was shot to bits by %killer% using an %name%'
 invalid: false
 durability: 1000
 maxItemStack: 1
-setZoomLevel: 3
+setZoomLevel: 5
 sway:
   defaultValue: 0.2
   defaultMultiplier: 2
@@ -47,7 +47,7 @@ ChargingHandler: Revolver
 ReloadingHandler: none
 addMuzzleSmoke: true
 drop-glow-color: none
-headshotMultiplier: 3.5
+headshotMultiplier: 1.5
 weaponsounds_volume: 4
 firing_knockback: 0
 DestructableMaterials:

@@ -46,13 +46,13 @@ delayForReload: 5
 bullets-per-shot: 1
 isAutomatic: false
 unlimitedAmmo: false
-LightLeveOnShoot: 14
+LightLeveOnfot: 14
 slownessOnEquip: 1
 Version_18_Support: false
 ChargingHandler: none
 addMuzzleSmoke: true
 drop-glow-color: none
-headshotMultiplier: 3.5
+headshotMultiplier: 1.5
 weaponsounds_volume: 4
 weaponsounds_reloadingSound: reloadbullet
 firing_knockback: 0

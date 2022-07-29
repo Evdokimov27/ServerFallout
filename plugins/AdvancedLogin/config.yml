@@ -1,0 +1,147 @@
+# /---------------------------------Developed by Leoko--------------------------------\
+# |  ####  ###   #   #  ####  #  #  ####  ####  ###      #      ###    ####  #  #  #  |
+# |  #  #  #  #  #   #  #  #  ## #  #     #     #  #     #     #   #  #      #  ## #  |
+# |  ####  #  #  #   #  ####  # ##  #     ##    #  #     #     #   #  #  ##  #  # ##  |
+# |  #  #  #  #   # #   #  #  #  #  #     #     #  #     #     #   #  #   #  #  #  #  |
+# |  #  #  ###     #    #  #  #  #  ####  ####  ###      ####   ###    ###   #  #  #  |
+# \---------------------------------Developed by Leoko--------------------------------/
+
+
+# MySQL-Settings
+MySQL:
+  UseMySQL: false
+  IP: "localhost"
+  DB-Name: "PINs"
+  Username: "root"
+  Password: "YourPW"
+  Port: 3306
+ 
+# Every X minutes the pins will be refreshed form the MySQL [if MySQL is enabled]
+AutoLoad: 5
+
+# If enabled player will be able to login with "/pin PIN"
+# so players which connect via a smartphone will also be able to login
+# !! This will make it very easy for "Login-Crackers" to login !!
+EnablePinCommand: false
+
+#Should the plugin save the plays IP for the auto-login feature
+SaveIP: true
+# The amount of time in MIN how long the IP should stay saved
+# Use -1 for infinit time [= 1 Day] (Recommended)
+SaveDuration: -1
+
+# Add commands which should still be allowed
+# for example /register & /login from AuthMe
+BypassCommands:
+- '/login'
+- '/register'
+
+# If you have a special login server in your bungeecord-network
+# you can specify the name of the server where the player should be
+# connected if he logs in successfully 
+# Set to "none" to disable
+LobbyServer: "none"
+
+#Should there be sounds effects
+Sounds: true
+
+#Optimal length is 4 or 5 and also valid is 3 and 6
+#I don't recoment to use a length that is not between 3 and 6!
+PIN-Length: 4
+
+# If enabled only users with the perm "al.login" need to enter a pin
+PermsLogin: false
+
+# If enabled this will teleport the player to a set location (/setJoinLoc)
+# while he is logging in.
+HideLocation: false
+
+# If enabled the player will be in spectator mode while logging in
+SpectatorOnLogin: false
+
+#The player will be kicked after x sec when he has not logged in
+#Set to -1 to disable this
+KickAfterSec:
+  Seconds: 20
+  KickMessage: "&cYou have not logged in after 20 sec!"
+
+#The player will be kicked when he types in the code x times wrong
+#Set to -1 to disable this
+KickAfterTries:
+  Tries: 3
+  KickMessage: "&cYou have not logged in after 3 tries"
+
+#The command will be executed after x wrong PIN attempts eg Ban [%IP% or %PLAYER%] no /
+#Set to -1 to disable this
+CommandAfterTries:
+  Tries: -1
+  Command: "banip %IP% You have been banned for typing in the PIN 3 times wrong"
+
+# This item will be displayed in the result slot of the inventory
+# as the "Show Pin" item
+ShowPinItem: "NAME_TAG"
+
+# The title of the crafting table. Only visible on newer MC Versions
+InventoryTitle: "&c&lLogin&8: Enter Pin"
+
+# Whether a users PIN can be shown through the %PIN% placeholder
+# Using: https://www.spigotmc.org/resources/placeholderapi.6245/
+PINPlaceholder: false
+
+# Users with names not matching this regular expression will
+# not be able to connect to the server.
+NameRegex: "[a-zA-Z_0-9]*"
+
+Messages-Chat:
+  AdminPINReset: 
+    User: '&cYour PIN got reset by an admin'
+    Admin: '&cThe PIN of player %PLAYER% got reset'
+    HasNoPin: '&cThis player has no PIN'
+  AdminPINSet:
+    User: '&cYour PIN got changed'
+    Admin: '&cThe PIN of player %PLAYER% got changed to %PIN%'
+    NoValidPIN: '&cThis is not a valid PIN'
+  PinCommand: '&cIf you have logged in via a ChatClient please use /pin PIN to login'
+  ConfReload: '&aThe config.yml has been reloaded' 
+  NoPerms: "&cYou don't have enough perms"
+Messages-Title:
+  Register:
+    Line1: '&c&lRegistration'
+    Line2: '&cClick on the items to set a PIN &oeg.: 1234'
+    Stay: 70
+  Registered:
+    Line1: '&a&lWelcome!'
+    Line2: '&aSuccessful registered! &cYour PIN&8: &7%PIN%'
+    Stay: 70
+  Loggedin:
+    Line1: '&a&lWelcome!'
+    Line2: '&aPIN accepted!'
+    Stay: 70
+  AutoLoggedin:
+    Line1: '&a&lWelcome!'
+    Line2: '&aYou were automatically logged in'
+    Stay: 70
+  WrongPIN:
+    Line1: '&c&lWrong PIN'
+    Line2: '&7&oPIN not accepted, try it again'
+    Stay: 70
+  FastLoginLog:
+    Line1: '&a&lFastLogin'
+    Line2: '&aYou got force-logged in by FastLogin'
+  FastLoginReg:
+    Line1: '&a&lFastLogin'
+    Line2: '&aYou got force-registered in by FastLogin'
+Messages-Items:
+  ShowPIN: '&cShow PIN'
+  PIN: '&c&lPIN &8&l»'
+  HiddenNumber: '&7&l*'
+  Numbers:
+    1: '&f&l1'
+    2: '&f&l2'
+    3: '&f&l3'
+    4: '&f&l4'
+    5: '&f&l5'
+    6: '&f&l6'
+    7: '&f&l7'
+    8: '&f&l8'
+    9: '&f&l9'

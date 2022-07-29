@@ -1,96 +1,18 @@
-size: 45
 Categories:
   weapons_armor:
-    name: '&eWeapons&f/&eArmor'
-    lore:
-    - '&7Here you can find the &cbest'
-    - '&7equipment of the server.'
-    slot: 12
-    id: GOLDEN_SWORD
+    item:
+      id: DIAMOND_SWORD
+      name: '&eWeapons&f/&eArmor'
+      lore:
+      - '&7Here you can find the &cbest'
+      - '&7equipment of the server.'
+      item_flags:
+      - HIDE_ATTRIBUTES
   others:
-    name: '&dOther Crafts'
-    lore:
-    - '&7A lot of stuff you can craft,'
-    - '&7like the &bVIP &6rank.'
-    slot: 14
     permission: epiccraftingsplus.categories.others
-    id: LIME_DYE
-Inventory:
-  '0':
-    slot: 0
-    id: GREEN_STAINED_GLASS_PANE
-  '1':
-    slot: 1
-    id: LIME_STAINED_GLASS_PANE
-  '2':
-    slot: 2
-    id: GREEN_STAINED_GLASS_PANE
-  '3':
-    slot: 3
-    id: LIME_STAINED_GLASS_PANE
-  '4':
-    slot: 4
-    id: GREEN_STAINED_GLASS_PANE
-  '5':
-    slot: 5
-    id: LIME_STAINED_GLASS_PANE
-  '6':
-    slot: 6
-    id: GREEN_STAINED_GLASS_PANE
-  '7':
-    slot: 7
-    id: LIME_STAINED_GLASS_PANE
-  '8':
-    slot: 8
-    id: GREEN_STAINED_GLASS_PANE
-  '9':
-    slot: 9
-    id: LIME_STAINED_GLASS_PANE
-  '10':
-    slot: 17
-    id: LIME_STAINED_GLASS_PANE
-  '11':
-    slot: 18
-    id: GREEN_STAINED_GLASS_PANE
-  '12':
-    slot: 26
-    id: GREEN_STAINED_GLASS_PANE
-  '13':
-    slot: 27
-    id: LIME_STAINED_GLASS_PANE
-  '14':
-    slot: 35
-    id: LIME_STAINED_GLASS_PANE
-  '15':
-    slot: 36
-    name: '&7Go Back'
-    command: chestcommands open inventory %player%
-    id: ARROW
-  '16':
-    slot: 37
-    id: LIME_STAINED_GLASS_PANE
-  '17':
-    slot: 38
-    id: GREEN_STAINED_GLASS_PANE
-  '18':
-    slot: 39
-    id: LIME_STAINED_GLASS_PANE
-  '19':
-    name: '&6Info'
-    lore:
-    - '&7Select one of the categories above'
-    - '&7to begin crafting items!'
-    slot: 40
-    id: LEVER
-  '20':
-    slot: 41
-    id: LIME_STAINED_GLASS_PANE
-  '21':
-    slot: 42
-    id: GREEN_STAINED_GLASS_PANE
-  '22':
-    slot: 43
-    id: LIME_STAINED_GLASS_PANE
-  '23':
-    slot: 44
-    id: GREEN_STAINED_GLASS_PANE
+    item:
+      id: REDSTONE
+      name: '&dOther Crafts'
+      lore:
+      - '&7A lot of stuff you can craft,'
+      - '&7like money or the &bVIP &7rank.'

@@ -1,0 +1,34 @@
+item:
+  id: 'DIAMOND_SWORD'
+  name: "&4&lSuper Sword"
+  lore:
+  - "&6This is one of the best"
+  - "&6swords on the server!"
+  - ""
+  - "&8[Created by: &c%player%&8]"
+  enchants:
+  - 'DAMAGE_ALL;6'
+  - 'FIRE_ASPECT;3'
+  item_flags:
+  - HIDE_ATTRIBUTES  
+requires:
+- 'id:DIAMOND;amount:15;name:&bUnique Diamond;lore:&7A legendary mineral|&7very hard to obtain..'
+- 'id:IRON_INGOT;amount:10'
+category: weapons_armor
+priority: 1
+permission: ecraft.supersword
+cooldown: 1800
+cooldown_bypass_cost: 5000
+extra_requirements:
+  conditions:
+  - "%player_level% >= 15"     
+  - "%player_gamemode% == SURVIVAL"  
+  message:
+  - "&8Extra Requirements:"
+  - "&6You need to be level 15 to craft this."
+  - "&8Status: &7%player_level%&8/&715 %status_symbol_requirement_1%"
+  - ""
+  - "&6You need to be on survival."
+  - "&8Status: &7%player_gamemode% %status_symbol_requirement_2%"
+actions_when_crafted:
+- "console_command: broadcast &2&l%player% crafted a &4&lSUPER SWORD&2&l!" 

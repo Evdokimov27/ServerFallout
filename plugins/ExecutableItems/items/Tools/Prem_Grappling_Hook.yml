@@ -1,0 +1,73 @@
+name: '&7&l(&b&l❖&7&l)>> &7&oGrappling hook'
+lore:
+- '&f'
+- '&8&l»&7&l&m----------------&8&l«'
+- '&b     Launch !'
+- '&b     wait..... '
+- '&b     and click !!!'
+- '&8&l»&7&l&m----------------&8&l«'
+- '&f'
+material: FISHING_ROD
+glow: true
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 20
+hideUsage: false
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+canBeUsedOnlyByTheOwner: false
+activators:
+  activator1:
+    activator: PLAYER_FISH_BLOCK
+    displayName: Activator name
+    usageModification: -1
+    usePerDay: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - CUSTOMDASH1 %block_x% %block_y% %block_z%
+    - SENDMESSAGE §8§l§oExecutableItems §7Youhouuuuuuuuuu !
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+  activator2:
+    activator: PLAYER_FISH_ENTITY
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - CUSTOMDASH1 %entity_x% %entity_y% %entity_z%
+    - SENDMESSAGE §8§l§oExecutableItems §7Youuuhouuu
+    silenceOutput: false
+    entityCommands: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    detailedEntities: []
+  activator3:
+    activator: PLAYER_FISH_NOTHING
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - CUSTOMDASH1 %entity_x% %entity_y% %entity_z%
+    - SENDMESSAGE §8§l§oExecutableItems §7Youuuhouuu !!
+    silenceOutput: false
+    entityCommands: []
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    detailedEntities: []
+config_4_2: true
+config_update: true

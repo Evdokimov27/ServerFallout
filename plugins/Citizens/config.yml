@@ -17,23 +17,10 @@ npc:
       max-fall-distance: 3
     attack-range: 3.0625
     use-new-finder: false
-  chat:
-    options:
-      bystanders-hear-targeted-chat: true
-      max-number-of-targets-to-show: 2
-      multiple-targets-format: <target>|, <target>| & <target>| & others
-      range: 5
-      max-text-range: 500
-    format:
-      no-targets: '[<npc>]: <text>'
-      with-target-to-bystanders: '[<npc>] -> [<target>]: <text>'
-      to-target: '[<npc>] -> You: <text>'
-      with-targets-to-bystanders: '[<npc>] -> [<targets>]: <text>'
-  controllable:
-    ground-direction-modifier: 1.0
-    max-ground-speed: 0.5
-    use-boat-controls: true
+    defaults:
+      destination-teleport-margin: -1
   default:
+    bossbar-view-range: 64
     waypoints:
       cache-paths: false
     look-close:
@@ -43,8 +30,8 @@ npc:
       random-look-delay: 60
       disable-while-navigating: true
     pathfinding:
-      range: 25.0
-    random-talker: true
+      range: 75.0
+    random-talker: false
     realistic-looking: false
     stationary-ticks: -1
     talk-close:
@@ -52,6 +39,24 @@ npc:
       range: 5
     text:
       '0': Hi, I'm <npc>!
+    spawn-nodamage-ticks: 20
+  chat:
+    options:
+      bystanders-hear-targeted-chat: false
+      max-number-of-targets-to-show: 2
+      multiple-targets-format: <target>|, <target>| & <target>| & others
+      range: 5
+      max-text-range: 500
+      talk-to-npcs: true
+    format:
+      no-targets: '[<npc>]: <text>'
+      with-target-to-bystanders: '[<npc>] -> [<target>]: <text>'
+      to-target: '[<npc>] -> You: <text>'
+      with-targets-to-bystanders: '[<npc>] -> [<targets>]: <text>'
+  controllable:
+    ground-direction-modifier: 1.0
+    max-ground-speed: 0.5
+    use-boat-controls: true
   hologram:
     default-line-height: 0.4
   limits:
@@ -59,6 +64,11 @@ npc:
     max-permission-checks: 100
     max-packet-entries: 15
     max-speed: 100
+  text:
+    speech-bubble-ticks: 50
+    max-talk-cooldown: 5
+    min-talk-cooldown: 10
+    talk-item: '*'
   tablist:
     disable: true
     remove-packet-delay: 1
@@ -77,10 +87,12 @@ npc:
   commands:
     error-messages:
       maximum-times-used: You have reached the maximum number of uses ({0}).
+      missing-item: Missing {1} {0}
       no-permission: You don't have permission to do that.
+      not-enough-experience: You need at least {0} experience.
       not-enough-money: You need at least ${0}.
-      on-cooldown: Please wait {0} more seconds.
-      on-global-cooldown: Please wait {0} more seconds.
+      on-cooldown: Please wait for {minutes} minutes and {seconds_over} seconds.
+      on-global-cooldown: Please wait for {minutes} minutes and {seconds_over} seconds.
   packets:
     update-delay: 30
   player:
@@ -89,12 +101,11 @@ npc:
     item: stick
     message: Selected [[<npc>]] (ID <id>).
   server-ownership: false
-  text:
-    max-talk-cooldown: 5
-    min-talk-cooldown: 10
-    talk-item: '*'
   teleport-delay: -1
   player-scoreboard-teams:
+    enable: true
+  scoreboard-teams:
+    packet-send-ticks: 1
     enable: true
 general:
   authlib:
@@ -109,6 +120,8 @@ general:
     message: <a>
   translation:
     locale: ''
+  reload-warning-enabled: true
+  entity-spawn-wait-ticks: 10
 advanced:
   check-minecraft-version: true
 economy:

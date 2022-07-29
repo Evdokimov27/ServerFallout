@@ -1,6 +1,6 @@
 ENABLE-DEBUG: false
 language: en
-FriendlyFireEnabled: false
+FriendlyFireEnabled: true
 KickPlayerIfDeniedResourcepack: false
 useDefaultResourcepack: false
 EnableWeaponDurability: false
@@ -23,7 +23,7 @@ sendTitleOnJoin: false
 SecondsTillRPIsSent: 5.0
 enableBulletTrails: true
 BulletTrailsSpacing: 0.5
-enableIgnoreArmorProtection: true
+enableIgnoreArmorProtection: false
 enableIgnoreUnbreakingChecks: false
 enableIgnoreSkipForBasegameItems: false
 Items:
@@ -34,7 +34,7 @@ enableReloadOnlyWhenSwapToOffhand: false
 allowGunHitEntities: false
 showOutOfAmmoOnTitle: false
 showReloadingTitle: true
-showAmmoInXPBar: true
+showAmmoInXPBar: false
 perWeaponPermission: false
 enableExplosionDamage: false
 enableExplosionDamageDrop: false
@@ -61,7 +61,7 @@ ManuallyOverrideTo_1_13_systems: false
 ManuallyOverrideTo_1_14_systems: false
 unknownTranslationKeyFixer: false
 Enable_Creation_Of_Default_Files: false
-EnableGlowEffects: true
+EnableGlowEffects: false
 Break-Block-Texture-If-Shot: true
 enableRecoil: true
 experimental:
@@ -87,8 +87,8 @@ impenetrableEntityTypes:
 - ARROW
 DefaultResourcepackOverride: true
 IronSightsOnRightClick: true
-SwapSneakToSingleFire: false
+SwapSneakToSingleFire: true
 DestructableMaterials:
 - MATERIAL_NAME_HERE
 overrideAttackSpeed: true
-DefaultResourcepack: https://github.com/ZombieStriker/QualityArmory-Resourcepack/releases/download/latest/QualityArmory.zip
+DefaultResourcepack: https://github.com/Evdokimov27/Fallout-Resourcepack/releases/download/MC/Fallout.Paradise.zip

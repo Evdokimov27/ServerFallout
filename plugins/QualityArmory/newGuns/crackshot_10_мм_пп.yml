@@ -1,5 +1,5 @@
 name: Fallout_10-мм
-displayname: '&6§e10-мм пистолет'
+displayname: '&6§e10-мм пистолет пулемет'
 id: 13
 variant: 0
 weapontype: SMG
@@ -7,7 +7,7 @@ weaponsounds: bulletmauser
 enableIronSights: true
 ammotype: '762'
 damage: 4
-maxbullets: 12
+maxbullets: 14
 price: 1000
 lore:
 - §eУрон - 4
@@ -37,19 +37,19 @@ particles:
 invalid: false
 durability: 1000
 maxItemStack: 1
-firerate: 1
+firerate: 1.3
 delayForShoot: 0.3
 maxBulletDistance: 200
 unlimitedAmmo: false
 LightLeveOnShoot: 14
-recoil: 1
+recoil: 4
 slownessOnEquip: 0
 Version_18_Support: false
 ChargingHandler: none
 ReloadingHandler: none
 addMuzzleSmoke: true
 drop-glow-color: none
-headshotMultiplier: 3.5
+headshotMultiplier: 1.5
 weaponsounds_volume: 4
 firing_knockback: 0
 KilledByMessage: '%player% was shot by %killer% using a %name%'

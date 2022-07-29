@@ -1,0 +1,257 @@
+name: '&5◘ &4R&ca&6i&en&2b&ao&bw &3H&1e&9l&dm&5e&4t &5◘'
+lore:
+- '&8&m-&4&m-&8&m-&c&m-&8&m-&6&m-&8&m-&e&m-&8&m-&2&m-&8&m-&a&m-&8&m-&b&m-&8&m-&3&m-&8&m-&1&m-&8&m-&9&m-&8&m-'
+- '&7'
+- '&8➤ &7&oWear to produce'
+- '     &7&orainbow particles !'
+- '&7'
+- '&7&o(Click to equip)'
+- '&7'
+- '&8&m-&4&m-&8&m-&c&m-&8&m-&6&m-&8&m-&e&m-&8&m-&2&m-&8&m-&a&m-&8&m-&b&m-&8&m-&3&m-&8&m-&1&m-&8&m-&9&m-&8&m-'
+material: RED_STAINED_GLASS
+headDBID: ''
+glow: false
+glowDrop: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+usage: 0
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+activators:
+  activator1:
+    activator: PLAYER_RIGHT_CLICK
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - HEAD
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    onlyAirClick: false
+    onlyBlockClick: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+  activator2:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - 'minecraft:item replace entity %player% armor.head with orange_stained_glass{display:{Name:''{"text":"§5◘
+      §4R§ca§6i§en§2b§ao§bw §3H§1e§9l§dm§5e§4t §5◘"}'',Lore:[''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'',
+      ''{"text":"§7"}'', ''{"text":"§8➤ §7§oWear to produce"}'', ''{"text":"     §7§orainbow
+      particles !"}'', ''{"text":"§7"}'', ''{"text":"§7§o(Click to equip)"}'', ''{"text":"§7"}'',
+      ''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'']},PublicBukkitValues:{"executableitems:ei-id":"Prem_Rainbow_Helmet",
+      "executableitems:ei-color": 1.0d}}'
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    detailedSlots:
+    - 39
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_color_int%'
+          comparator: EQUALS
+          part2: 0.0
+          messageIfNotValid: '&e'
+          cancelEventIfNotValid: false
+  activator3:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - 'minecraft:item replace entity %player% armor.head with yellow_stained_glass{display:{Name:''{"text":"§5◘
+      §4R§ca§6i§en§2b§ao§bw §3H§1e§9l§dm§5e§4t §5◘"}'',Lore:[''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'',
+      ''{"text":"§7"}'', ''{"text":"§8➤ §7§oWear to produce"}'', ''{"text":"     §7§orainbow
+      particles !"}'', ''{"text":"§7"}'', ''{"text":"§7§o(Click to equip)"}'', ''{"text":"§7"}'',
+      ''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'']},PublicBukkitValues:{"executableitems:ei-id":"Prem_Rainbow_Helmet",
+      "executableitems:ei-color": 2.0d}}'
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    detailedSlots:
+    - 39
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_color_int%'
+          comparator: EQUALS
+          part2: 1.0
+          messageIfNotValid: '&e'
+          cancelEventIfNotValid: false
+  activator4:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - 'minecraft:item replace entity %player% armor.head with green_stained_glass{display:{Name:''{"text":"§5◘
+      §4R§ca§6i§en§2b§ao§bw §3H§1e§9l§dm§5e§4t §5◘"}'',Lore:[''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'',
+      ''{"text":"§7"}'', ''{"text":"§8➤ §7§oWear to produce"}'', ''{"text":"     §7§orainbow
+      particles !"}'', ''{"text":"§7"}'', ''{"text":"§7§o(Click to equip)"}'', ''{"text":"§7"}'',
+      ''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'']},PublicBukkitValues:{"executableitems:ei-id":"Prem_Rainbow_Helmet",
+      "executableitems:ei-color": 3.0d}}'
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    detailedSlots:
+    - 39
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_color_int%'
+          comparator: EQUALS
+          part2: 2.0
+          messageIfNotValid: '&e'
+          cancelEventIfNotValid: false
+  activator5:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - 'minecraft:item replace entity %player% armor.head with blue_stained_glass{display:{Name:''{"text":"§5◘
+      §4R§ca§6i§en§2b§ao§bw §3H§1e§9l§dm§5e§4t §5◘"}'',Lore:[''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'',
+      ''{"text":"§7"}'', ''{"text":"§8➤ §7§oWear to produce"}'', ''{"text":"     §7§orainbow
+      particles !"}'', ''{"text":"§7"}'', ''{"text":"§7§o(Click to equip)"}'', ''{"text":"§7"}'',
+      ''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'']},PublicBukkitValues:{"executableitems:ei-id":"Prem_Rainbow_Helmet",
+      "executableitems:ei-color": 4.0d}}'
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    detailedSlots:
+    - 39
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_color_int%'
+          comparator: EQUALS
+          part2: 3.0
+          messageIfNotValid: '&e'
+          cancelEventIfNotValid: false
+  activator6:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - 'minecraft:item replace entity %player% armor.head with magenta_stained_glass{display:{Name:''{"text":"§5◘
+      §4R§ca§6i§en§2b§ao§bw §3H§1e§9l§dm§5e§4t §5◘"}'',Lore:[''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'',
+      ''{"text":"§7"}'', ''{"text":"§8➤ §7§oWear to produce"}'', ''{"text":"     §7§orainbow
+      particles !"}'', ''{"text":"§7"}'', ''{"text":"§7§o(Click to equip)"}'', ''{"text":"§7"}'',
+      ''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'']},PublicBukkitValues:{"executableitems:ei-id":"Prem_Rainbow_Helmet",
+      "executableitems:ei-color": 5.0d}}'
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    detailedSlots:
+    - 39
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_color_int%'
+          comparator: EQUALS
+          part2: 4.0
+          messageIfNotValid: '&e'
+          cancelEventIfNotValid: false
+  activator7:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - 'minecraft:item replace entity %player% armor.head with purple_stained_glass{display:{Name:''{"text":"§5◘
+      §4R§ca§6i§en§2b§ao§bw §3H§1e§9l§dm§5e§4t §5◘"}'',Lore:[''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'',
+      ''{"text":"§7"}'', ''{"text":"§8➤ §7§oWear to produce"}'', ''{"text":"     §7§orainbow
+      particles !"}'', ''{"text":"§7"}'', ''{"text":"§7§o(Click to equip)"}'', ''{"text":"§7"}'',
+      ''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'']},PublicBukkitValues:{"executableitems:ei-id":"Prem_Rainbow_Helmet",
+      "executableitems:ei-color": 6.0d}}'
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    detailedSlots:
+    - 39
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_color_int%'
+          comparator: EQUALS
+          part2: 5.0
+          messageIfNotValid: '&e'
+          cancelEventIfNotValid: false
+  activator8:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    commands:
+    - 'minecraft:item replace entity %player% armor.head with red_stained_glass{display:{Name:''{"text":"§5◘
+      §4R§ca§6i§en§2b§ao§bw §3H§1e§9l§dm§5e§4t §5◘"}'',Lore:[''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'',
+      ''{"text":"§7"}'', ''{"text":"§8➤ §7§oWear to produce"}'', ''{"text":"     §7§orainbow
+      particles !"}'', ''{"text":"§7"}'', ''{"text":"§7§o(Click to equip)"}'', ''{"text":"§7"}'',
+      ''{"text":"§8§m-§4§m-§8§m-§c§m-§8§m-§6§m-§8§m-§e§m-§8§m-§2§m-§8§m-§a§m-§8§m-§b§m-§8§m-§3§m-§8§m-§1§m-§8§m-§9§m-§8§m-"}'']},PublicBukkitValues:{"executableitems:ei-id":"Prem_Rainbow_Helmet",
+      "executableitems:ei-color": 0.0d}}'
+    silenceOutput: false
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 5
+    delayInTick: true
+    cancelEvent: false
+    detailedSlots:
+    - 39
+    conditions:
+      placeholdersConditions:
+        plchC1:
+          type: PLAYER_NUMBER
+          part1: '%var_color_int%'
+          comparator: EQUALS
+          part2: 6.0
+          messageIfNotValid: '&e'
+          cancelEventIfNotValid: false
+variables:
+  color: 0.0
+config_4_2: true
+config_update: true

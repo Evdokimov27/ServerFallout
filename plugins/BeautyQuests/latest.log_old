@@ -1,0 +1,119 @@
+[07:15:24] ---- BEAUTYQUESTS LOGGER - OPENED Fri Jul 29 07:15:24 IRKT 2022 ----
+[07:15:32] [INFO]: Enabling BeautyQuests v0.19.7
+[07:15:32] [INFO]: ------------ BeautyQuests ------------
+[07:15:32] [DEBUG]: Hooked into [Citizens] v2.0.30-SNAPSHOT (build 2634)
+[07:15:32] [DEBUG]: Hooked into [WorldGuard] v7.0.5+3827266
+[07:15:32] [DEBUG]: Hooked into [Vault] v1.7.3-b131
+[07:15:32] [DEBUG]: Hooked into [PlaceholderAPI] v2.11.2
+[07:15:32] [DEBUG]: Hooked into [HolographicDisplays] v2.4.9
+[07:15:32] [DEBUG]: Hooked into [Sentinel] v2.6.0-SNAPSHOT (build 472)
+[07:15:32] [INFO]: Loaded valid Minecraft version 1_16_R3.
+[07:15:32] [DEBUG]: Loading data file, last time edited : Fri Jul 29 07:05:55 IRKT 2022
+[07:15:32] [INFO]: Loaded language file locales/en_US.yml (0.028s)!
+[07:15:32] [INFO]: Loaded start particles: REDSTONE in shape POINT with color "R255 G255 B0"
+[07:15:32] [INFO]: Loaded talk particles: VILLAGER_HAPPY in shape BAR
+[07:15:32] [INFO]: Loaded next particles: SMOKE_NORMAL in shape SPOT
+[07:15:32] [DEBUG]: Initlializing default stage types.
+[07:15:32] [DEBUG]: Stage registered (Find, 0)
+[07:15:32] [DEBUG]: Stage registered (Talk, 1)
+[07:15:32] [DEBUG]: Stage registered (Items, 2)
+[07:15:32] [DEBUG]: Stage registered (Mobs, 3)
+[07:15:32] [DEBUG]: Stage registered (Mine, 4)
+[07:15:32] [DEBUG]: Stage registered (Place, 5)
+[07:15:32] [DEBUG]: Stage registered (Chat, 6)
+[07:15:32] [DEBUG]: Stage registered (Interact, 7)
+[07:15:32] [DEBUG]: Stage registered (Fish, 8)
+[07:15:32] [DEBUG]: Stage registered (Melt, 9)
+[07:15:32] [DEBUG]: Stage registered (Enchant, 10)
+[07:15:32] [DEBUG]: Stage registered (Craft, 11)
+[07:15:32] [DEBUG]: Stage registered (Bucket, 12)
+[07:15:32] [DEBUG]: Stage registered (Location, 13)
+[07:15:32] [DEBUG]: Stage registered (PlayTime, 14)
+[07:15:32] [DEBUG]: Stage registered (Breed, 15)
+[07:15:32] [DEBUG]: Stage registered (Tame, 16)
+[07:15:32] [DEBUG]: Initlializing default rewards.
+[07:15:32] [DEBUG]: Quest object registered (id: commandReward, class: fr.skytasul.quests.rewards.CommandReward)
+[07:15:32] [DEBUG]: Quest object registered (id: itemReward, class: fr.skytasul.quests.rewards.ItemReward)
+[07:15:32] [DEBUG]: Quest object registered (id: removeItemsReward, class: fr.skytasul.quests.rewards.RemoveItemsReward)
+[07:15:32] [DEBUG]: Quest object registered (id: textReward, class: fr.skytasul.quests.rewards.MessageReward)
+[07:15:32] [DEBUG]: Quest object registered (id: tpReward, class: fr.skytasul.quests.rewards.TeleportationReward)
+[07:15:32] [DEBUG]: Quest object registered (id: expReward, class: fr.skytasul.quests.rewards.XPReward)
+[07:15:32] [DEBUG]: Quest object registered (id: checkpointReward, class: fr.skytasul.quests.rewards.CheckpointReward)
+[07:15:32] [DEBUG]: Quest object registered (id: questStopReward, class: fr.skytasul.quests.rewards.QuestStopReward)
+[07:15:32] [DEBUG]: Quest object registered (id: requirementDependentReward, class: fr.skytasul.quests.rewards.RequirementDependentReward)
+[07:15:32] [DEBUG]: Quest object registered (id: randomReward, class: fr.skytasul.quests.rewards.RandomReward)
+[07:15:32] [DEBUG]: Quest object registered (id: wait, class: fr.skytasul.quests.rewards.WaitReward)
+[07:15:32] [DEBUG]: Quest object registered (id: titleReward, class: fr.skytasul.quests.rewards.TitleReward)
+[07:15:32] [DEBUG]: Initlializing default requirements.
+[07:15:32] [DEBUG]: Quest object registered (id: logicalOr, class: fr.skytasul.quests.requirements.logical.LogicalOrRequirement)
+[07:15:32] [DEBUG]: Quest object registered (id: questRequired, class: fr.skytasul.quests.requirements.QuestRequirement)
+[07:15:32] [DEBUG]: Quest object registered (id: levelRequired, class: fr.skytasul.quests.requirements.LevelRequirement)
+[07:15:32] [DEBUG]: Quest object registered (id: permissionRequired, class: fr.skytasul.quests.requirements.PermissionsRequirement)
+[07:15:32] [DEBUG]: Quest object registered (id: scoreboardRequired, class: fr.skytasul.quests.requirements.ScoreboardRequirement)
+[07:15:32] [DEBUG]: Initlializing default quest options.
+[07:15:32] [DEBUG]: Quest option registered (id: pool)
+[07:15:32] [DEBUG]: Quest option registered (id: name)
+[07:15:32] [DEBUG]: Quest option registered (id: description)
+[07:15:32] [DEBUG]: Quest option registered (id: customItem)
+[07:15:32] [DEBUG]: Quest option registered (id: confirmMessage)
+[07:15:32] [DEBUG]: Quest option registered (id: hologramText)
+[07:15:32] [DEBUG]: Quest option registered (id: bypassLimit)
+[07:15:32] [DEBUG]: Quest option registered (id: hideNoRequirements)
+[07:15:32] [DEBUG]: Quest option registered (id: startableFromGUI)
+[07:15:32] [DEBUG]: Quest option registered (id: failOnDeath)
+[07:15:32] [DEBUG]: Quest option registered (id: cancellable)
+[07:15:32] [DEBUG]: Quest option registered (id: cancelActions)
+[07:15:32] [DEBUG]: Quest option registered (id: hologramLaunch)
+[07:15:32] [DEBUG]: Quest option registered (id: hologramLaunchNo)
+[07:15:32] [DEBUG]: Quest option registered (id: scoreboard)
+[07:15:32] [DEBUG]: Quest option registered (id: hide)
+[07:15:32] [DEBUG]: Quest option registered (id: auto)
+[07:15:32] [DEBUG]: Quest option registered (id: repeatable)
+[07:15:32] [DEBUG]: Quest option registered (id: timer)
+[07:15:32] [DEBUG]: Quest option registered (id: endSound)
+[07:15:32] [DEBUG]: Quest option registered (id: firework)
+[07:15:32] [DEBUG]: Quest option registered (id: requirements)
+[07:15:32] [DEBUG]: Quest option registered (id: startRewards)
+[07:15:32] [DEBUG]: Quest option registered (id: startMessage)
+[07:15:32] [DEBUG]: Quest option registered (id: starterNPC)
+[07:15:32] [DEBUG]: Quest option registered (id: startDialog)
+[07:15:32] [DEBUG]: Quest option registered (id: endRewards)
+[07:15:32] [DEBUG]: Quest option registered (id: endMsg)
+[07:15:32] [DEBUG]: Item comparison registered (id: bukkit)
+[07:15:32] [DEBUG]: Item comparison registered (id: customBukkit)
+[07:15:32] [DEBUG]: Item comparison registered (id: material)
+[07:15:32] [DEBUG]: Item comparison registered (id: name)
+[07:15:32] [DEBUG]: Item comparison registered (id: lore)
+[07:15:32] [DEBUG]: Item comparison registered (id: enchants)
+[07:15:32] [DEBUG]: Item comparison registered (id: repair)
+[07:15:32] [DEBUG]: Mob factory registered (id: bukkitEntity)
+[07:15:32] [DEBUG]: Bossbars manager has been registered: fr.skytasul.quests.api.bossbar.BQBossBarImplementation
+[07:15:32] [DEBUG]: Mob factory registered (id: citizensNPC)
+[07:15:32] [DEBUG]: Now using WorldGuard entry API.
+[07:15:32] [DEBUG]: Quest object registered (id: regionRequired, class: fr.skytasul.quests.requirements.RegionRequirement)
+[07:15:32] [DEBUG]: Quest object registered (id: moneyReward, class: fr.skytasul.quests.rewards.MoneyReward)
+[07:15:32] [DEBUG]: Quest object registered (id: permReward, class: fr.skytasul.quests.rewards.PermissionReward)
+[07:15:32] [DEBUG]: Quest object registered (id: moneyRequired, class: fr.skytasul.quests.requirements.MoneyRequirement)
+[07:15:32] [INFO]: Placeholders registered !
+[07:15:32] [DEBUG]: Quest object registered (id: placeholderRequired, class: fr.skytasul.quests.requirements.PlaceholderRequirement)
+[07:15:32] [DEBUG]: Holograms manager has been registered: fr.skytasul.quests.utils.compatibility.BQHolographicDisplays2
+[07:15:32] [DEBUG]: Started bStats metrics
+[07:15:32] [DEBUG]: Starting Spigot updater
+[07:15:35] [DEBUG]: 0 accounts loaded and 2 identifiers.
+[07:15:35] [DEBUG]: Registered 4 lines in scoreboard
+[07:15:35] [INFO]: 0 quests loaded (0.015s)!
+[07:15:35] [INFO]: Periodic saves task started (18000 ticks). Task ID: 540
+[07:15:36] [INFO]: You are using the latest version of BeautyQuests.
+[07:30:35] [DEBUG]: Saving 0 loaded accounts and 2 identifiers.
+[07:30:35] [DEBUG]: Saved datas (0.001s)!
+[07:30:35] [INFO]: Datas saved ~ periodic save
+[07:45:35] [DEBUG]: Saving 0 loaded accounts and 2 identifiers.
+[07:45:35] [DEBUG]: Saved datas (0.001s)!
+[07:45:35] [INFO]: Datas saved ~ periodic save
+[07:51:26] [INFO]: Disabling BeautyQuests v0.19.7
+[07:51:26] [INFO]: Periodic saves task stopped.
+[07:51:26] [DEBUG]: Saving 0 loaded accounts and 2 identifiers.
+[07:51:26] [DEBUG]: Saved datas (0.001s)!
+[07:51:26] [DEBUG]: Unregistered from WorldGuard entry API.
+[07:51:26] Logger was open during 36 minutes
+[07:51:26] ---- BEAUTYQUESTS LOGGER - CLOSED Fri Jul 29 07:51:26 IRKT 2022 ----

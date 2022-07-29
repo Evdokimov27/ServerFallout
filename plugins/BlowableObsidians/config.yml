@@ -1,0 +1,86 @@
+#########################################
+# -------------- Settings ------------- #
+#########################################
+# Notice: Item names in 1.8 and 1.8.1 is not always the same!
+# List of blocks here (latest): https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# List of blocks here (1.8): https://helpch.at/docs/1.8/org/bukkit/Material.html
+#########################################
+
+### Which worlds and where the plugin works
+World Settings:
+  world:
+    Enabled: true
+    Bedrock Protection:
+      - -64
+      - -63
+      - -62
+  world_nether:
+    Enabled: true
+    Bedrock Protection:
+      - 0
+      - 1
+      - 2
+      - 126
+      - 127
+  world_the_end:
+    Enabled: true
+    Bedrock Protection: []
+
+### How much to damage managed blocks
+Explosion Settings:
+  Default:
+    Radius: 3.0
+    Damage: 1.0
+  TNT:
+    Radius: 3.0
+    Damage: 30.0
+  Creeper:
+    Radius: 3.0
+    Damage: 1.0
+  Wither Creation:
+    Radius: 3.0
+    Damage: 1.0
+  Wither Projectile:
+    Radius: 3.0
+    Damage: 1.0
+  Wither Block Eating:
+    Damage: 1.0
+## Explosions caused by other plugins:
+  Custom Explosions: 
+    Radius: 3.0
+    Damage: 50.0
+
+### Send block health if 100% health.
+Always Send Health: true
+
+### How effective explosions damage inside water/lava.
+### Damage is multiplied with this if inside a liquid.
+Liquid Multiplier: 0.0
+
+### When to send block health message.
+Check:
+  Item: 'POTATO'
+  Type: 'RIGHT_CLICK_BLOCK'
+
+### Messages which can be translated.
+### You may use <health> instead of <percent>%
+Message:
+  Block Health: '&9Прочность: &c<health> ед.'
+
+### How much health the blowable blocks has.
+### Use wildcard <blocks> for all blocks.
+### You can also add more blocks here
+Blocks Health:
+  obsidian: 50.0
+  chest: 10.0
+  trapped_chest: 10.0
+  oak_door: 30.0
+
+
+
+### Health regeneration
+### How many seconds until the block health is back at max health.
+Regeneration Time: 3600
+
+### Don't touch this
+Config Version: 12

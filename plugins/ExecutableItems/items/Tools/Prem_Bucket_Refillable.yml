@@ -1,0 +1,78 @@
+name: '&3✦ &bWater bucket refillable &3✦'
+lore:
+- '&3&l---&7&l>>&3&l-----&7&l<<&3&l---'
+- '&7Epic: &bWater refillable'
+- '&7'
+- '&7&oInfo:'
+- '&3» &bClick on water to increment usage'
+- '&3» &bClick on block to add water'
+- '&3&l---&7&l>>&3&l-----&7&l<<&3&l---'
+- '&8Signed by: &bPoseidon'
+material: BUCKET
+glow: false
+cancel-item-drop: true
+cancel-enchant: false
+cancel-anvil: false
+cancel-consumption: false
+cancel-item-place: true
+cancel-deposit-in-chest: false
+cancel-item-craft: false
+locked-in-inventory: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: 5
+usageLimit: 50
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: PLAYER_RIGHT_CLICK
+    displayName: '&ean activator'
+    usageModification: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    cancelEvent: true
+    onlyBlockClick: true
+    commands:
+    - DELAYTICK 2
+    - SETBLOCK WATER
+    detailedBlocks: []
+    requiredItems: []
+    blockCommands: []
+    conditions:
+      playerConditions:
+        ifNotTargetBlock:
+        - WATER
+        ifNotTargetBlockMsg: '&e'
+    detailedSlots:
+    - '-1'
+    - '40'
+  activator2:
+    activator: PLAYER_FILL_BUCKET
+    displayName: '&ean activator'
+    usageModification: 1
+    cooldown: 0
+    displayCooldownMessage: true
+    cancelEvent: true
+    commands:
+    - REPLACEBLOCK DIRT
+    - REPLACEBLOCK AIR
+    detailedSlots:
+    - '-1'
+    - '40'
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    silenceOutput: false
+    blockCommands: []
+    detailedBlocks:
+    - WATER
+    cancelEventIfNotDetailedBlocks: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEventIfInCooldown: false
+config_4_2: true
+config_update: true

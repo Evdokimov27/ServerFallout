@@ -1,0 +1,13 @@
+item:
+  id: 'PLAYER_HEAD'
+  skull_data:
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA4Yjc3MmVjYWVlNzA2MjM1ZDFhZGJmMGI5YTI5YjU4YmE5YzBlZDYwZGU2ZjEwZWZiMWE3Zjg2ZDllIn19fQ=="
+    id: "ec62ea75-402c-44fb-8f71-bef0015a4634"
+  name: "&2&lChristmas Ornament"
+  amount: 16
+category: others
+requires:
+- 'id:TROPICAL_FISH;amount:1'
+craft_with_money: 1500
+priority: 5
+actions_when_crafted:

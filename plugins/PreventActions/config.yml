@@ -1,0 +1,23 @@
+# Messages
+message:
+  block:
+    break: '&e⚠ &cYou cannot break &4%type%'
+    interact:
+      physically: '&e⚠ &cYou cannot interact with &4%type%'
+      click: '&e⚠ &cYou cannot interact with &4%type%'
+    place: '&e⚠ &cYou cannot place &4%type%'
+  entity:
+    damage: '&e⚠ &cYou cannot attack a creature &4%type%'
+    interact: '&e⚠ &cYou cannot interact with the creature &4%type%'
+  item:
+    craft: '&e⚠ &cYou cannot craft &4%type%'
+
+  other:
+    config-reloaded: '&a✔ &8Configuration reloaded!'
+    no-permissions: '&4✖ &cNo permission to use this command!'
+
+settings:
+  # Particle
+  # Spawn when the player has no rights
+  # All particles: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.htm
+  particle: 'SMOKE_LARGE'

@@ -1,0 +1,75 @@
+name: '&4✦ &cEpic helmet &4✦'
+lore:
+- '&c&l---&7&l>>&c&l-----&7&l<<&c&l---'
+- ''
+- '&4✦ &7Epic:'
+- '  &4➤ &cSpeed 3'
+- '  &4➤ &c+1 health bonus'
+- ''
+- '&4✦ &7Particle: &cFalse'
+- '&7&oClick to change to True'
+- ''
+- '&c&l---&7&l>>&c&l-----&7&l<<&c&l---'
+- '&8Signed by: &4%player%'
+material: LEATHER_HELMET
+armorColor: 14031903
+glow: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: true
+hideAttributes: true
+usage: 0
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator1:
+    activator: LOOP
+    detailedSlots:
+    - '39'
+    displayName: '&ean activator'
+    usageModification: 0
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - effect give %player% minecraft:speed 2 3 true
+    silenceOutput: true
+    requiredItems: []
+    delay: 1
+    delayInTick: false
+  activator2:
+    activator: INVENTORY_CLICK
+    displayName: '&ean activator'
+    usageModification: -1
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - ei giveslot %player% Prem_EpicHelmet-particlesON 1 %slot%
+    silenceOutput: false
+    requiredItems: []
+    detailedClick: RIGHT
+    cancelEvent: false
+    detailedSlots: []
+attributes:
+  attribute1:
+    attribute: GENERIC_MAX_HEALTH
+    name: '&eDefault name'
+    uuid: aace69d0-38e6-412a-92c8-12632e77d140
+    amount: 2.0
+    operation: ADD_NUMBER
+    slot: HEAD
+cancel-item-drop: false
+cancel-enchant: true
+cancel-anvil: true
+cancel-consumption: false
+cancel-item-place: false
+cancel-deposit-in-chest: false
+cancel-deposit-in-furnace: false
+cancel-item-craft: true
+cancel-item-frame: false
+cancel-tool-interactions: false
+locked-in-inventory: false
+config_4_2: true
+config_update: true

@@ -10,11 +10,11 @@ weapontype: LAZER
 weaponsounds: bulletswblaster
 enableIronSights: true
 ammotype: fusion_cell
-damage: 4
-maxbullets: 20
+damage: 6
+maxbullets: 10
 price: 1600
-firerate: 1
-isAutomatic: true
+firerate: 0.8
+isAutomatic: false
 bullets-per-shot: 1
 addMuzzleSmoke: false
 particles:
@@ -32,7 +32,7 @@ KilledByMessage: '%player% was pew-pew''d by %killer% using a %name%'
 invalid: false
 durability: 1000
 maxItemStack: 1
-setZoomLevel: 2
+setZoomLevel: 10
 sway:
   defaultValue: 0.2
   defaultMultiplier: 2
@@ -40,12 +40,12 @@ sway:
   moveModifier: true
   runModifier: true
   unscopedModifier: 1
-delayForReload: 1.5
-delayForShoot: 0.3
+delayForReload: 2.5
+delayForShoot: 0.7
 maxBulletDistance: 200
 unlimitedAmmo: false
 LightLeveOnShoot: 14
-slownessOnEquip: 0
+slownessOnEquip: 1
 Version_18_Support: false
 ChargingHandler: none
 ReloadingHandler: none

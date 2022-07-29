@@ -1,0 +1,54 @@
+name: '&f&lElytral Trail'
+lore:
+- ''
+- '&7Emits a trail when you glide'
+- '&7with it.'
+material: ELYTRA
+glow: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: false
+hideAttributes: false
+usage: -1
+hideUsage: false
+usePerDay: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+hideUnbreakable: false
+canBeUsedOnlyByTheOwner: false
+durability: 432
+activators:
+  activator1:
+    activator: LOOP
+    displayName: Activator name
+    usageModification: 0
+    usePerDay: -1
+    cooldown: 0
+    displayCooldownMessage: false
+    commands:
+    - 'LOOP START: 25'
+    - execute at %player% run particle minecraft:firework ^1 ^1 ^-1 0.01 0.01 0.01
+      0 1
+    - execute at %player% run particle minecraft:firework ^-1 ^1 ^-1 0.01 0.01 0.01
+      0 1
+    - DELAYTICK 1
+    - LOOP END
+    silenceOutput: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    delay: 1
+    delayInTick: false
+    cancelEvent: false
+    detailedSlots:
+    - '38'
+    conditions:
+      playerConditions:
+        ifGliding: true
+        ifGlidingMsg: ''
+      customConditions: {}
+headDBID: ''
+hidePotionEffects: false
+config_4_2: true
+config_update: true

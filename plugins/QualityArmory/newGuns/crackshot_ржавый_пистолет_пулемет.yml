@@ -1,5 +1,5 @@
-name: Fallout_Ржавы_пистолет_пулемет
-displayname: '&6Ржавый пистолет-пулемет'
+name: Fallout_Самодельный_пистолет_пулемет_плохой
+displayname: '&6Самодельный пистолет-пулемет плохого качества'
 id: 8
 variant: 1
 craftingRequirements:
@@ -9,8 +9,8 @@ weapontype: SMG
 weaponsounds: bulletsmall
 enableIronSights: true
 ammotype: 9mm
-damage: 3
-maxbullets: 12
+damage: 1
+maxbullets: 15
 price: 700
 isPrimaryWeapon: false
 material: CROSSBOW
@@ -25,15 +25,15 @@ sway:
   moveModifier: true
   runModifier: true
   unscopedModifier: 1
-firerate: 1
-delayForReload: 1.5
+firerate: 1.3
+delayForReload: 3.5
 delayForShoot: 0.3
 bullets-per-shot: 1
-isAutomatic: false
-maxBulletDistance: 200
+isAutomatic: true
+maxBulletDistance: 100
 unlimitedAmmo: false
 LightLeveOnShoot: 14
-recoil: 1
+recoil: 3
 slownessOnEquip: 0
 particles:
   bullet_particle: REDSTONE
@@ -47,7 +47,7 @@ ChargingHandler: none
 ReloadingHandler: none
 addMuzzleSmoke: true
 drop-glow-color: none
-headshotMultiplier: 3.5
+headshotMultiplier: 1.5
 weaponsounds_volume: 4
 firing_knockback: 0
 KilledByMessage: '%player% was shot by %killer% using a %name%'

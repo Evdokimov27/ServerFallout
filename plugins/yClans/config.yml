@@ -1,0 +1,22 @@
+Database:
+ Type: SQLITE #Types: MYSQL, SQLITE, MYSQL_FAST
+ IP: localhost:3306
+ DB: test
+ User: admin
+ Pass: ''
+ Debug: true
+# Default language pack ( linguagem padrão )
+Lang: 'pt-br'
+# Active only if the plugin appear date error when load and save on database ( normally on 1.16 )
+# Ative somente se o plugin apresentar erro de data quando carregar e salvar na database ( normalmente na 1.16 )
+Data adapter: false
+Data format: "MM dd, yyyy HH:mm:ss"
+# Type of amount formats available: LETTER (K, M, B, T ...) and NUMBER (100.00)
+# Tipo de formatos de quantia disponíveis: LETRA (K,M,B,T...) e NUMERO (100,00)
+Formatting: 'LETTER'
+# yPoints, PlayerPoints, JH_Shop, yCash, TGCash, AtlasEconomiaSecundaria, MageCash, WheavelGems, NextCash, SpaceShop, LegendaryEconomy
+Points: 'PlayerPoints'
+# Command and alises
+Command:
+ Command: 'clan'
+ Aliases: [ ]

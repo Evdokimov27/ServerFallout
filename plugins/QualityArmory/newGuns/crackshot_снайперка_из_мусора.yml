@@ -1,12 +1,12 @@
-name: Fallout_ржавая_снайперка
-displayname: '&6§eРжавая снайперка'
+name: Fallout_ржавая_винтовка
+displayname: '&6§eРжавая винтовка'
 id: 7
 variant: 0
 weapontype: SNIPER
 weaponsounds: bulletbig
 enableIronSights: true
 ammotype: '762'
-damage: 10
+damage: 5
 maxbullets: 5
 price: 1000
 lore:
@@ -23,7 +23,7 @@ sway:
   unscopedModifier: 1
 isAutomatic: false
 bullets-per-shot: 1
-delayForReload: 10.0
+delayForReload: 5.0
 material: crossbow
 setZoomLevel: 10
 hasNightVisionOnScope: false
@@ -38,18 +38,18 @@ ChargingHandler: BoltAction
 invalid: false
 durability: 1000
 maxItemStack: 1
-firerate: 1
+firerate: 0.5
 delayForShoot: 0.3
 maxBulletDistance: 200
 unlimitedAmmo: false
 LightLeveOnShoot: 14
-recoil: 1
+recoil: 0.6
 slownessOnEquip: 0
 Version_18_Support: false
 ReloadingHandler: none
 addMuzzleSmoke: true
 drop-glow-color: none
-headshotMultiplier: 3.5
+headshotMultiplier: 3
 weaponsounds_volume: 4
 firing_knockback: 0
 KilledByMessage: '%player% was shot by %killer% using a %name%'

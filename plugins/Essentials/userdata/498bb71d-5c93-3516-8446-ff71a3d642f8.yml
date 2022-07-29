@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 26.1.208.109
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1658096147023
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1659053087401
+  login: 1659053043734
+money: '2313852.0'
+last-account-name: evdokimov27
+logoutlocation:
+  world: 94a43f0b-14e2-4104-a4ac-285a6199c872
+  world-name: world
+  x: -1099.3559317769552
+  y: 47.0
+  z: 889.5975351606304
+  yaw: 301.5000915527344
+  pitch: 15.900022506713867
+lastlocation:
+  world: 94a43f0b-14e2-4104-a4ac-285a6199c872
+  world-name: world
+  x: -1102.4794438130837
+  y: 57.0
+  z: 878.714710613298
+  yaw: 175.13519287109375
+  pitch: 38.93413162231445

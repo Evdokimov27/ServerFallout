@@ -1,0 +1,18 @@
+item:
+  id: 'EMERALD'
+  name: "&c&lRandom Item"
+  lore:
+  - "&aCrafting this, you can get one of these items:"
+  - "&4Super Sword &7-> &220%"
+  - "&4King Helmet &7-> &230%"
+  - "&4Epic Bow    &7-> &250%"
+  - ""
+  - "&6Good luck! :)"
+category: others
+requires:
+- 'id:BEACON;amount:5'
+priority: 4
+random_craftings:
+- "super_sword;20"
+- "king_helmet;30"
+- "epic_bow;50"

@@ -1,0 +1,128 @@
+name: '&7✦ &fGREEDY Pickaxe &7✦'
+lore:
+- '&8&l---&7&l>>&8&l-----&7&l<<&8&l---'
+- '&f'
+- '&7✪ &6Efficiency &eII'
+- '&7✪ &6Unbreaking &eI'
+- '&f'
+- '&7Require: &f1 Cobblestone to mine'
+- '&7Epic: &f2% to drop a &bDiamond'
+- '&f'
+- '&6Ability: &e3 x 3 x 3 destruction'
+- '&6Require: &eSneak + 1 LVL'
+- '&f'
+- '&7Blocks break: &e%var_blockbreak_int%'
+- '&f'
+- '&8&l---&7&l>>&8&l-----&7&l<<&8&l---'
+material: DIAMOND_PICKAXE
+glow: true
+cancel-item-drop: true
+cancel-enchant: false
+cancel-anvil: false
+cancel-consumption: false
+cancel-item-place: true
+cancel-deposit-in-chest: false
+cancel-item-craft: false
+locked-in-inventory: false
+disableStack: false
+keepItemOnDeath: false
+give-first-join: false
+give-slot: 0
+hideEnchantments: true
+hideAttributes: true
+usage: -1
+usageLimit: -1
+disable-world: []
+unbreakable: false
+activators:
+  activator2:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: '&ean activator'
+    usageModification: 0
+    cooldown: 0
+    displayCooldownMessage: true
+    commands:
+    - 'RANDOM RUN: 1'
+    - nothing*98
+    - give %player% diamond 1
+    - give %player% diamond 1
+    - RANDOM END
+    requiredItems:
+    - COBBLESTONE:1
+    requiredItemsMsg: '&4&l&oExecutableItems &cTo mine with this pickaxe you must
+      have &61 Cobblestone &c! &7(&a2% &7chance to drop a &bDiamond &7when you mine)'
+    detailedSlots:
+    - '-1'
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    silenceOutput: false
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    desactiveDrops: false
+    cancelEventIfInvalidRequiredItems: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    conditions:
+      playerConditions:
+        ifNotSneaking: true
+        ifNotSneakingMsg: ''
+    variablesModification:
+      blockbreak:
+        type: MODIFICATION
+        modification: '1'
+  activator3:
+    activator: PLAYER_BLOCK_BREAK
+    displayName: '&ean activator'
+    usageModification: 0
+    cooldown: 5
+    displayCooldownMessage: false
+    commands:
+    - MODIFYDURABILITY -1 %slot% true
+    blockCommands:
+    - MINEINCUBE 3 true true
+    conditions:
+      playerConditions:
+        ifSneaking: true
+        ifSneakingMsg: ''
+      customConditions: {}
+    detailedSlots:
+    - '-1'
+    usePerDay: -1
+    cancelEventIfMaxUsePerDay: false
+    autoUpdateItem: false
+    silenceOutput: false
+    detailedBlocks: []
+    cancelEventIfNotDetailedBlocks: false
+    desactiveDrops: false
+    requiredLevel: 1
+    requiredLevelMsg: '&4&l&oExecutableItems &cTo active this ability you must have
+      &6%level% level &c!'
+    cancelEventIfInvalidRequiredLevel: true
+    cancelEventIfInvalidRequiredExecutableItems: false
+    cancelEvent: false
+    cancelEventIfInCooldown: false
+    isCooldownInTicks: true
+    cooldownMsg: ''
+    variablesModification:
+      blockbreak:
+        type: MODIFICATION
+        modification: '1'
+customModelData: 1
+headDBID: ''
+glowDrop: false
+usePerDay: -1
+durability: 1561
+canBeUsedOnlyByTheOwner: false
+storeItemInfos: false
+variables:
+  blockbreak: 0.0
+enchantments:
+  enchantment1:
+    enchantment: efficiency
+    level: 2
+  enchantment2:
+    enchantment: unbreaking
+    level: 1
+config_4_2: true
+config_update: true
